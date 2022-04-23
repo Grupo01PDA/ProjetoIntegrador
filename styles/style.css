@@ -6,10 +6,17 @@
 }
 
 .feed{
-    display: flexbox;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
     padding-left: 30%;
 }
+
+body{
+    background-color: #120A8F;
+    color: #096fe0 
+}
+
+
 
 footer{
     position: relative;
