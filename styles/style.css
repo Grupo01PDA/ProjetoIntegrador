@@ -4,19 +4,15 @@
     box-sizing: border-box;
     font-family: "Arial";
 }
+body{
+    background-color: solid black;
+}
 
 .feed{
-    display: flex;
-    flex-wrap: nowrap;
+    display: flexbox;
+    flex-wrap: wrap;
     padding-left: 30%;
 }
-
-body{
-    background-color: #120A8F;
-    color: #096fe0 
-}
-
-
 
 footer{
     position: relative;
@@ -24,3 +20,6 @@ footer{
     background-color: #4099b9;
     width: 100%;
 }
+img{
+    width: 200px;
+   }
