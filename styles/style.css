@@ -4,22 +4,7 @@
     box-sizing: border-box;
     font-family: "Arial";
 }
-body{
-    background-color: solid black;
-}
 
-.feed{
-    display: flexbox;
-    flex-wrap: wrap;
-    padding-left: 30%;
+.logo{
+    max-width: 200px;
 }
-
-footer{
-    position: relative;
-    bottom: 0;
-    background-color: #4099b9;
-    width: 100%;
-}
-img{
-    width: 200px;
-   }
