@@ -1,23 +1,37 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Arial";
 }
-
-.col, .logo{
-    width:200px; 
-    height:100px; 
-    padding-top: 6px;
-    margin-top: -10px;
-    margin-left: -15px;
+header{
+    background-color: #f0f0f0;
 }
 
-.row{
-    background-color: #F0F0F0;
+
+.logo{
+    width:150px; 
 }
 
-.d-flex{
-    position: absolute;
-    padding-top: 35px;
-    left: 250px;
-    
+.divBusca{
+    background-color: #FFFFFF;
+    border-radius:15px;
+    width: fit-content;
+    border: 1px solid;
+}
+  
+.txtBusca{
+    background-color:transparent;
+    padding-left:10px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:25px;
+    width: 250px;
+    margin-right: 3rem;
+}
+
+.btnBusca{
+    padding-right: 7px;
+    padding-bottom: 4px;
 }
