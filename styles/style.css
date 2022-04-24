@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     font-family: "Arial";
+    margin: 0;
+    padding: 0;
 }
 
 .col, .logo{
@@ -20,4 +22,23 @@
     padding-top: 35px;
     left: 250px;
     
+}
+
+.rodaPE{
+    text-align: center;
+    padding: 45px;
+    background-color: #FFFFFF ;
+    display: flex;
+
+
+}
+
+.copy{
+    
+}
+.nos{
+
+}
+.ajuda{
+
 }
