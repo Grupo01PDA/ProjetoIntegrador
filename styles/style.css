@@ -1,8 +1,6 @@
 *{
     box-sizing: border-box;
     font-family: "Arial";
-    margin: 0;
-    padding: 0;
 }
 header{
     background-color: #f0f0f0;
@@ -20,18 +18,60 @@ header{
     
 }
 
-.rodaPE{
-    text-align: center;
-    padding: 45px;
-    background-color: #FFFFFF ;
-    display: flex;
+   .rodaPE{
+    width: 100%;
+   height: 50vh;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
 
 
 }
 
+<<<<<<< HEAD
+/* .copy{ 
+    text-align: left;
+    
+}
+.nos{
+    text-align: center;
+    padding-top: 10px;
+    
+
+}
+.ajuda{
+    text-align: right;
+    
+} */
+
+footer{
+    height: 100px;
+    width: 100%;
+    min-width: 250px;
+    display: flex;
+    background-color: #F0F0F0;
+}
+
+p {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+footer .rodaPE
+{
+    width: 352px;
+    height: 106px;
+    padding: 25px 73px;
+}
 
 
 
+=======
+=======
+
+
+
+>>>>>>> 773092719947ba21074847e3ba84b0a85cb2c936
 .divBusca{
     background-color: #FFFFFF;
     border-radius:15px;
