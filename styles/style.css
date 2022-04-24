@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Arial";
     margin: 0;
@@ -31,19 +29,13 @@ header{
 
 }
 
-.copy{
-    
-}
-.nos{
 
-}
-.ajuda{
 
-}
+
 .divBusca{
     background-color: #FFFFFF;
     border-radius:15px;
-    width: fit-content;
+    max-width: 100px;
     border: 1px solid;
 }
   
