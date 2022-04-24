@@ -1,18 +1,16 @@
 *{
     box-sizing: border-box;
     font-family: "Arial";
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f0f0f0;
 }
 
-.col, .logo{
-    width:200px; 
-    height:100px; 
-    padding-top: 6px;
-    margin-top: -10px;
-    margin-left: -15px;
-}
 
-.row{
-    background-color: #F0F0F0;
+.logo{
+    width:150px; 
 }
 
 .d-flex{
@@ -21,3 +19,39 @@
     left: 250px;
     
 }
+
+.rodaPE{
+    text-align: center;
+    padding: 45px;
+    background-color: #FFFFFF ;
+    display: flex;
+
+
+}
+
+
+
+
+.divBusca{
+    background-color: #FFFFFF;
+    border-radius:15px;
+    max-width: 100px;
+    border: 1px solid;
+}
+  
+.txtBusca{
+    background-color:transparent;
+    padding-left:10px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:25px;
+    width: 250px;
+    margin-right: 3rem;
+}
+
+.btnBusca{
+    padding-right: 7px;
+    padding-bottom: 4px;
+}
+
