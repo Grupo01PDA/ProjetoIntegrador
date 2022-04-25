@@ -8,9 +8,7 @@
 section{
     background-color: #e6e6e6;
 }
-.navegacao{
-    background-color: #f0f0f0;
-}
+
 .videos{
     background-color: #e6e6e6;
 }
@@ -70,6 +68,8 @@ footer .rodaPE{
     border:none;
     height:25px;
     width: 20rem;
+    box-shadow: 0 0 0 0;
+    outline: 0;
     
 }
 
@@ -97,6 +97,8 @@ footer .rodaPE{
     --bs-gutter-x: 0rem !important;
 }
 
+
+
 @media screen and (max-width: 768px) {
 
     .navegacao{
@@ -108,3 +110,22 @@ footer .rodaPE{
     }
     
 }
+
+.barra-lateral {
+   
+     background: color #f0f0f0;
+    color:black;
+    font-size:1.00em;
+    
+    
+    
+
+}
+
+ li {
+    
+    list-style-type: none;
+    padding: 2% 5%;
+    margin-left:10% ;
+}
+
