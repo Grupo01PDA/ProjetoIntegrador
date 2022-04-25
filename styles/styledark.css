@@ -7,7 +7,6 @@
 /* inicio do site*/
 header{
     background-color: #0f0f0f;
-    width: 100%;
 }
 
 /*LOGO*/
@@ -41,10 +40,14 @@ header{
     border-radius: 100%;
 }
 
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /*section coluna de navegação/feed*/
 section{
-    background-color: #d81717;
-    width: 100%;
+    background-color: #1b1b1b;
 }
 /*Coluna de navegação*/
 .navegacao{
@@ -57,16 +60,14 @@ section{
 
 /*FOOTER*/
 footer{
-    width: 100%;
-    max-width: 100%;
     display: flex;
     background-color: #0f0f0f;
 }
 .rodaPE{
-   width: 100%;
-   display: flex;
-   justify-content: center; 
-   align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 footer .rodaPE {
