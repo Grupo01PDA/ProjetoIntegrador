@@ -28,6 +28,8 @@ header{
     border:none;
     height:25px;
     width: 20rem;   
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 .btnBusca{
     padding-right: 7px;
