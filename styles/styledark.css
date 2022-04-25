@@ -4,16 +4,15 @@
     margin: 0;
     padding: 0;
 }
+
 /* inicio do site*/
 header{
     background-color: #0f0f0f;
 }
-
 /*LOGO*/
 .logo{
     width:150px; 
 }
-
 /*barra de pesquisa*/
 .divBusca{
     background-color: #FFFFFF;
@@ -35,31 +34,55 @@ header{
     padding-right: 7px;
     padding-bottom: 4px;
 }
-
 /*botão tema claro ou escuro*/
 .tema{
     border: -1px;
     border-radius: 100%;
 }
-
-.row{
-    margin-left: 0;
-    margin-right: 0;
-}
-
 /*section coluna de navegação/feed*/
 section{
     background-color: #1b1b1b;
 }
 /*Coluna de navegação*/
-.navegacao{
+.barra-lateral{
     background-color: #0f0f0f;
+    color:#f0f0f0;
+    font-size:1.00em;
+}
+li{
+    list-style-type: none;
+    padding: 2% 5%;
+    margin-left:10% ;
 }
 /*feed*/
 .feed{
     background-color: #1b1b1b;
 }
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+.links {
+    text-decoration: none;
+    color: #ffffff;
+}
 
+.links:hover{
+    text-decoration: none;
+    color:#3DF5A7;
+}
+.lupa{
+    border: none;
+    background-color: transparent;
+}
+
+.card{
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    margin-bottom: 3rem;
+}
+.card-body{
+    background-color: #3DF5A7;
+}
 /*FOOTER*/
 footer{
     background-color: #0f0f0f;
@@ -86,23 +109,6 @@ footer a{
     text-decoration: none;
     color:#FFFFFF
 }
-
-.row{
-    --bs-gutter-x: 0rem !important;
-}
-
-
-.links {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.links:hover{
-    text-decoration: none;
-    color:#3DF5A7;
-    
-}
-
 @media screen and (max-width: 768px) {
 
     .navegacao{

@@ -4,62 +4,18 @@
     margin: 0;
     padding: 0;
 }
-
-section{
-    background-color: #e6e6e6;
-}
-
-.videos{
-    background-color: #e6e6e6;
-}
+/*Início do site*/
 header{
     background-color: #f0f0f0;
 }
+/*Logo*/
 .logo{
     width:150px; 
 }
-.rodaPE{
-    width: 100%;
-   height: 50vh;
-   display: flex;
-   justify-content: center; 
-   align-items: center;
-}
-
-footer{
-    height: 100px;
-    width: 100%;
-    min-width: 250px;
-    display: flex;
-    background-color: #F0F0F0;
-}
-
-footer a:hover{
-    text-decoration: none;
-    color: #096FE0;
-}
-
-footer a{
-    text-decoration: none;
-    color:#000000
-}
-
-p {
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-footer .rodaPE{
-    width: 352px;
-    height: 106px;
-    padding: 25px 73px;
-}
-
 .divBusca{
     background-color: #FFFFFF;
     width: max-content;
 }
-  
 .txtBusca{
     background-color:transparent;
     padding-left:10px;
@@ -69,18 +25,34 @@ footer .rodaPE{
     height:25px;
     width: 20rem;
     box-shadow: 0 0 0 0;
-    outline: 0;
-    
+    outline: 0; 
 }
-
 .btnBusca{
     padding-right: 7px;
     padding-bottom: 4px;
 }
-
 .tema{
-    border: -1px none;
+    border: -1px;
     border-radius: 100%;
+}
+/*section coluna de navegação/feed*/
+section{
+    background-color: #e6e6e6;
+}
+/*Coluna de navegação*/
+.barra-lateral{
+    background: color #f0f0f0;
+    color:black;
+    font-size:1.00em;
+}
+li{
+    list-style-type: none;
+    padding: 2% 5%;
+    margin-left:10% ;
+}
+/*feed*/
+.feed{
+    background-color: #e6e6e6;
 }
 
 .links {
@@ -97,35 +69,48 @@ footer .rodaPE{
     --bs-gutter-x: 0rem !important;
 }
 
+.lupa{
+    border: none;
+    background-color: transparent;
+}
 
-
+.card{
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    margin-bottom: 3rem;
+}
+.card-body{
+    background-color: #096FE0;
+}
+/*FOOTER*/
+footer{
+    background-color: #f0f0f0;
+}
+.rodaPE{
+    justify-content: center; 
+    align-items: center;
+}
+footer .rodaPE {
+    height: auto;
+    padding: 30px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #f0f0f0;
+    text-decoration: none
+}
+footer a:hover{
+    text-decoration: none;
+    color: #096FE0;
+}
+footer a{
+    text-decoration: none;
+    color:#000000
+}
 @media screen and (max-width: 768px) {
-
     .navegacao{
         display: none;
     }
-
     header .parte3Header{
         display: none;
-    }
-    
+    }  
 }
-
-.barra-lateral {
-   
-     background: color #f0f0f0;
-    color:black;
-    font-size:1.00em;
-    
-    
-    
-
-}
-
- li {
-    
-    list-style-type: none;
-    padding: 2% 5%;
-    margin-left:10% ;
-}
-
