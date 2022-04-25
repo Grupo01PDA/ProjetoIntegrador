@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styledark.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Home Study</title>
 </head>
-<body>
-    <header class="container-fluid">
-        <div class="row align-items-center">
+<bod>
+    <header class="row align-items-center">
             <!--div da logo-->
             <div class="col d-flex justify-content-start">
                 <img class="logo" src="./imagens/LogoHS.png">
@@ -23,7 +22,7 @@
                     <img src="imagens/search.svg" class="btnBusca" alt="Buscar" />
                 </div>
             </div>
-            <div class="col d-flex justify-content-between">
+            <div class="col d-flex justify-content-between parte3Header">
                     <!--div do link para notícias-->
                         <a class="links" href="noticias.html">Notícias</a>
                     
@@ -31,13 +30,12 @@
                         <a class="links" href="login.html">Faça Seu Login</a>
                     
                     <!--div para troca de tema - TEMPORÁRIO-->
-                        <button class="tema"><a href="indexdark.html" ><img src="/imagens/circle-half.svg" alt="user" width="30px"></a></button>
+                        <button class="tema"><a href="index.html" ><img src="/imagens/circle-half.svg" alt="user" width="30px"></a></button>
             </div>
-        </div>
     </header>
-    <section class="container-fluid  row">
+    <section class="row">
         <!--Coluna de navegação-->
-        <div class="col navegacao">
+        <div class="col-3 navegacao">
             <div>
                 <a href="Erro.html">Crie seu Cronograma</a> 
             </div>
@@ -59,7 +57,7 @@
         </div>
     
         <!--Vídeos do feed-->
-        <div class="videos col">
+        <div class="feed col-9">
 
             <h1>Português</h1>
             <div nome="português">
@@ -235,9 +233,15 @@
     
     <!--footer-->
     <footer class="container-fluid">
-           <div class="rodaPE"><p>&copy;copyright 2022</p></div> 
-            <div class="rodaPE"><p><a href="Erro.html">Desenvolvedores</a></p></div>
-            <div class="rodaPE"><p><a href="Erro.html">Precisa de ajuda?</a></p></div>
+        <div class="rodaPE">
+            &copy;copyright 2022
+        </div>
+        <div class="rodaPE">
+            <a href="Erro.html">Desenvolvedores</a>
+        </div>
+        <div class="rodaPE">
+            <a href="Erro.html">Precisa de ajuda?</a>
+        </div>
     </footer>
 </body>
 </html>

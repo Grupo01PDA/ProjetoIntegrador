@@ -4,6 +4,16 @@
     margin: 0;
     padding: 0;
 }
+
+section{
+    background-color: #e6e6e6;
+}
+.navegacao{
+    background-color: #f0f0f0;
+}
+.videos{
+    background-color: #e6e6e6;
+}
 header{
     background-color: #f0f0f0;
 }
@@ -60,8 +70,9 @@ footer .rodaPE
     padding-bottom: 4px;
 }
 
-a{
-    text-decoration: none;
+.tema{
+    border: -1px none;
+    border-radius: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,7 +81,7 @@ a{
         display: none;
     }
 
-    .parte3Header{
+    header .parte3Header{
         display: none;
     }
     
