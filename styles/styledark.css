@@ -28,6 +28,8 @@ header{
     border:none;
     height:25px;
     width: 20rem;   
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 .btnBusca{
     padding-right: 7px;
@@ -60,12 +62,9 @@ section{
 
 /*FOOTER*/
 footer{
-    display: flex;
     background-color: #0f0f0f;
 }
 .rodaPE{
-    width: 100%;
-    display: flex;
     justify-content: center; 
     align-items: center;
 }
@@ -76,16 +75,33 @@ footer .rodaPE {
     font-size: 15px;
     text-transform: uppercase;
     color: #f0f0f0;
+    text-decoration: none
 }
+footer a:hover{
+    text-decoration: none;
+    color: #3DF5A7;
+}
+
 footer a{
     text-decoration: none;
-    color: #f0f0f0;
+    color:#FFFFFF
+}
+
+.row{
+    --bs-gutter-x: 0rem !important;
 }
 
 
+.links {
+    text-decoration: none;
+    color: #ffffff;
+}
 
-
-
+.links:hover{
+    text-decoration: none;
+    color:#3DF5A7;
+    
+}
 
 @media screen and (max-width: 768px) {
 

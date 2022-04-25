@@ -26,7 +26,6 @@ header{
    align-items: center;
 }
 
-
 footer{
     height: 100px;
     width: 100%;
@@ -35,17 +34,27 @@ footer{
     background-color: #F0F0F0;
 }
 
+footer a:hover{
+    text-decoration: none;
+    color: #096FE0;
+}
+
+footer a{
+    text-decoration: none;
+    color:#000000
+}
+
 p {
     font-size: 20px;
     text-transform: uppercase;
 }
 
-footer .rodaPE
-{
+footer .rodaPE{
     width: 352px;
     height: 106px;
     padding: 25px 73px;
 }
+
 .divBusca{
     background-color: #FFFFFF;
     width: max-content;
@@ -59,6 +68,8 @@ footer .rodaPE
     border:none;
     height:25px;
     width: 20rem;
+    box-shadow: 0 0 0 0;
+    outline: 0;
     
 }
 
@@ -71,6 +82,22 @@ footer .rodaPE
     border: -1px none;
     border-radius: 100%;
 }
+
+.links {
+    text-decoration: none;
+    color: #000000;
+}
+
+.links:hover{
+    text-decoration: none;
+    color:#096FE0;
+}
+
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+
+
 
 @media screen and (max-width: 768px) {
 
