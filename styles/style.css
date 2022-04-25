@@ -29,6 +29,21 @@ header{
 }
 
 
+/* .copy{ 
+    text-align: left;
+    
+}
+.nos{
+    text-align: center;
+    padding-top: 10px;
+    
+
+}
+.ajuda{
+    text-align: right;
+    
+} */
+
 footer{
     height: 100px;
     width: 100%;
@@ -57,6 +72,7 @@ footer .rodaPE{
     height: 106px;
     padding: 25px 73px;
 }
+
 .divBusca{
     background-color: #FFFFFF;
     width: max-content;
