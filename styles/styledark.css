@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+}
+/* inicio do site*/
+header{
+    background-color: #0f0f0f;
+}
+
+/*LOGO*/
+.logo{
+    width:150px; 
+}
+
+/*barra de pesquisa*/
+.divBusca{
+    background-color: #FFFFFF;
+    border: 1px solid;
+    width: max-content;
+}
+.txtBusca{
+    background-color:transparent;
+    padding-left:10px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:25px;
+    width: 20rem;   
+}
+.btnBusca{
+    padding-right: 7px;
+    padding-bottom: 4px;
+}
+
+/*botão tema claro ou escuro*/
+.tema{
+    border: -1px;
+    border-radius: 100%;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*section coluna de navegação/feed*/
+section{
+    background-color: #1b1b1b;
+}
+/*Coluna de navegação*/
+.navegacao{
+    background-color: #0f0f0f;
+}
+/*feed*/
+.feed{
+    background-color: #1b1b1b;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    background-color: #0f0f0f;
+}
+.rodaPE{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+footer .rodaPE {
+    height: auto;
+    padding: 30px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #f0f0f0;
+}
+footer a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .navegacao{
+        display: none;
+    }
+
+    .parte3Header{
+        display: none;
+    }
+    
+}

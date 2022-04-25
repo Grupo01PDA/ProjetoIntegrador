@@ -1,32 +1,33 @@
 *{
     box-sizing: border-box;
     font-family: "Arial";
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    background-color: #e6e6e6;
+}
+.navegacao{
+    background-color: #f0f0f0;
+}
+.videos{
+    background-color: #e6e6e6;
 }
 header{
     background-color: #f0f0f0;
 }
-
-
 .logo{
     width:150px; 
 }
-
-.d-flex{
-    position: absolute;
-    padding-top: 35px;
-    left: 250px;
-    
-}
-
-   .rodaPE{
+.rodaPE{
     width: 100%;
    height: 50vh;
    display: flex;
    justify-content: center; 
    align-items: center;
-
-
 }
+
 
 /* .copy{ 
     text-align: left;
@@ -65,9 +66,7 @@ footer .rodaPE
 
 .divBusca{
     background-color: #FFFFFF;
-    border-radius:15px;
-    max-width: 100px;
-    border: 1px solid;
+    width: max-content;
 }
   
 .txtBusca{
@@ -77,8 +76,8 @@ footer .rodaPE
     font-size:14px;
     border:none;
     height:25px;
-    width: 250px;
-    margin-right: 3rem;
+    width: 20rem;
+    
 }
 
 .btnBusca{
@@ -86,3 +85,19 @@ footer .rodaPE
     padding-bottom: 4px;
 }
 
+.tema{
+    border: -1px none;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navegacao{
+        display: none;
+    }
+
+    header .parte3Header{
+        display: none;
+    }
+    
+}
