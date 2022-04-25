@@ -11,35 +11,31 @@
 </head>
 <body>
     <header class="container-fluid">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center">
             <!--div da logo-->
-            <div class="col">
+            <div class="col d-flex justify-content-start">
                 <img class="logo" src="./imagens/LogoHS.png">
             </div>
             <!--div da barra de pesquisa-->
-            <div class="divBusca mx-auto col">
-                <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
-                <img src="imagens/search.svg" class="btnBusca" alt="Buscar" />
-            </div>
-            <div class="col">
-                <div class="row">
-                    <!--div do link para notícias-->
-                    <div class="col">
-                        <a class="links" href="noticias.html">Notícias</a>
-                    </div>
-                    <!--div para página de login-->
-                    <div class="col">
-                        <a class="links" href="login.html">Faça Seu Login</a>
-                    </div>
-                    <!--div para troca de tema - TEMPORÁRIO-->
-                    <div class="col">
-                        <button class=""><a href="index.html" ><img src="/imagens/person-circle.svg" alt="user" width="30px"></a></button>
-                    </div>
+            <div class="col d-flex justify-content-center">
+                <div class="divBusca rounded-pill">
+                    <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
+                    <img src="imagens/search.svg" class="btnBusca" alt="Buscar" />
                 </div>
+            </div>
+            <div class="col d-flex justify-content-between">
+                    <!--div do link para notícias-->
+                        <a class="links" href="noticias.html">Notícias</a>
+                    
+                    <!--div para página de login-->
+                        <a class="links" href="login.html">Faça Seu Login</a>
+                    
+                    <!--div para troca de tema - TEMPORÁRIO-->
+                        <button class=""><a href="index.html" ><img src="/imagens/person-circle.svg" alt="user" width="30px"></a></button>
             </div>
         </div>
     </header>
-    <section class="row">
+    <section class="container-fluid  row">
         <!--Coluna de navegação-->
         <div class="col navegacao">
             <div>
@@ -238,7 +234,7 @@
     </section>
     
     <!--footer-->
-    <footer>
+    <footer class="container-fluid">
            <div class="rodaPE"><p>&copy;copyright 2022</p></div> 
             <div class="rodaPE"><p><a href="Erro.html">Desenvolvedores</a></p></div>
             <div class="rodaPE"><p><a href="Erro.html">Precisa de ajuda?</a></p></div>

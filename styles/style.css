@@ -1,16 +1,15 @@
 *{
     box-sizing: border-box;
     font-family: "Arial";
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: #f0f0f0;
 }
-
-
 .logo{
     width:150px; 
 }
-
 .rodaPE{
     width: 100%;
    height: 50vh;
@@ -41,9 +40,8 @@ footer .rodaPE
 }
 .divBusca{
     background-color: #FFFFFF;
-    border-radius:15px;
-    max-width: 100px;
     border: 1px solid;
+    width: max-content;
 }
   
 .txtBusca{
@@ -53,8 +51,8 @@ footer .rodaPE
     font-size:14px;
     border:none;
     height:25px;
-    width: 250px;
-    margin-right: 3rem;
+    width: 20rem;
+    
 }
 
 .btnBusca{
@@ -64,4 +62,16 @@ footer .rodaPE
 
 a{
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navegacao{
+        display: none;
+    }
+
+    .parte3Header{
+        display: none;
+    }
+    
 }
