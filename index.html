@@ -13,30 +13,36 @@
 <body>
     <header class="container-fluid">
         <div class="row align-items-center justify-content-center">
+            <!--div da logo-->
             <div class="col">
                 <img class="logo" src="./imagens/LogoHS.png">
             </div>
+            <!--div da barra de pesquisa-->
             <div class="divBusca mx-auto col">
                 <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
                 <img src="imagens/search.svg" class="btnBusca" alt="Buscar" />
             </div>
             <div class="col">
                 <div class="row">
+                    <!--div do link para notícias-->
                     <div class="col">
-                        <a href="noticias.html">Notícias</a>
+                        <a class="links" href="noticias.html">Notícias</a>
                     </div>
+                    <!--div para página de login-->
                     <div class="col">
-                        <a href="login.html">Faça Seu Login</a>
+                        <a class="links" href="login.html">Faça Seu Login</a>
                     </div>
+                    <!--div para troca de tema - TEMPORÁRIO-->
                     <div class="col">
-                        <button><a href="login.html" ><img src="/imagens/person-circle.svg" alt="user" width="30px"></a></button>
+                        <button class=""><a href="index.html" ><img src="/imagens/person-circle.svg" alt="user" width="30px"></a></button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <br><br><br>
-    <div class:"topics-scholl">
+
+    <!--Vídeos do feed-->
+    <div class="">
         <div nome="video-1">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/s8a6eXncWY8"
                 title="YouTube video player" frameborder="0"
@@ -106,13 +112,14 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
-    </div>           
+    </div>
+    
+    
+    <!--footer-->
     <footer>
            <div class="rodaPE"><p>&copy;copyright 2022</p></div> 
-            <div class="rodaPE"><p>desevolvedores</P></div>
-            <div class="rodaPE"><p>precisa de ajuda?</p></div>
-        
-        
+            <div class="rodaPE"><p><a href="Erro.html">Desenvolvedores</a></p></div>
+            <div class="rodaPE"><p><a href="Erro.html">Precisa de ajuda?</a></p></div>
     </footer>
 </body>
 </html>

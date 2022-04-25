@@ -11,21 +11,12 @@ header{
     width:150px; 
 }
 
-.d-flex{
-    position: absolute;
-    padding-top: 35px;
-    left: 250px;
-    
-}
-
-   .rodaPE{
+.rodaPE{
     width: 100%;
    height: 50vh;
    display: flex;
    justify-content: center; 
    align-items: center;
-
-
 }
 
 
@@ -71,3 +62,6 @@ footer .rodaPE
     padding-bottom: 4px;
 }
 
+a{
+    text-decoration: none;
+}
