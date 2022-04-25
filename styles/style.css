@@ -28,22 +28,6 @@ header{
    align-items: center;
 }
 
-
-/* .copy{ 
-    text-align: left;
-    
-}
-.nos{
-    text-align: center;
-    padding-top: 10px;
-    
-
-}
-.ajuda{
-    text-align: right;
-    
-} */
-
 footer{
     height: 100px;
     width: 100%;
@@ -107,7 +91,10 @@ footer .rodaPE{
 .links:hover{
     text-decoration: none;
     color:#096FE0;
-    
+}
+
+.row{
+    --bs-gutter-x: 0rem !important;
 }
 
 @media screen and (max-width: 768px) {
