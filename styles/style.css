@@ -37,13 +37,22 @@ footer{
     background-color: #F0F0F0;
 }
 
+footer a:hover{
+    text-decoration: none;
+    color: #096FE0;
+}
+
+footer a{
+    text-decoration: none;
+    color:#000000
+}
+
 p {
     font-size: 20px;
     text-transform: uppercase;
 }
 
-footer .rodaPE
-{
+footer .rodaPE{
     width: 352px;
     height: 106px;
     padding: 25px 73px;
@@ -72,6 +81,17 @@ footer .rodaPE
 .tema{
     border: -1px none;
     border-radius: 100%;
+}
+
+.links {
+    text-decoration: none;
+    color: #000000;
+}
+
+.links:hover{
+    text-decoration: none;
+    color:#096FE0;
+    
 }
 
 @media screen and (max-width: 768px) {

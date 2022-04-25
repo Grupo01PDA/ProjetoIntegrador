@@ -76,10 +76,27 @@ footer .rodaPE {
     font-size: 15px;
     text-transform: uppercase;
     color: #f0f0f0;
+    text-decoration: none
 }
+footer a:hover{
+    text-decoration: none;
+    color: #3DF5A7;
+}
+
 footer a{
     text-decoration: none;
-    color: #f0f0f0;
+    color:#FFFFFF
+}
+
+.links {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.links:hover{
+    text-decoration: none;
+    color:#3DF5A7;
+    
 }
 
 
