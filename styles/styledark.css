@@ -62,12 +62,9 @@ section{
 
 /*FOOTER*/
 footer{
-    display: flex;
     background-color: #0f0f0f;
 }
 .rodaPE{
-    width: 100%;
-    display: flex;
     justify-content: center; 
     align-items: center;
 }
@@ -90,6 +87,11 @@ footer a{
     color:#FFFFFF
 }
 
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+
+
 .links {
     text-decoration: none;
     color: #ffffff;
@@ -100,11 +102,6 @@ footer a{
     color:#3DF5A7;
     
 }
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
 
