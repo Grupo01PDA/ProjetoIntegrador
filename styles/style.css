@@ -11,6 +11,7 @@ header{
 /*Logo*/
 .logo{
     width:150px; 
+    margin-top: -13px;
 }
 .hamburger{
     height: 26px;
