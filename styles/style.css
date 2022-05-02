@@ -88,7 +88,7 @@ section{
 }
 /*Coluna de navegação*/
 .barra-lateral{
-    background: color #f0f0f0;
+    background-color: #f0f0f0;
     color:black;
     font-size:1.00em;
 }
@@ -99,7 +99,12 @@ li{
 }
 /*feed*/
 .feed{
+    padding-top: 2rem;
     background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .links {
@@ -142,7 +147,7 @@ footer .rodaPE {
     padding: 30px 30px;
     font-size: 15px;
     text-transform: uppercase;
-    color: #f0f0f0;
+    color: #0f0f0f;
     text-decoration: none
 }
 footer a:hover{

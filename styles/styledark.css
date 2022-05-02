@@ -12,6 +12,7 @@ header{
 /*LOGO*/
 .logo{
     width:150px; 
+    margin-top: -13px;
 }
 .hamburger{
     height: 26px;
@@ -103,6 +104,10 @@ li{
 /*feed*/
 .feed{
     background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
 .row{
     --bs-gutter-x: 0rem !important;
@@ -164,5 +169,4 @@ footer a{
     .parte3Header{
         display: none;
     }
-    
 }
