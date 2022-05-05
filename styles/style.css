@@ -72,7 +72,6 @@ footer .rodaPE{
     width: 20rem;
     box-shadow: 0 0 0 0;
     outline: 0;
-    
 }
 
 .btnBusca{
@@ -87,7 +86,7 @@ footer .rodaPE{
 
 .links {
     text-decoration: none;
-    color: #000000;
+    color:#000000;
 }
 
 .links:hover{
@@ -95,8 +94,13 @@ footer .rodaPE{
     color:#096FE0;
 }
 
+
 .row{
     --bs-gutter-x: 0rem !important;
+}
+
+.col-3 navegacao{
+    text-decoration: none;
 }
 
 
