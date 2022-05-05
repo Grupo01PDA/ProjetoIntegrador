@@ -4,64 +4,65 @@
     margin: 0;
     padding: 0;
 }
-
-section{
-    background-color: #e6e6e6;
-}
-.navegacao{
-    background-color: #f0f0f0;
-}
-.videos{
-    background-color: #e6e6e6;
-}
+/*Início do site*/
 header{
     background-color: #f0f0f0;
 }
+/*Logo*/
 .logo{
     width:150px; 
+    margin-top: -13px;
 }
-.rodaPE{
-    width: 100%;
-   height: 50vh;
-   display: flex;
-   justify-content: center; 
-   align-items: center;
-}
-
-footer{
-    height: 100px;
-    width: 100%;
-    min-width: 250px;
+.hamburger{
+    height: 26px;
     display: flex;
-    background-color: #F0F0F0;
+    align-items: flex-end;
+    justify-content: right;
 }
-
-footer a:hover{
-    text-decoration: none;
-    color: #096FE0;
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
 }
-
-footer a{
-    text-decoration: none;
-    color:#000000
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
 }
-
-p {
-    font-size: 20px;
-    text-transform: uppercase;
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #000000;
+    transition: 0.25 ease-in-out;
 }
-
-footer .rodaPE{
-    width: 352px;
-    height: 106px;
-    padding: 25px 73px;
+label span:nth-child(1){
+    top: 0;
 }
-
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
 .divBusca{
     background-color: #FFFFFF;
     width: max-content;
 }
-  
 .txtBusca{
     background-color:transparent;
     padding-left:10px;
@@ -71,17 +72,38 @@ footer .rodaPE{
     height:25px;
     width: 20rem;
     box-shadow: 0 0 0 0;
-    outline: 0;
 }
-
 .btnBusca{
     padding-right: 7px;
     padding-bottom: 4px;
 }
-
 .tema{
-    border: -1px none;
+    border: -1px;
     border-radius: 100%;
+}
+/*section coluna de navegação/feed*/
+section{
+    background-color: #e6e6e6;
+}
+/*Coluna de navegação*/
+.barra-lateral{
+    background-color: #f0f0f0;
+    color:black;
+    font-size:1.00em;
+}
+li{
+    list-style-type: none;
+    padding: 2% 5%;
+    margin-left:10% ;
+}
+/*feed*/
+.feed{
+    padding-top: 2rem;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .links {
@@ -104,15 +126,49 @@ footer .rodaPE{
 }
 
 
+.lupa{
+    border: none;
+    background-color: transparent;
+}
 
+
+.card{
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    margin-bottom: 3rem;
+}
+.card-body{
+    background-color: #096FE0;
+}
+/*FOOTER*/
+footer{
+    background-color: #f0f0f0;
+}
+.rodaPE{
+    justify-content: center; 
+    align-items: center;
+}
+footer .rodaPE {
+    height: auto;
+    padding: 30px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    text-decoration: none
+}
+footer a:hover{
+    text-decoration: none;
+    color: #096FE0;
+}
+footer a{
+    text-decoration: none;
+    color:#000000
+}
 @media screen and (max-width: 768px) {
-
     .navegacao{
         display: none;
     }
-
     header .parte3Header{
         display: none;
-    }
-    
+    }  
 }
