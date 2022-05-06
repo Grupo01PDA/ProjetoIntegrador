@@ -19,10 +19,19 @@ form imput{
 }
 
 .body2{
-    margin-left: 60%;
-    padding-right: 5%;
-    margin-top: 4%;
+    margin-left: 48%;
+    margin-right: 20%;
+    margin-top:5%
+
 }
+
+button, input, optgroup, select, textarea {
+    background-color: #F0F0F0;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+
 
 .container {
     background-color: white;
@@ -31,7 +40,7 @@ form imput{
     align-items: center;
     flex-direction: column;
     border: solid rgb(161, 153, 153);
-    padding-top: 2%;
+    padding-top: 4%;
      
 }
 
@@ -53,6 +62,10 @@ body2 form label{
     background-color: #3DF5A7 ;
     border-radius: 20% ;
     font-family: 'Black';
+  }
+
+  button:hover{
+      background-color: #32d490;
   }
 
 
