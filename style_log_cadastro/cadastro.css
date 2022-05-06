@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Black';
+    src: url(Black-Regular.ttf) format('truetype');
+    font-weight: normall;
+    font-style: normal;
+}
+
+body{
+    background-color: aqua;
+}
+
+.toptitlle{
+    color: #3DF5A7 ;
+    padding-bottom: 15%;
+}
+
+form imput{
+    background-color: #F0F0F0;
+}
+
+.body2{
+    margin-left: 60%;
+    padding-right: 5%;
+    margin-top: 4%;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid rgb(161, 153, 153);
+    padding-top: 2%;
+     
+}
+
+body2 form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #3DF5A7 ;
+    border-radius: 20% ;
+    font-family: 'Black';
+  }
+
+
+
+  h3{
+      font-weight:800;
+  }
