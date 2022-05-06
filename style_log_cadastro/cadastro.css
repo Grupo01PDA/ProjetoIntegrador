@@ -1,75 +1,80 @@
-@font-face {
-    font-family: 'Black';
-    src: url(Black-Regular.ttf) format('truetype');
-    font-weight: normall;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --verde-base: #3DF5A7;
+    --azul-base: #096FE0;
+    --preto-base: #0f0f0f;
+    --branco-base: #f0f0f0;
+    --branco-fundo: #E6E6E6;
+    --preto-fundo: #1B1B1B;
+
 }
 
 body{
-    background-color: aqua;
+    background-color: var(--preto-fundo);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo-fundo{
+    width: 30rem;
+    margin-top: 3rem;
 }
 
-.toptitlle{
-    color: #3DF5A7 ;
-    padding-bottom: 15%;
-}
-
-form imput{
-    background-color: #F0F0F0;
-}
-
-.body2{
-    margin-left: 48%;
-    margin-right: 20%;
-    margin-top:5%
-
-}
-
-button, input, optgroup, select, textarea {
-    background-color: #F0F0F0;
-    border: none;
-    transition: all .3s ease-in-out;
-}
-
-
-
-.container {
-    background-color: white;
-    border-radius: 10%;
+.cadastro {
+    background-color: var(--verde-base);
+    
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid rgb(161, 153, 153);
-    padding-top: 4%;
-     
+    width: 20rem;
+
+    border: 1px solid var(--preto-base);
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+
+    margin-top: 4rem;
 }
 
-body2 form label{
+.toptitle{
+    color: var(--azul-base);
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.form{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cadastro_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
 }
 
+
+
+
 .button {
     border: none;
-    color: rgb(255, 255, 255);
+    color: var(--branco-base);
     padding: 15px 32px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1rem;
     cursor: pointer;
-    background-color: #3DF5A7 ;
-    border-radius: 20% ;
-    font-family: 'Black';
-  }
-
-  button:hover{
-      background-color: #32d490;
-  }
-
-
-
-  h3{
-      font-weight:800;
-  }
+    background-color: var(--azul-base);
+    border: 2px solid var(--azul-base);
+    border-radius: 20rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: 300ms;
+}
+button:hover{
+    border: 2px solid var(--azul-base);
+    background-color: var(--verde-base);
+    color: var(--preto-base);
+    transition: 300ms;
+}
