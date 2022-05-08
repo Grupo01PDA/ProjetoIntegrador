@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: var(--azul-base);
+    background-color: #3DF5A7;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -24,11 +24,11 @@ body{
 }
 .voltar a{
     text-decoration: none;
-    color: var(--branco-fundo);
+    color: var(--preto-fundo);
     transition: 300ms;
 }
 .voltar a:hover{
-    color: var(--verde-base);
+    color: var(--azul-base);
     transition: 300ms;
 }
 
@@ -37,14 +37,14 @@ body{
 }
 
 .cadastro {
-    background-color: var(--branco-fundo);
+    background-color: var(--branco-base);
     
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 20rem;
 
-    border: 1px solid var(--preto-base);
+    border: 1px solid var(--verde-base);
     border-radius: 2rem;
     padding: 4rem 2rem;
 
@@ -57,7 +57,7 @@ body{
 }
 
 .toptitle{
-    color: var(--azul-base);
+    color: var(--verde-base);
     font-family: 'Black Han Sans', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -108,8 +108,12 @@ body{
     transition: 300ms;
 }
 button:hover{
-    border: 2px solid var(--azul-base);
-    background-color: var(--azul-base);
-    color: var(--verde-base);
+    border: 2px solid var(--verde-base);
+    background-color: var(--verde-base);
+    color: var(--azul-base);
     transition: 300ms;
+}
+
+.linkCadastro{
+  padding-left: 33px;
 }
