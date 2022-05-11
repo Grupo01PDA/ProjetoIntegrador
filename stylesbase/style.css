@@ -1,12 +1,25 @@
+/*=============GERAL=============*/
+:root{
+    /*cores*/
+    --azul-base: #096FE0;
+    --verde-base: #3DF5A7;
+    --branco-base: #F0F0F0;
+    --preto-base: #0F0F0F;
+    --branco-de-fundo: #E6E6E6;
+    --preto-de-fundo: #1B1B1B;
+    --branco-maximo: #FFFFFF;
+}
 *{
     box-sizing: border-box;
     font-family: "Arial";
     margin: 0;
     padding: 0;
 }
-/*Início do site*/
+
+
+/*=============HEADER=============*/
 header{
-    background-color: #f0f0f0;
+    background-color: var(--branco-base);
 }
 /*Logo*/
 .logo{
@@ -36,7 +49,7 @@ label span{
     height: 5px;
     width: 100%;
     border-radius: 30px;
-    background-color: #000000;
+    background-color: var(--preto-base);
     transition: 0.25 ease-in-out;
 }
 label span:nth-child(1){
@@ -60,7 +73,7 @@ label span:nth-child(3){
     top: 8px;
 }
 .divBusca{
-    background-color: #FFFFFF;
+    background-color: var(--branco-maximo);
     width: max-content;
 }
 .txtBusca{
@@ -83,11 +96,11 @@ label span:nth-child(3){
 }
 /*section coluna de navegação/feed*/
 section{
-    background-color: #e6e6e6;
+    background-color: var(--branco-de-fundo);
 }
 /*Coluna de navegação*/
 .barra-lateral{
-    background-color: #f0f0f0;
+    background-color: var(--branco-base);
     color:black;
     font-size:1.00em;
 }
@@ -99,7 +112,7 @@ li{
 /*feed*/
 .feed{
     padding-top: 2rem;
-    background-color: #e6e6e6;
+    background-color: var(--branco-de-fundo);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,12 +121,12 @@ li{
 
 .links {
     text-decoration: none;
-    color:#000000;
+    color: var(--preto-base);
 }
 
 .links:hover{
     text-decoration: none;
-    color:#096FE0;
+    color:var(--azul-base);
 }
 
 
@@ -133,16 +146,16 @@ li{
 
 
 .card{
-    background-color: #0f0f0f;
-    border: 1px solid #0f0f0f;
+    background-color: var(--preto-base);
+    border: 1px solid var(--preto-base);
     margin-bottom: 3rem;
 }
 .card-body{
-    background-color: #096FE0;
+    background-color: var(--azul-base);
 }
-/*FOOTER*/
+/*=============FOOTER=============*/
 footer{
-    background-color: #f0f0f0;
+    background-color: var(--branco-base);
 }
 .rodaPE{
     justify-content: center; 
@@ -153,17 +166,20 @@ footer .rodaPE {
     padding: 30px 30px;
     font-size: 15px;
     text-transform: uppercase;
-    color: #0f0f0f;
+    color: var(--preto-base);
     text-decoration: none
 }
 footer a:hover{
     text-decoration: none;
-    color: #096FE0;
+    color: var(--azul-base);
 }
 footer a{
     text-decoration: none;
-    color:#000000
+    color: var(--preto-base);
 }
+
+
+/*=============MOBILE=============*/
 @media screen and (max-width: 768px) {
     .navegacao{
         display: none;
