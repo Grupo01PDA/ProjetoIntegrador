@@ -15,8 +15,9 @@
     margin: 0;
     padding: 0;
 }
-
-
+.row{
+    --bs-gutter-x: 0rem !important;
+}
 /*=============HEADER=============*/
 header{
     background-color: var(--branco-base);
@@ -26,6 +27,56 @@ header{
     width:150px; 
     margin-top: -13px;
 }
+/*barra de pesquisa*/
+.divBusca{
+    background-color: var(--branco-maximo);
+    width: max-content;
+}
+.txtBusca{
+    background-color:transparent;
+    padding-left:10px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:25px;
+    width: 20rem;
+    box-shadow: 0 0 0 0;
+}
+.btnBusca{
+    padding-right: 7px;
+    padding-bottom: 4px;
+}
+.lupa{
+    border: none;
+    background-color: transparent;
+}
+/*links*/
+.links {
+    text-decoration: none;
+    color: var(--preto-base);
+}
+.links:hover{
+    text-decoration: none;
+    color:var(--azul-base);
+}
+/*botão de troca de tema*/
+#toggle{
+    display: none;
+}
+.button{
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--azul-base);
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.button::after{
+    content: url("/imagens/circle-half.svg");
+}
+
+/*menu-hamburguer*/
 .hamburger{
     height: 26px;
     display: flex;
@@ -72,29 +123,8 @@ label span:nth-child(3){
     transform: rotate(45deg);
     top: 8px;
 }
-.divBusca{
-    background-color: var(--branco-maximo);
-    width: max-content;
-}
-.txtBusca{
-    background-color:transparent;
-    padding-left:10px;
-    font-style:italic;
-    font-size:14px;
-    border:none;
-    height:25px;
-    width: 20rem;
-    box-shadow: 0 0 0 0;
-}
-.btnBusca{
-    padding-right: 7px;
-    padding-bottom: 4px;
-}
-.tema{
-    border: -1px;
-    border-radius: 100%;
-}
-/*section coluna de navegação/feed*/
+
+/*=============FEED=============*/
 section{
     background-color: var(--branco-de-fundo);
 }
@@ -118,33 +148,9 @@ li{
     align-items: center;
     justify-content: center;
 }
-
-.links {
-    text-decoration: none;
-    color: var(--preto-base);
-}
-
-.links:hover{
-    text-decoration: none;
-    color:var(--azul-base);
-}
-
-
-.row{
-    --bs-gutter-x: 0rem !important;
-}
-
 .col-3 navegacao{
     text-decoration: none;
 }
-
-
-.lupa{
-    border: none;
-    background-color: transparent;
-}
-
-
 .card{
     background-color: var(--preto-base);
     border: 1px solid var(--preto-base);
@@ -153,6 +159,7 @@ li{
 .card-body{
     background-color: var(--azul-base);
 }
+
 /*=============FOOTER=============*/
 footer{
     background-color: var(--branco-base);
@@ -177,7 +184,6 @@ footer a{
     text-decoration: none;
     color: var(--preto-base);
 }
-
 
 /*=============MOBILE=============*/
 @media screen and (max-width: 768px) {
