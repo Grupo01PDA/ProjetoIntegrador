@@ -1,27 +1,15 @@
 body{
-  background-color: rgb(129, 115, 115);
+  background-color: rgb(130, 62, 62);
 }
 
-#toggle{
+.tema{
   display: none;
 }
 .button{
-  display: inline;
-  position: relative;
   cursor: pointer;
+  background-color: cadetblue;
 }
 
-.button::after{
-  content: url("../imagens/meiocirculo.svg");
-  width: min-content;
-  height: min-content;
-  background-color: #e03c3c;
-  border-radius: 3rem;
-  display: grid;
-  transition: background-color 1s, transform 1s;
-}
-#toggle:checked+.button::after{
-  content: url("../imagens/meiocirculo.svg");
-  background-color: #1f257f;
-  transform: rotateZ(180deg)
+.tema:checked+.button{
+  background-color: aliceblue;
 }
