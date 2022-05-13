@@ -116,13 +116,41 @@ label span:nth-child(3){
 }
 
 /*=============Perfil-usu=============*/
-
 .info_perfil{
-    background-color: #096FE0;
-    justify-content:space-between;
-    align-items:    ;
-    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: url("../imagens/fundo-user.png");
+    background-position: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: var(--branco-base);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem rgb(0, 0, 0));
+}
+.button-edit{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: var(--azul-base);
+    outline-offset: -1px;
+    outline: 1px solid var(--preto-base);
+    transition: 0.2s;
+}
+.button-edit:hover{
+    outline-offset: -1px;
+    outline: 1px solid var(--preto-base);
+    background-color: var(--verde-base);
+    transition: 0.2s;
+}
+
 
 /*=============FEED_downperfil=============*/
 
