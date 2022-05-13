@@ -40,7 +40,7 @@ header{
     border:none;
     height:25px;
     width: 20rem;
-    box-shadow: 0 0 0 0;
+    outline: none;
 }
 .btnBusca{
     padding-right: 7px;
@@ -122,8 +122,19 @@ section{
 /*Coluna de navegação*/
 .barra-lateral{
     background-color: var(--preto-base);
+    font-size:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.barra-lateral a{
+    text-decoration: none;
     color:var(--branco-base);
-    font-size:1.00em;
+}
+.barra-lateral a:hover{
+    color: var(--verde-base);
 }
 li{
     list-style-type: none;
