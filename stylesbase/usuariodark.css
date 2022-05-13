@@ -20,7 +20,7 @@
 }
 /*=============HEADER=============*/
 header{
-    background-color: var(--branco-base);
+    background-color: var(--preto-base);
 }
 /*Logo*/
 .logo{
@@ -53,18 +53,18 @@ header{
 /*links*/
 .links {
     text-decoration: none;
-    color: var(--preto-base);
+    color: var(--branco-base);
 }
 .links:hover{
     text-decoration: none;
-    color:var(--azul-base);
+    color:var(--verde-base);
 }
 /*botão de troca de tema*/
 .input-check{
     display: none;
 }
 label.checkbox svg{
-    fill: var(--preto-base);
+    fill: var(--branco-base);
 }
 
 /*menu-hamburguer*/
@@ -91,7 +91,7 @@ label span{
     height: 5px;
     width: 100%;
     border-radius: 30px;
-    background-color: var(--preto-base);
+    background-color: var(--branco-base);
     transition: 0.25 ease-in-out;
 }
 label span:nth-child(1){
@@ -115,56 +115,94 @@ label span:nth-child(3){
     top: 8px;
 }
 
-/*=============FEED=============*/
-section{
-    background-color: var(--branco-de-fundo);
+/*=============MAIN=============*/
+main.main{
+    background-color: var(--preto-de-fundo);
 }
-/*Coluna de navegação*/
-.barra-lateral{
-    background-color: var(--branco-base);
-    font-size:1rem;
+
+/*=============Perfil-usu=============*/
+.info_perfil{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: url("../imagens/fundo-user.png");
+    background-position: 0%;
     display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: flex-start;
-    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
 }
-.barra-lateral a{
-    text-decoration: none;
-    color:var(--preto-base);
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: var(--branco-base);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem rgb(0, 0, 0));
 }
-.barra-lateral a:hover{
-    color: var(--azul-base);
+.button-edit{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: var(--verde-base);
+    outline-offset: -1px;
+    outline: 1px solid var(--branco-base);
+    transition: 0.2s;
 }
-li{
-    list-style-type: none;
-    padding: 2% 5%;
-    margin-left:10% ;
+.button-edit:hover{
+    outline-offset: -1px;
+    outline: 1px solid var(--branco-base);
+    background-color: var(--azul-base);
+    transition: 0.2s;
 }
-/*feed*/
+
+/*=============FEED_downperfil=============*/
+.posts_etc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--branco-base);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--preto-de-fundo);
+    color: var(--branco-base);
+}
+.posts_etc .postagens .postagens-svg rect{
+    stroke: var(--branco-base);
+}
+
+.posts_etc .salvos .salvos-svg line{
+    stroke: var(--branco-base);
+}
+.posts_etc .salvos .salvos-svg path{
+    stroke: var(--branco-base);
+}
+
+.posts_etc .gabaritos .gabaritos-svg rect{
+    stroke: var(--branco-base);
+}
+.posts_etc .gabaritos .gabaritos-svg line{
+    stroke: var(--branco-base);
+}
+
+/*=============FEED==============*/
 .feed{
-    padding-top: 2rem;
-    background-color: var(--branco-de-fundo);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-.col-3 navegacao{
-    text-decoration: none;
-}
-.card{
-    background-color: var(--preto-base);
-    border: 1px solid var(--preto-base);
-    margin-bottom: 3rem;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--preto-de-fundo);
+
 }
 .card-body{
-    background-color: var(--azul-base);
+    background-color: var(--verde-base);
 }
 
 /*=============FOOTER=============*/
 footer{
-    background-color: var(--branco-base);
+    background-color: var(--preto-base);
 }
 .rodaPE{
     justify-content: center; 
@@ -175,24 +213,14 @@ footer .rodaPE {
     padding: 30px 30px;
     font-size: 15px;
     text-transform: uppercase;
-    color: var(--preto-base);
+    color: var(--branco-base);
     text-decoration: none
 }
 footer a:hover{
     text-decoration: none;
-    color: var(--azul-base);
+    color: var(--verde-base);
 }
 footer a{
     text-decoration: none;
-    color: var(--preto-base);
-}
-
-/*=============MOBILE=============*/
-@media screen and (max-width: 768px) {
-    .navegacao{
-        display: none;
-    }
-    header .parte3Header{
-        display: none;
-    }  
+    color: var(--branco-base);
 }

@@ -70,7 +70,7 @@ label.checkbox svg{
 /*menu-hamburguer*/
 .hamburger{
     height: 26px;
-    display: flex;
+    display: none;
     align-items: flex-end;
     justify-content: right;
 }
@@ -115,6 +115,11 @@ label span:nth-child(3){
     top: 8px;
 }
 
+/*=============MAIN=============*/
+main.main{
+    background-color: var(--branco-de-fundo);
+}
+
 /*=============Perfil-usu=============*/
 .info_perfil{
     padding-top: 1rem;
@@ -151,16 +156,48 @@ label span:nth-child(3){
     transition: 0.2s;
 }
 
-
 /*=============FEED_downperfil=============*/
-
 .posts_etc{
-    flex-direction: row;
-    justify-content: ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--preto-base);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--branco-de-fundo);
+    color: var(--preto-base);
+}
+.posts_etc .postagens .postagens-svg rect{
+    stroke: var(--preto-base);
 }
 
-.icons{
-    
+.posts_etc .salvos .salvos-svg line{
+    stroke: var(--preto-base);
+}
+.posts_etc .salvos .salvos-svg path{
+    stroke: var(--preto-base);
+}
+
+.posts_etc .gabaritos .gabaritos-svg rect{
+    stroke: var(--preto-base);
+}
+.posts_etc .gabaritos .gabaritos-svg line{
+    stroke: var(--preto-base);
+}
+
+/*=============FEED==============*/
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--branco-de-fundo);
+
+}
+.card-body{
+    background-color: var(--azul-base);
 }
 
 /*=============FOOTER=============*/

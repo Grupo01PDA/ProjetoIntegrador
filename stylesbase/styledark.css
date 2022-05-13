@@ -70,7 +70,7 @@ label.checkbox svg{
 /*menu-hamburguer*/
 .hamburger{
     height: 26px;
-    display: flex;
+    display: none;
     align-items: flex-end;
     justify-content: right;
 }
