@@ -60,10 +60,13 @@ header{
     color:var(--verde-base);
 }
 /*botão de troca de tema*/
-.tema{
-    border: -1px;
-    border-radius: 100%;
+.input-check{
+    display: none;
 }
+label.checkbox svg{
+    fill: var(--branco-base);
+}
+
 /*menu-hamburguer*/
 .hamburger{
     height: 26px;

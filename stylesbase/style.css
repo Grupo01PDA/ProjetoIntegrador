@@ -60,21 +60,11 @@ header{
     color:var(--azul-base);
 }
 /*botão de troca de tema*/
-#toggle{
+.input-check{
     display: none;
 }
-.button{
-    display: inline-block;
-    width: 4rem;
-    height: 2rem;
-    background-color: var(--azul-base);
-    border-radius: 1rem;
-    position: relative;
-    cursor: pointer;
-}
-.button::after{
-    content: url("/imagens/circle-half.svg");
-    
+label.checkbox svg{
+    fill: var(--preto-base);
 }
 
 /*menu-hamburguer*/

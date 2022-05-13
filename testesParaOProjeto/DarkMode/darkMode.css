@@ -10,9 +10,6 @@
   --cor2: #000;
 }
 
-.input-check{
-  display: none;
-}
 
 body{
   background-color: var(--cor2);
