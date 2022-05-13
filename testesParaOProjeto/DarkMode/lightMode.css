@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+:root{
+  --cor1: #FFF;
+  --cor2: #000;
+}
+
+.input-check{
+  display: none;
+}
+
+body{
+  background-color: var(--cor1);
+}
+h1{
+  color: var(--cor2);
+}
+label.checkbox svg{
+  fill: var(--cor2);
+}
