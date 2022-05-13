@@ -1,26 +1,129 @@
-.top{
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
+/*=============GERAL=============*/
+:root{
+    /*cores*/
+    --azul-base: #096FE0;
+    --verde-base: #3DF5A7;
+    --branco-base: #F0F0F0;
+    --preto-base: #0F0F0F;
+    --branco-de-fundo: #E6E6E6;
+    --preto-de-fundo: #1B1B1B;
+    --branco-maximo: #FFFFFF;
 }
-
-
-.txtBusca {
-    background-color: transparent;
-    padding-left: 10px;
-    font-style: italic;
-    font-size: 14px;
-    border: none;
-    height: 25px;
+*{
+    box-sizing: border-box;
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+}
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+/*=============HEADER=============*/
+header{
+    background-color: var(--branco-base);
+}
+/*Logo*/
+.logo{
+    width:150px; 
+    margin-top: -13px;
+}
+/*barra de pesquisa*/
+.divBusca{
+    background-color: var(--branco-maximo);
+    width: max-content;
+}
+.txtBusca{
+    background-color:transparent;
+    padding-left:10px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:25px;
     width: 20rem;
-    box-shadow: 0 0 0 0;
+    outline: none;
 }
-
-.btnBusca {
+.btnBusca{
     padding-right: 7px;
     padding-bottom: 4px;
 }
+.lupa{
+    border: none;
+    background-color: transparent;
+}
+/*links*/
+.links {
+    text-decoration: none;
+    color: var(--preto-base);
+}
+.links:hover{
+    text-decoration: none;
+    color:var(--azul-base);
+}
+/*botão de troca de tema*/
+.input-check{
+    display: none;
+}
+label.checkbox svg{
+    fill: var(--preto-base);
+}
 
-.fundo_perfil{
-    border: solid black;
+/*menu-hamburguer*/
+.hamburger{
+    height: 26px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--preto-base);
+    transition: 0.25 ease-in-out;
+}
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/*=============Perfil-usu=============*/
+
+.info_perfil{
+    background-color: #096FE0;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.posts_etc{
+    flex-direction: row;
 }

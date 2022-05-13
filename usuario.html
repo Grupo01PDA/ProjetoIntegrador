@@ -5,27 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesbase/usuario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Página de usuário</title>
 </head>
 <body>
-    <header class="top">
-        <span id="logo">LOGO</span>
-        <a href=""></a>
-        <div class="top_">
-            <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
-            <button class="lupa"><img src="imagens/search.svg" class="btnBusca" alt="Buscar" /></button>
+    <header class="row justify-content-between align-items-center">
+        <!--div da logo-->
+        <div class="col d-flex justify-content-start">
+            <img class="logo" src="./imagens/HomeS.png">
         </div>
-        <div class="word_1">
-            <p>Notícias</p>
+        <!--div da barra de pesquisa-->
+        <div class="col d-flex justify-content-center">
+            <div class="divBusca rounded-pill">
+                <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
+                <button class="lupa"><img src="imagens/search.svg" class="btnBusca" alt="Buscar" /></button>
+            </div>
         </div>
-        <div id="icon_user">
-            <img src="" alt="icon_usuario">
+        <div class="col d-flex justify-content-around">
+            <!--div do link para notícias-->
+            <a class="links" href="noticias.html">Notícias</a>
+
+            <!--div para página de login-->
+            <a class="links" href="cadastro-login.html">Entre</a>
+
+            <!--div para troca de tema - TEMPORÁRIO-->
+            <input class="input-check" type="checkbox" id="checkbox">
+            <label class="checkbox" for="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-circle-half" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                </svg>
+            </label>
+            <!--Hamburguer menu-->
+            <div class="hamburger">
+                <input type="checkbox" id="checkbox-menu">
+
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
         </div>
     </header>
         <div class="info_perfil">
-        
-        <button id="button" type:"button">Editar perfil</button>
+        <a href="">
+            <img src="" alt="img_perfil">
+        </a>
+        <div class="name_e-mail">
+            <h1>name exemplo</h1>
+            <p>email123@exemplo.com</p>
+        </div>
+
+        <button id="bt_edit" type:"button">Editar perfil</button>
     </div>
-    </div>  
+    <nav class="posts_etc">
+        <img src="" alt="icone_posts">
+        <ul>
+            <span>Meus posts</span>
+        </ul>
+        <img src="" alt="icone_save">
+        <ul>
+            <span>Salvos</span>
+        </ul>
+        <img src="" alt="icone_provas..">
+        <ul>
+            <span>Provas e Gabaritos</span>
+        </ul>
+    </nav>
+
 </body>
 </html>
