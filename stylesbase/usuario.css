@@ -120,10 +120,37 @@ label span:nth-child(3){
 .info_perfil{
     background-color: #096FE0;
     justify-content:space-between;
-    align-items: center;
+    align-items:    ;
     flex-direction: row;
 }
 
+/*=============FEED_downperfil=============*/
+
 .posts_etc{
     flex-direction: row;
+}
+
+/*=============FOOTER=============*/
+footer{
+    background-color: var(--branco-base);
+}
+.rodaPE{
+    justify-content: center; 
+    align-items: center;
+}
+footer .rodaPE {
+    height: auto;
+    padding: 30px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--preto-base);
+    text-decoration: none
+}
+footer a:hover{
+    text-decoration: none;
+    color: var(--azul-base);
+}
+footer a{
+    text-decoration: none;
+    color: var(--preto-base);
 }
