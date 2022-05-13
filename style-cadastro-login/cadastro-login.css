@@ -23,9 +23,56 @@ body{
   top: 1rem;
   left: 2rem;
 }
+.voltar a{
+  text-decoration: none;
+  color: var(--branco-base);
+}
+.voltar a:hover{
+  color: var(--verde-base);
+}
 
 .escolha{
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
+  background-color: var(--branco-base);
+  max-width: 30rem;
+  margin: auto;
+  margin-top: 7rem;
+  gap: 5rem;
+  padding-block: 5rem;
+  border-radius: 2rem;
+}
+.escolha a{
+  text-decoration: none;
+}
+
+.cadastro{
+  background-color: var(--azul-base);
+  color: var(--branco-base);
+  padding: 2rem 2rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.cadastro:hover{
+  outline-offset: -3px;
+  outline: 3px solid var(--verde-base);
+  transition: 0.3s;
+}
+
+.login{
+  background-color: var(--verde-base);
+  color: var(--preto-base);
+  padding: 2rem 2rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.login:hover{
+  outline-offset: -3px;
+  outline: 3px solid var(--azul-base);
+  transition: 0.3s;
 }
