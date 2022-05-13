@@ -1,0 +1,26 @@
+.top{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+
+.txtBusca {
+    background-color: transparent;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 14px;
+    border: none;
+    height: 25px;
+    width: 20rem;
+    box-shadow: 0 0 0 0;
+}
+
+.btnBusca {
+    padding-right: 7px;
+    padding-bottom: 4px;
+}
+
+.fundo_perfil{
+    border: solid black;
+}
