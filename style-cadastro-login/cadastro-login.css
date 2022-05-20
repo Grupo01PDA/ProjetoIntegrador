@@ -15,7 +15,28 @@
   font-family: 'Open Sans', sans-serif;
 }
 body{
+  background: url("/imagens/HomeS.png");
+  background-color: var(--preto-fundo);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: center;
+  transition: 200ms;
+}
+
+body.background-login{
+  background: url("/imagens/templateloginpng.png");
+  background-repeat: no-repeat;
+  background-color: var(--verde-base);
+  background-position-y: 5rem;
+  transition: 200ms;
+}
+body.background-cadastro{
+  background: url("/imagens/templatecadastro.png");
+  background-repeat: no-repeat;
   background-color: var(--azul-base);
+  background-position-y: 5rem;
+  background-position-x: right;
+  transition: 200ms;
 }
 
 .voltar{
@@ -38,7 +59,7 @@ body{
   background-color: var(--branco-base);
   max-width: 30rem;
   margin: auto;
-  margin-top: 7rem;
+  margin-top: 10rem;
   gap: 5rem;
   padding-block: 5rem;
   border-radius: 2rem;
