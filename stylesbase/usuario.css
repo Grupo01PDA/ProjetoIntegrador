@@ -157,7 +157,7 @@ main.main{
 }
 
 /*=============FEED_downperfil=============*/
-.posts_etc{
+nav.posts_etc{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -168,34 +168,67 @@ main.main{
     background-color: var(--branco-de-fundo);
     color: var(--preto-base);
 }
-.posts_etc .postagens .postagens-svg rect{
-    stroke: var(--preto-base);
+
+.posts_etc button.postagens, 
+.posts_etc button.salvos, 
+.posts_etc button.gabaritos{
+    border: none;
+    background: none;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: 300ms;
 }
 
-.posts_etc .salvos .salvos-svg line{
-    stroke: var(--preto-base);
-}
-.posts_etc .salvos .salvos-svg path{
-    stroke: var(--preto-base);
+.posts_etc button.btnActive{
+    background-color: var(--azul-base);
 }
 
-.posts_etc .gabaritos .gabaritos-svg rect{
-    stroke: var(--preto-base);
-}
-.posts_etc .gabaritos .gabaritos-svg line{
+.posts_etc button.postagens svg.posts-svg [stroke*='#0F0F0F'], 
+.posts_etc button.salvos svg.salvos-svg [stroke*='#0F0F0F'],
+.posts_etc button.gabaritos svg.provas-svg [stroke*='#0F0F0F'] {
     stroke: var(--preto-base);
 }
 
 /*=============FEED==============*/
 .feed{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 3rem;
+    overflow-x: hidden;
     background-color: var(--branco-de-fundo);
 
 }
+.posts-feed{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.salvos-feed{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.gabaritos-feed{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    transform: translateX(50%);
+    margin-right: 50%;
+}
+
 .card-body{
     background-color: var(--azul-base);
 }
