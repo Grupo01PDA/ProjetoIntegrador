@@ -12,29 +12,29 @@
 
 
 <body>
-    <header class="row justify-content-between align-items-center">
+    <header class="row">
         <!--div da logo-->
-        <div class="col d-flex justify-content-start">
+        <div class="col-3 col-sm-3 col-md-3">
             <img class="logo" src="./imagens/HomeS.png">
         </div>
 
 
         <!--div da barra de pesquisa-->
-        <div class="col d-flex justify-content-center">
+        <div class="col-9 col-sm-9 col-md-4 pesquisa">
             <div class="divBusca rounded-pill">
                 <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
                 <button class="lupa"><img src="imagens/search.svg" class="btnBusca" alt="Buscar" /></button>
             </div>
         </div> 
 
-        <div class="col d-flex justify-content-around">
+        <div class="col-6 col-sm-9 col-md-4 alin-itens links">
             <!--div do link para notícias-->
-            <a class="links" href="noticias.html">Notícias</a>
+            <a id="not" class="links" href="noticias.html">Notícias</a>
 
             <!--div para página de login-->
-            <a class="links" href="cadastro-login.html">Entre</a>
-        
-
+            <a id="log" class="links" href="cadastro-login.html">Entre</a>
+        </div>
+        <div class="col-6 col-sm-3 col-md-1 botao">
         <!--div para troca de tema - TEMPORÁRIO-->
             <input class="input-check" type="checkbox" id="checkbox">
             <label class="checkbox" for="checkbox">
@@ -53,7 +53,7 @@
     </header>
 
     <section class="row">
-        <nav id="nav" class="barra-lateral col-3">
+        <nav id="nav" class="barra-lateral col-3 col-sm-12 col-md-3">
 
             <!--Hamburguer menu-->
         <button aria-label="Abrir Menu" id='btn-mobile' aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
@@ -73,8 +73,8 @@
     
        
         <!--Vídeos do feed-->
-        <div class="feed col-9">
-            <div nome="Portugues">
+        <div class="feed col-9 col-sm-12 col-md-9">
+            <div nome="Portugues" class="col-sm-9">
                 <div class="card" style="width: 35.2rem;">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/s8a6eXncWY8"
                         title="YouTube video player" frameborder="0"

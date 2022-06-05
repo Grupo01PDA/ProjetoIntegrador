@@ -15,9 +15,9 @@
     margin: 0;
     padding: 0;
 }
-.row{
+/*.row{
     --bs-gutter-x: 0rem !important;
-}
+}*/
 /*=============HEADER=============*/
 header{
     background-color: var(--branco-base);
@@ -30,6 +30,10 @@ header{
 }
 
 /*barra de pesquisa*/
+
+.pesquisa{
+    padding-top: 30px;
+}
 .divBusca{
     background-color: var(--branco-maximo);
     width: max-content;
@@ -57,6 +61,7 @@ header{
 /*links*/
 
 .links {
+    padding-top: 30px;
     text-decoration: none;
     color: var(--preto-base);
 }
@@ -66,6 +71,10 @@ header{
 }
 /*botão de troca de tema*/
 
+.botao{
+    align-items: center;
+    padding-top: 30px;
+}
 .input-check{
     display: none;
 }
@@ -156,6 +165,18 @@ footer a{
 
 /*=============MOBILE=============*/
 @media (max-width: 600px) {
+
+    .txtBusca{
+        background-color:transparent;
+        padding-left:10px;
+        font-style:italic;
+        font-size:14px;
+        border:none;
+        height:25px;
+        /*width: 20rem;*/
+        outline: none;
+    }
+
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -214,5 +235,55 @@ footer a{
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.05);
         font-size: large;
+    }
+
+    .alin-itens{
+        text-align: center;
+        padding: 3% 0;
+    }
+    .feed{
+        padding-top: 2rem;
+        background-color: var(--branco-de-fundo);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-3 navegacao{
+        text-decoration: none;
+    }
+    .card{
+        background-color: var(--preto-base);
+        border: 1px solid var(--preto-base);
+        margin-bottom: 3rem;
+    }
+    .card-body{
+        background-color: var(--azul-base);
+    }
+    
+    .barra-lateral {
+        background-color: var(--branco-base);
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: flex-start;
+        gap: 0rem;
+    }
+    .botao{
+        align-items: center;
+        padding-top: 2px;
+    }
+    .links {
+        font-size: 20px;
+        padding-top: 0px;
+        text-decoration: none;
+        color: var(--preto-base);
+    }
+    #log{
+        padding-left: 50px;
+    }
+    #not{
+        padding-right: 50px;
     }
 }
