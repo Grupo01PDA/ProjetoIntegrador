@@ -1,13 +1,13 @@
-const express = require('express')
+const express = require('express');
 const app = express();
-const port = 3000
+const port = 3000;
 
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.render('ejs/views/pages/cadastro-login')
-}) 
+    res.render('pages/index');
+});
 
 app.listen(port, () =>{
-     console.log(`projeto rodando na port: ${port}`)
-})
+     console.log(`projeto rodando na port: ${port}`);
+});
