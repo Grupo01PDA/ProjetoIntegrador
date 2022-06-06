@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <head>
         <meta charset="UTF-8">
@@ -13,11 +12,10 @@
 <body>
 
     <!--Header-->
-    <%- include('../ejs/views/partials/header) %> 
-
+    <%- include('../partials/header') %> 
 
     <section class="row">
-        <nav id="nav" class="barra-lateral col-3">
+        <nav id="nav" class="barra-lateral col-3 col-sm-12 col-md-3">
 
             <!--Hamburguer menu-->
         <button aria-label="Abrir Menu" id='btn-mobile' aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
@@ -37,8 +35,8 @@
     
        
         <!--Vídeos do feed-->
-        <div class="feed col-9">
-            <div nome="Portugues">
+        <div class="feed col-9 col-sm-12 col-md-9">
+            <div nome="Portugues" class="col-sm-9">
                 <div class="card" style="width: 35.2rem;">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/s8a6eXncWY8"
                         title="YouTube video player" frameborder="0"
@@ -284,17 +282,7 @@
     </section>
 
     <!--footer-->
-    <footer class="d-flex justify-content-around">
-        <div class="rodaPE ">
-            &copy;copyright 2022
-        </div>
-        <div class="rodaPE ">
-            <a href="Erro.html">Desenvolvedores</a>
-        </div>
-        <div class="rodaPE">
-            <a href="Erro.html">Precisa de ajuda?</a>
-        </div>
-    </footer>
+    <%- include('../partials/footer') %>
 
     <script type="text/javascript" src="/js/index.js"></script>
 </body>
