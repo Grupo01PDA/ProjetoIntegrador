@@ -11,49 +11,12 @@
 </head>
 
 <body>
-    <header class="row justify-content-between align-items-center">
-        <!--div da logo-->
-        <div class="col d-flex justify-content-start">
-            <a href="index.html">
-                <img class="logo" src="./imagens/HomeS.png">
-            </a>
-        </div>
-        <!--div da barra de pesquisa-->
-        <div class="col d-flex justify-content-center">
-            <div class="divBusca rounded-pill">
-                <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
-                <button class="lupa"><img src="imagens/search.svg" class="btnBusca" alt="Buscar" /></button>
-            </div>
-        </div>
-        <div class="col d-flex justify-content-around">
-            <!--div do link para notícias-->
-            <a class="links" href="noticias.html">Notícias</a>
+    <%- include("../partials/header") %> 
 
-            <!--div para troca de tema - TEMPORÁRIO-->
-            <input class="input-check" type="checkbox" id="checkbox">
-            <label class="checkbox" for="checkbox">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-circle-half" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-                </svg>
-            </label>
-            <!--Hamburguer menu-->
-            <div class="hamburger">
-                <input type="checkbox" id="checkbox-menu">
-
-                <label for="checkbox-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-        </div>
-        </div>
-    </header>
     <main class="main">
         <div class="info_perfil">
             <div class="perfil">
-                <img src="./imagens/IconUser.png" alt="loading">
+                <img src="/imagens/IconUser.png" alt="loading">
                 <div class="name_e-mail">
                     <h1>Usuario123</h1>
                     <p>email123@exemplo.com</p>
@@ -146,7 +109,7 @@
             </div>
         </div>
     </main>
-    <%- include('../views/partials/footer') %>
+    <%- include('../partials/footer')  %> 
     <script type="text/javascript" src="/js/usuariotema.js"></script>
 </body>
 

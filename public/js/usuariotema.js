@@ -3,9 +3,9 @@ const input = document.querySelector('#checkbox')
 
 input.addEventListener('change', function () {
   if(input.checked == true){
-    document.getElementById('tema').href = './stylesbase/usuariodark.css'
+    document.getElementById('tema').href = 'css/usuariodark.css'
   } else{
-    document.getElementById('tema').href = './stylesbase/usuario.css'
+    document.getElementById('tema').href = 'css/usuario.css'
   }
 })
 
