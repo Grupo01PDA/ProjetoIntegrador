@@ -29,6 +29,31 @@ header{
     margin-top: -13px;
 }
 
+/*header*/
+
+.top header{
+    display: flex;
+    
+}
+
+.col-2{
+    display: flex;
+}
+
+.col-6{
+    display: flex;
+}
+
+col-4{
+    display: flex;
+
+}
+
+
+
+
+
+
 /*barra de pesquisa*/
 
 .pesquisa{
