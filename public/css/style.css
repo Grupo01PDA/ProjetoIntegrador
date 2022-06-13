@@ -15,9 +15,9 @@
     margin: 0;
     padding: 0;
 }
-/*.row{
+.row{
     --bs-gutter-x: 0rem !important;
-}*/
+}
 /*=============HEADER=============*/
 header{
     background-color: var(--branco-base);
