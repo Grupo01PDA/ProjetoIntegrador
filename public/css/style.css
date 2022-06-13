@@ -31,37 +31,30 @@ header{
 
 /*header*/
 
-.top header{
+#top header{
     display: flex;
+    justify-content: space-around;
     
 }
 
-.col-2{
-    display: flex;
-}
-
-.col-6{
-    display: flex;
-}
-
-col-4{
+.divBusca{
     display: flex;
 
 }
 
-
-
-
-
+#endHeader{
+    display: flex;
+}
 
 /*barra de pesquisa*/
 
-.pesquisa{
+#pesquisa{
     padding-top: 30px;
 }
 .divBusca{
     background-color: var(--branco-maximo);
     width: max-content;
+    border-radius: 3rem;
 }
 .txtBusca{
     background-color:transparent;
