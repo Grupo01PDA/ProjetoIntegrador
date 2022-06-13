@@ -9,6 +9,21 @@ input.addEventListener('change', function () {
   }
 })
 
+
+
+var modalCadastro = document.getElementById("modalCadastro");
+var modaldiv = document.
+
+modalCadastro.addEventListener('click', function(){
+
+})
+
+
+
+
+
+
+
 const posts = document.getElementById("posts");
 const salvos = document.getElementById("salvos");
 const provas = document.getElementById("provas");
