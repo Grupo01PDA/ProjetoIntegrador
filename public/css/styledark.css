@@ -93,30 +93,32 @@ label.checkbox svg {
 }
 
 /*=============FEED=============*/
-section {
+main {
     background-color: var(--preto-de-fundo);
+    display: flex;
+    justify-content: space-between;
 }
 /*Coluna de navegação*/
 .barra-lateral {
     background-color: var(--preto-base);
     font-size: 1rem;
     display: flex;
+    width: 20%;
     flex-direction: column;
     justify-content: top;
     align-items: flex-start;
     gap: 3rem;
 }
-.barra-lateral a {
+.lista li a {
     text-decoration: none;
     color: var(--branco-base);
 }
-.barra-lateral a:hover {
+.lista li a:hover {
     color: var(--verde-base);
 }
 li {
     list-style-type: none;
-    padding: 2% 5%;
-    margin-left: 10%;
+    padding: 2.5rem;
 }
 /*feed*/
 .feed {

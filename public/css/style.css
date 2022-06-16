@@ -44,7 +44,7 @@ header.header {
 }
 .txtBusca {
     background-color: transparent;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     font-style: italic;
     font-size: 1rem;
     border: none;
@@ -93,46 +93,44 @@ label.checkbox svg {
 }
 
 /*=============FEED=============*/
-section {
+main {
     background-color: var(--branco-de-fundo);
+    display: flex;
+    justify-content: space-between;
 }
 /*Coluna de navegação*/
 .barra-lateral {
     background-color: var(--branco-base);
     font-size: 1rem;
     display: flex;
+    width: 20%;
     flex-direction: column;
     justify-content: top;
     align-items: flex-start;
     gap: 3rem;
 }
-.barra-lateral a {
+.lista li a {
     text-decoration: none;
     color: var(--preto-base);
 }
-.barra-lateral a:hover {
+.lista li a:hover {
     color: var(--azul-base);
 }
 li {
     list-style-type: none;
-    padding: 2% 5%;
-    margin-left: 10%;
+    padding: 2.5rem;
 }
 /*feed*/
 .feed {
-    padding-top: 2rem;
-    background-color: var(--branco-de-fundo);
     display: flex;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.col-3 navegacao {
-    text-decoration: none;
+    margin-right: 25%;
+    transform: translate(25%);
 }
 .card {
-    background-color: var(--preto-base);
-    border: 1px solid var(--preto-base);
     margin-bottom: 3rem;
 }
 .card-body {
