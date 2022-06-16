@@ -18,85 +18,6 @@
     padding: 0;
 }
 
-/*=============HEADER=============*/
-header.header {
-    background-color: var(--branco-base);
-    display: flex;
-    position: fixed;
-    z-index: 10;
-    height: var(--header);
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    margin-left: 2rem;
-}
-
-.logo-hs {
-    width: 8rem;
-}
-
-/*barra de pesquisa*/
-.divBusca {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--branco-maximo);
-    width: fit-content;
-    border-radius: 3rem;
-}
-.txtBusca {
-    background-color: transparent;
-    padding-left: 0.5rem;
-    font-style: italic;
-    font-size: 1rem;
-    border: none;
-    height: 1.5rem;
-    width: 20rem;
-    outline: none;
-}
-.lupa {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    width: 2rem;
-}
-
-/*links*/
-.links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5rem;
-    margin-right: 2rem;
-}
-.link {
-    text-decoration: none;
-    color: var(--preto-base);
-}
-.link:hover {
-    text-decoration: none;
-    color: var(--azul-base);
-}
-
-/*botão de troca de tema*/
-.botao {
-    align-items: center;
-}
-.input-check {
-    display: none;
-}
-label.checkbox svg {
-    fill: var(--preto-base);
-}
-
-/*menu-hamburguer*/
-#btn-mobile {
-    display: none;
-}
-
 /*=============FEED=============*/
 main {
     background-color: var(--branco-de-fundo);
@@ -128,7 +49,7 @@ main {
 li {
     list-style-type: none;
     padding-left: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 /*feed*/
 .feed {
@@ -145,33 +66,8 @@ li {
     width: 37.8rem;
 }
 
-/*=============FOOTER=============*/
-footer {
-    background-color: var(--branco-base);
-}
-.rodaPE {
-    justify-content: center;
-    align-items: center;
-}
-footer .rodaPE {
-    height: auto;
-    padding: 30px 30px;
-    font-size: 15px;
-    text-transform: uppercase;
-    color: var(--preto-base);
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: none;
-    color: var(--azul-base);
-}
-footer a {
-    text-decoration: none;
-    color: var(--preto-base);
-}
-
 /*=============MOBILE=============*/
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .txtBusca {
         background-color: transparent;
         padding-left: 10px;

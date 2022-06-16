@@ -1,0 +1,98 @@
+/*=============GERAL=============*/
+:root {
+  /*cores*/
+  --azul-base: #096fe0;
+  --verde-base: #3df5a7;
+  --branco-base: #f0f0f0;
+  --preto-base: #0f0f0f;
+  --branco-de-fundo: #e6e6e6;
+  --preto-de-fundo: #1b1b1b;
+  --branco-maximo: #ffffff;
+
+  --header: 5.5rem;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Arial';
+  margin: 0;
+  padding: 0;
+}
+
+/*=============HEADER=============*/
+header.header {
+  background-color: var(--preto-base);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  height: var(--header);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 2rem;
+}
+
+.logo-hs {
+  width: 8rem;
+}
+
+/*barra de pesquisa*/
+.divBusca {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--branco-maximo);
+  width: fit-content;
+  border-radius: 3rem;
+}
+.txtBusca {
+  background-color: transparent;
+  padding-left: 0.5rem;
+  font-style: italic;
+  font-size: 1rem;
+  border: none;
+  height: 1.5rem;
+  width: 20rem;
+  outline: none;
+}
+.lupa {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 2rem;
+}
+
+/*links*/
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 2rem;
+}
+.link {
+  text-decoration: none;
+  color: var(--branco-base);
+}
+.link:hover {
+  text-decoration: none;
+  color: var(--verde-base);
+}
+
+/*botão de troca de tema*/
+.botao {
+  align-items: center;
+}
+.input-check {
+  display: none;
+}
+label.checkbox svg {
+  fill: var(--branco-base);
+}
+
+/*menu-hamburguer*/
+#btn-mobile {
+  display: none;
+}
