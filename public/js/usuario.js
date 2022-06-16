@@ -12,10 +12,12 @@ input.addEventListener('change', function () {
 
 
 var modalCadastro = document.getElementById("modalCadastro");
-var modaldiv = document.
+var modaldiv = document.getElementById("modalJanela");
 
 modalCadastro.addEventListener('click', function(){
+  modaldiv.style.display = "block";
 
+  
 })
 
 
