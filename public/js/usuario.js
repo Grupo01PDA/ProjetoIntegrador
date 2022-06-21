@@ -4,8 +4,12 @@ const input = document.querySelector('#checkbox')
 input.addEventListener('change', function () {
   if(input.checked == true){
     document.getElementById('tema').href = 'css/usuariodark.css'
+    document.getElementById('temaHeader').href = './css/headerdark.css'
+    document.getElementById('temaFooter').href = './css/footerdark.css'
   } else{
     document.getElementById('tema').href = 'css/usuario.css'
+    document.getElementById('temaHeader').href = './css/header.css'
+    document.getElementById('temaFooter').href = './css/footer.css'
   }
 })
 
@@ -13,11 +17,13 @@ input.addEventListener('change', function () {
 
 var modalCadastro = document.getElementById("modalCadastro");
 var modaldiv = document.getElementById("modalJanela");
+var fecharModal = document.getElementById("fechar");
 
 modalCadastro.addEventListener('click', function(){
   modaldiv.style.display = "block";
-
-  
+  fecharModal.addEventListener('click', function() {
+    modaldiv.style.display = "none";
+  })
 })
 
 

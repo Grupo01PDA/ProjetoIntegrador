@@ -3,7 +3,6 @@ const input = document.querySelector('#checkbox')
 
 input.addEventListener('change', function () {
   if(input.checked == true){
-    console.log('Funcionou?')
     document.getElementById('tema').href = './css/styledark.css'
     document.getElementById('temaHeader').href = './css/headerdark.css'
     document.getElementById('temaFooter').href = './css/footerdark.css'
