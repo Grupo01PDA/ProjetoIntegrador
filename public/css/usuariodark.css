@@ -10,6 +10,8 @@
     --branco-maximo: #ffffff;
 
     --header: 5.5rem;
+    --cardW: 37.8rem;
+    --cardH: 25rem;
 }
 * {
     box-sizing: border-box;
@@ -228,8 +230,8 @@ input[type*="email"]{
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .gabaritos-feed {
@@ -241,6 +243,14 @@ input[type*="email"]{
     margin-right: 50%;
 }
 
-.card-body {
-    background-color: var(--verde-base);
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--verde-base);
+    width: var(--cardW);
+    height: var(--cardH);
+}
+
+.card-post{
+    max-height: var(--cardH);
 }

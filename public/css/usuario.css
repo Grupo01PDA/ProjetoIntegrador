@@ -10,6 +10,8 @@
     --branco-maximo: #ffffff;
 
     --header: 5.5rem;
+    --cardW: 37.8rem;
+    --cardH: 25rem;
 }
 * {
     box-sizing: border-box;
@@ -206,6 +208,14 @@ nav.posts_etc {
 }
 
 /*=============FEED==============*/
+/*ideia para amanhã
+
+quando clicar no botão, a parte se torna visível,
+as outras desabilitam, assim só aparece 1 de cada vez
+todas centralizadas
+
+*/
+
 .feed {
     display: flex;
     flex-direction: row;
@@ -219,8 +229,8 @@ nav.posts_etc {
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    transform: translateX(-50%);
-    margin-left: 50%;
+    width: 100vw;
+    justify-content: center;
 }
 
 .salvos-feed {
@@ -228,8 +238,8 @@ nav.posts_etc {
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    margin-left: 45%;
-    margin-right: 45%;
+    width: 100vw;
+    justify-content: center;
 }
 
 .gabaritos-feed {
@@ -237,10 +247,18 @@ nav.posts_etc {
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    transform: translateX(50%);
-    margin-right: 50%;
+    width: 100vw;
+    justify-content: center;
 }
 
-.card-body {
-    background-color: var(--azul-base);
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--azul-base);
+    width: var(--cardW);
+    height: var(--cardH);
+}
+
+.card-post{
+    max-height: var(--cardH);
 }
