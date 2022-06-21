@@ -48,14 +48,11 @@ main.main {
     padding: 0.5rem 2rem;
     border: none;
     background-color: var(--azul-base);
-    outline-offset: -1px;
-    outline: 1px solid var(--preto-base);
     transition: 0.2s;
 }
 .button-edit:hover {
-    outline-offset: -1px;
-    outline: 1px solid var(--preto-base);
-    background-color: var(--verde-base);
+    background-color: var(--branco-base);
+    color: var(--azul-base);
     transition: 0.2s;
 }
 
@@ -123,6 +120,7 @@ main.modalMain {
 .bloco {
     display: flex;
     flex-direction: column;
+    color: var(--preto-base);
     gap: 1rem;
 }
 
@@ -135,6 +133,10 @@ main.modalMain {
     border: 1px solid var(--azul-base);
 }
 select.modalInput {
+    text-transform: lowercase;
+}
+
+input[type*="email"]{
     text-transform: lowercase;
 }
 
@@ -182,11 +184,20 @@ nav.posts_etc {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     transition: 300ms;
+    color: var(--preto-base);
 }
 
 .posts_etc button.btnActive {
     background-color: var(--azul-base);
+    color: var(--branco-base);
 }
+
+.posts_etc button.postagens.btnActive svg.posts-svg [stroke*='#0F0F0F'],
+.posts_etc button.salvos.btnActive svg.salvos-svg [stroke*='#0F0F0F'],
+.posts_etc button.gabaritos.btnActive svg.provas-svg [stroke*='#0F0F0F'] {
+    stroke: var(--branco-base);
+}
+
 
 .posts_etc button.postagens svg.posts-svg [stroke*='#0F0F0F'],
 .posts_etc button.salvos svg.salvos-svg [stroke*='#0F0F0F'],
