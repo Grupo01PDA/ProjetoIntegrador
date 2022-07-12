@@ -10,7 +10,11 @@
     --branco-maximo: #ffffff;
 
     --header: 5.5rem;
+    --border-radius: 2rem;
+    --card-border-redius: 1rem;
+    --card-padding: 1rem;
 }
+
 * {
     box-sizing: border-box;
     font-family: 'Arial';
@@ -18,12 +22,122 @@
     padding: 0;
 }
 
+
+
 /*=============FEED=============*/
 main {
     background-color: var(--branco-de-fundo);
     display: flex;
     justify-content: space-between;
 }
+
+.middle .feeds2 .feed2 {
+
+    border-radius: var(--card-border-redius);
+    padding: var(--card-padding);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.feeds2 {
+    background-color: #fcf8f8;
+    border-radius: var(--card-border-redius);
+    padding: var(--card-padding);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.comentarios {
+    color: #8e8e8e;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.profile-photo {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.middle .feed2 .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle .feed2 .user {
+    display: flex;
+    gap: 1rem;
+}
+
+.middle .feed2 .photo {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.7rem 0;
+}
+
+.middle .feed2 .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.9rem;
+}
+
+.middle .liked-by {
+    display: flex;
+}
+
+.middle .liked-by span {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    margin-left: -0.6rem;
+}
+
+.middle .liked-by span:first-child {
+    margin: 0;
+
+}
+
+.middle .liked-by p {
+    margin-left: 0.5rem;
+}
+
+.feed {
+    display: flex;
+    margin-top: calc(var(--header) + 1rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    transform: translateX(-25%);
+}
+
+
+/*=============Story=============*/
+
+.middle .stories {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+}
+
+
+.story .profile-photo {
+    border: solid #3df5a7;
+}
+
 /*Coluna de navegação*/
 .barra-lateral {
     background-color: var(--branco-base);
@@ -39,28 +153,22 @@ main {
     align-items: flex-start;
     gap: 3rem;
 }
+
 .lista li a {
     text-decoration: none;
     color: var(--preto-base);
 }
+
 .lista li a:hover {
     color: var(--azul-base);
 }
+
 li {
     list-style-type: none;
     padding-left: 2rem;
     padding-bottom: 4rem;
 }
-/*feed*/
-.feed {
-    display: flex;
-    margin-top: calc(var(--header) + 1rem);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    transform: translateX(-25%);
-}
+
 .card {
     margin-bottom: 2rem;
     width: 37.8rem;
@@ -88,10 +196,12 @@ li {
         cursor: pointer;
         gap: 0.5rem;
     }
+
     #hamburger {
         border-top: 2px solid;
         width: 20px;
     }
+
     #hamburger::after,
     #hamburger::before {
         content: '';
@@ -103,12 +213,15 @@ li {
         transform: 0.6s;
         position: relative;
     }
+
     #nav.active #hamburger {
         border-top-color: transparent;
     }
+
     #nav.active #hamburger::before {
         transform: rotate(135deg);
     }
+
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
@@ -127,11 +240,13 @@ li {
         visibility: hidden;
         overflow-y: hidden;
     }
+
     #nav.active #menu {
         height: calc(1000vh - 70px);
         visibility: visible;
         overflow-y: auto;
     }
+
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
@@ -143,6 +258,7 @@ li {
         text-align: center;
         padding: 3% 0;
     }
+
     .feed {
         padding-top: 2rem;
         background-color: var(--branco-de-fundo);
@@ -151,14 +267,17 @@ li {
         align-items: center;
         justify-content: center;
     }
+
     .col-3 navegacao {
         text-decoration: none;
     }
+
     .card {
         background-color: var(--preto-base);
         border: 1px solid var(--preto-base);
         margin-bottom: 3rem;
     }
+
     .card-body {
         background-color: var(--azul-base);
     }
@@ -172,19 +291,23 @@ li {
         align-items: flex-start;
         gap: 0rem;
     }
+
     .botao {
         align-items: center;
         padding-top: 2px;
     }
+
     .links {
         font-size: 20px;
         padding-top: 0px;
         text-decoration: none;
         color: var(--preto-base);
     }
+
     #log {
         padding-left: 50px;
     }
+
     #not {
         padding-right: 50px;
     }
