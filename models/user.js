@@ -3,9 +3,14 @@ const db = require('../connection/db');
 
 const Usuario = db.define('usuarios', {
     id: {
-        type: Sequelize.DataTypes.STRING,
+        type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true  
+    },
+    senha: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false
     },
     nome: {
         type: Sequelize.DataTypes.STRING,
