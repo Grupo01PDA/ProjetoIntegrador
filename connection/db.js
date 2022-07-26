@@ -1,9 +1,6 @@
 const Sequelize = require("sequelize");
-//  pessoa = nome, cpf, idade
-//  pessoa("guilherme", 425261271, 17)
 
 if(process.env.ENVIRONMENT === 'production'){
-    console.log("PRODCTION")
     const sequelize = new Sequelize(
         process.env.DATABASE_NAME,
         process.env.DATABASE_USERNAME,
@@ -16,7 +13,6 @@ if(process.env.ENVIRONMENT === 'production'){
     )
     module.exports = sequelize;
 }else {
-    console.log("STAGING");
     const sequelize = new Sequelize(
         process.env.DATABASE_NAME_TESTE,
         process.env.DATABASE_USERNAME_TESTE,
