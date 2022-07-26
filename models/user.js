@@ -13,10 +13,10 @@ const Usuario = db.define('usuarios', {
     },
     sobrenome: {
         type: Sequelize.DataTypes.STRING,
-        allownull: false
+        allowNull: false
     },
     escolaridade: {
-        type: Sequelize.DataTypes.STRING
+        type: Sequelize.DataTypes.STRING,
         allowNull: false
     },
     email: {
@@ -26,3 +26,7 @@ const Usuario = db.define('usuarios', {
 });
 
 module.exports = Usuario;
+
+// 1 parametro NOME DA TABELA
+// 2 parametro sao as colunas que devem ter na
+// tabela
