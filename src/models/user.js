@@ -8,7 +8,7 @@ const Usuario = db.define('usuarios', {
         primaryKey: true,
         autoIncrement: true  
     },
-    senha: {
+    rank: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
     },
