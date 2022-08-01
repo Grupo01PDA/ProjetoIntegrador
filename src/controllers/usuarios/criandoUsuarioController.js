@@ -4,7 +4,7 @@ const criandoUsuarioController = async (req, res)=>{
   //verifica se a tabela existe no banco
   //caso não existe ele cria
   //se existe ele insere os dados na tabela
-  await db.sync({force: true})
+  await db.sync()
   const { apelido, nome, sobrenome, escolaridade, email, senha } = req.body
   const novoUsuario = await usuario.create({
       apelido,

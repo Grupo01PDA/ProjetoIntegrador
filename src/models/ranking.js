@@ -19,6 +19,10 @@ const Ranking = db.define('rankings', {
     }
 });
 
+Ranking.hasMany(Usuario, {
+    foreignKey: "idUsuario"
+});
+Usuario.belongsTo(Ranking)
 
 module.exports = Ranking;
 
