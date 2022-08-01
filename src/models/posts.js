@@ -7,27 +7,6 @@ const posts = db.define('posts', {
         allowNull: false,
         primaryKey: true,
         autoIncrement: true  
-    },
-    rank: {
-        type: Sequelize.DataTypes.STRING,
-        allowNull: false
-    },
-    nome: {
-        type: Sequelize.DataTypes.STRING,
-        allowNull: false
-    },
-    sobrenome: {
-        type: Sequelize.DataTypes.STRING,
-        allowNull: false
-    },
-    escolaridade: {
-        type: Sequelize.DataTypes.STRING,
-        allowNull: false
-    },
-    email: {
-        type: Sequelize.DataTypes.STRING,
-        allowNull: false
     }
-});
 
-module.exports = Usuario;
+module.exports = posts;
