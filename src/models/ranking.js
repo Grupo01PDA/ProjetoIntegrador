@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 const db = require('../connection/db');
+const Usuario = require('./user');
 
 const Ranking = db.define('rankings', {
     id: {
@@ -17,6 +18,7 @@ const Ranking = db.define('rankings', {
         allowNull: false
     }
 });
+
 
 module.exports = Ranking;
 

@@ -9,9 +9,10 @@ const Usuario = db.define('usuarios', {
         primaryKey: true,
         autoIncrement: true  
     },
-    rank: {
+    apelido: {
         type: Sequelize.DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     nome: {
         type: Sequelize.DataTypes.STRING,
@@ -27,6 +28,11 @@ const Usuario = db.define('usuarios', {
     },
     email: {
         type: Sequelize.DataTypes.STRING,
+        allowNull: false,
+        unique: true
+    },
+    senha: {
+        type: Sequelize.DataTypes.STRING,
         allowNull: false
     }
 });
@@ -34,6 +40,10 @@ const Usuario = db.define('usuarios', {
 Usuario.belongsTo(Ranking, {
     foreignKey: "idRanking"
 });
+
+Ranking.hasMany(Usuario, {
+    foreignKey: "idUsuario"
+})
 
 module.exports = Usuario;
 
