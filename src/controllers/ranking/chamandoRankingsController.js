@@ -1,6 +1,6 @@
-const chamandoRankingController = async(req, res) => {
-    let usuario = require("../../models/user");
-    const pegarUsuario = await usuario.findAll();
-    return res.status(200).json({Allusers: pegarUsuario});
-  };
-  module.exports = chamandoRankingController;
+const chamandoRankingsController = async(req, res) => {
+  let ranking = require("../../models/ranking");
+  const pegarRanking = await usuario.findAll();
+  return res.status(200).json({Ranques: pegarRanking});
+};
+module.exports = chamandoRankingsController;
