@@ -1,7 +1,8 @@
 const express = require("express")
-const chamandoRankcontroller = require("../controllers/")
+const chamandoRankingsController = require("../controllers/ranking/chamandoRankingsController")
 
 const rankRoute = express.Router();
-rankRoute.get.chamandoRankcontroller
+
+rankRoute.get("/rankings", chamandoRankingsController)
 
 module.exports = rankRoute;
