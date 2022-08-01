@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 const db = require('../connection/db');
+const Ranking = require('./ranking');
 
 const Usuario = db.define('usuarios', {
     id: {
@@ -28,6 +29,10 @@ const Usuario = db.define('usuarios', {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
     }
+});
+
+Usuario.belongsTo(Ranking, {
+    foreignKey: "idRanking"
 });
 
 module.exports = Usuario;
