@@ -1,7 +1,7 @@
 const { response } = require('express')
 const express = require('express')
 const app = express()
-const port = 3306
+const port = 4000
 
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'))

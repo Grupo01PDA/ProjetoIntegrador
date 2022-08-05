@@ -1,11 +1,8 @@
-const posts = require("../..//models/posts")
-const Usuario = require("../../models/user")
-
 const mudandoPostsController = async (req,res)=>{
     const posts = require ("../..//models/posts")
     const id = req.params.id 
     const { documents, description, qtdLike, qtdComentario, qtdCompartilhamento } = req.body
-    const posts = await posts.findByPK(id)
+    posts = await posts.findByPK(id)
     await posts.update({
         documents: documents || posts.documents,
         description: description || posts.description,
@@ -15,7 +12,7 @@ const mudandoPostsController = async (req,res)=>{
     },
     { where: { id: id }}
     )
-    const postAtualizado = await usuario.findByPK(id)
+    const postAtualizado = await posts.findByPK(id)
     return res.json({ usuario: postAtualizado});
 };
 module.exports = mudandoPostsController;

@@ -1,7 +1,6 @@
-const posts = require('../../models/user')
-
 const criandoPostsController = async (req, res)=>{
 const db = require('../../models/posts')
+const posts = require('../../models/posts')
 await db.sync()
 const { documents, description, qtdLike, qtdComentario, qtdCompartilhamento } = req.body
 const novoPost = await posts.create({
@@ -13,4 +12,4 @@ const novoPost = await posts.create({
 })
     return res.status(202).json({ posts: novoPost })
 };
-module.exports = criandoPostsController
+module.exports = criandoPostsController;

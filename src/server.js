@@ -1,9 +1,9 @@
+require('dotenv/config')
 const express = require('express')
 const usuarioRoute = require('../src/routes/user.routes')
 const rankRoute = require('./routes/rank.routes')
 const app = express()
-const port = 4000
-require('dotenv/config')
+const port = 3303
 
 app.use(express.json())
 
