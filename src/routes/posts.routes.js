@@ -1,4 +1,4 @@
-const express = require('éxpress);
+const express = require('express')
 const chamandoPostsController = require("../controllers/posts/chamandoPostsController");
 const criandoPostsController = require('../controllers/posts/criandoUsuarioController');
 const mudandoPostsController = require("../controllers/posts/mudandoPostsController");

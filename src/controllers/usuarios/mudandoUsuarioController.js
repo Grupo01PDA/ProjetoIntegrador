@@ -3,8 +3,7 @@ const mudandoUsuarioController = async (req, res) => {
   const id = req.params.id
   const { nome, sobrenome, email, senha, escolaridade } = req.body
   const pessoa = await usuario.findByPk(id)
-  await usuario.update(
-      {
+  await usuario.update({
           nome: nome || pessoa.nome,
           sobrenome: sobrenome || pessoa.sobrenome,
           senha: senha || pessoa.senha,

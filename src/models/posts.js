@@ -28,7 +28,7 @@ const posts = db.define('posts', {
         allowNull: true,
         autoIncrement: true
     },
-    qtdCompartilhar: {
+    qtdCompartilhamento: {
         type: sequelize.DataTypes.INTEGER,
         allowNull: true,
         autoIncrement: true
