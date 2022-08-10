@@ -21,6 +21,10 @@ const Usuario = db.define('usuarios', {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
     },
+    dtDeNascimento: {
+        type: Sequelize.DataTypes.DATE,
+        allowNull: false
+    },
     escolaridade: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
