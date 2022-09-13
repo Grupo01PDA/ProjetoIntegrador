@@ -1,24 +1,17 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "init": "^0.1.2"
-  },
-  "name": "homestudy",
+  "name": "frontend",
   "version": "1.0.0",
+  "description": "teste",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Grupo01PDA/ProjetoIntegrador.git"
-  },
-  "author": "",
+  "author": "Grupo01",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Grupo01PDA/ProjetoIntegrador/issues"
-  },
-  "homepage": "https://github.com/Grupo01PDA/ProjetoIntegrador#readme",
-  "description": ""
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
 }
