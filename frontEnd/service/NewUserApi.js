@@ -21,7 +21,7 @@ async function pegar() {
 async function enviar() {
     const dados = document.getElementByClass(".input_cadastro");
     const valorDados = dados.value
-    valorDados = [] 
+    console.log(valorDados)
     const adress = await fetch(`http://localhost:4000/${valorDados}/criarUsu`)
     const jsonAdress = await adress.json()
     console.log(jsonAdress)
