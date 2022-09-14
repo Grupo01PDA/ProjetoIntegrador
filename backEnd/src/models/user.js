@@ -34,6 +34,10 @@ const Usuario = db.define('usuarios', {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
     }
+    sttsUsuario: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false
+    }
 });
 
 module.exports = Usuario;
