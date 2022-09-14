@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
 }*/
 })
-
 const dados = document.getElementByClass(".input_cadastro");
 const valorDados = dados.value
 
