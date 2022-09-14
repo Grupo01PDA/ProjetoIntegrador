@@ -33,9 +33,9 @@ const Usuario = db.define('usuarios', {
     senha: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
-    }
+    },
     sttsUsuario: {
-        type: Sequelize.DataTypes.STRING,
+        type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false
     }
 });
