@@ -11,9 +11,10 @@ footer {
   background-color: var(--branco-base);
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: relative;
   z-index: 1;
-  padding: 2rem;
+  height: var(--header);
   color: var(--preto-base);
 }
 footer a:hover {
