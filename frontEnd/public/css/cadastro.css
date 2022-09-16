@@ -27,13 +27,11 @@ body{
 }
 
 .cadastro {
-    background-color: var(--branco-fundo);
-    
+    background-color: var(--branco-base);
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 20rem;
-
     border: 1px solid var(--preto-base);
     border-radius: 2rem;
     padding: 4rem 2rem;
@@ -91,16 +89,14 @@ body{
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--azul-base);
-    border: 2px solid var(--azul-base);
     border-radius: 20rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     transition: 300ms;
 }
 button:hover{
-    border: 2px solid var(--azul-base);
-    background-color: var(--azul-base);
-    color: var(--verde-base);
+    background-color: var(--verde-base);
+    color: var(--preto-base);
     transition: 300ms;
 }
 

@@ -37,10 +37,7 @@ body.background-cadastro{
 }
 .voltar a{
   text-decoration: none;
-  color: var(--branco-base);
-}
-.voltar a:hover{
-  color: var(--verde-base);
+  color: var(--preto-base);
 }
 
 .escolha{

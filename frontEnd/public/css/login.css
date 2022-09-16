@@ -84,23 +84,21 @@ body{
 
 .button {
     border: none;
-    color: var(--branco-base);
+    color: var(--preto-base);
     padding: 1rem 2rem;
     margin: 0 auto;
     text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
-    background-color: var(--azul-base);
-    border: 2px solid var(--azul-base);
+    background-color: var(--verde-base);
     border-radius: 20rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     transition: 300ms;
 }
 button:hover{
-    border: 2px solid var(--verde-base);
-    background-color: var(--verde-base);
-    color: var(--azul-base);
+    background-color: var(--azul-base);
+    color: var(--branco-base);
     transition: 300ms;
 }
 
