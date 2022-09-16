@@ -1,19 +1,3 @@
-const input = document.querySelector('#checkbox')
-
-
-input.addEventListener('change', function () {
-  if(input.checked == true){
-    document.getElementById('tema').href = './css/styledark.css'
-    document.getElementById('temaHeader').href = './css/headerdark.css'
-    document.getElementById('temaFooter').href = './css/footerdark.css'
-
-  } else{
-    document.getElementById('tema').href = './css/style.css'
-    document.getElementById('temaHeader').href = './css/header.css'
-    document.getElementById('temaFooter').href = './css/footer.css'
-  }
-})
-
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
