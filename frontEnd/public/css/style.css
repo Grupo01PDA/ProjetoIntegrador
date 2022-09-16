@@ -13,17 +13,15 @@ main {
     display: flex;
     justify-content: space-between;
 }
-
-.middle .feeds2 .feed2 {
-
-    border-radius: var(--card-border-redius);
-    padding: var(--card-padding);
-    padding: 1rem;
-    margin: 1rem 0;
-    font-size: 0.85rem;
-    line-height: 1.5;
+/*feed*/
+.feed {
+    display: flex;
+    margin-top: calc(var(--header) + 1rem);
+    margin-left: var(--barra-lateral);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 
 /*Coluna de navegação*/
 .barra-lateral {
@@ -31,10 +29,9 @@ main {
     font-size: 1rem;
     display: flex;
     position: fixed;
-    z-index: 10;
     margin-top: var(--header);
     height: 100%;
-    width: 20%;
+    width: var(--barra-lateral);
     flex-direction: column;
     justify-content: top;
     align-items: flex-start;
@@ -55,18 +52,6 @@ li {
     padding-left: 2rem;
     padding-bottom: 4rem;
 }
-
-/*feed*/
-.feed {
-    display: flex;
-    margin-top: calc(var(--header) + 1rem);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    transform: translateX(-25%);
-}
-
 
 
 /*=============MOBILE=============*/
