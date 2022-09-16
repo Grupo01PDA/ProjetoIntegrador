@@ -1,18 +1,4 @@
 /*=============GERAL=============*/
-:root {
-    /*cores*/
-    --azul-base: #096fe0;
-    --verde-base: #3df5a7;
-    --branco-base: #f0f0f0;
-    --preto-base: #0f0f0f;
-    --branco-de-fundo: #e6e6e6;
-    --preto-de-fundo: #1b1b1b;
-    --branco-maximo: #ffffff;
-
-    --header: 5.5rem;
-    --cardW: 37.8rem;
-    --cardH: 25rem;
-}
 * {
     box-sizing: border-box;
     font-family: 'Arial';
@@ -221,8 +207,8 @@ input[type*="email"]{
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    transform: translateX(-50%);
-    margin-left: 50%;
+    width: 100vw;
+    justify-content: center;
 }
 
 .salvos-feed {
@@ -230,8 +216,8 @@ input[type*="email"]{
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100vw;
+    justify-content: center;
 }
 
 .gabaritos-feed {
@@ -239,8 +225,8 @@ input[type*="email"]{
     align-items: center;
     flex-direction: column-reverse;
     gap: 3rem;
-    transform: translateX(50%);
-    margin-right: 50%;
+    width: 100vw;
+    justify-content: center;
 }
 
 .card{

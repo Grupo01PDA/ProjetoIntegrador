@@ -1,18 +1,4 @@
 /*=============GERAL=============*/
-:root {
-    /*cores*/
-    --azul-base: #096fe0;
-    --verde-base: #3df5a7;
-    --branco-base: #f0f0f0;
-    --preto-base: #0f0f0f;
-    --branco-de-fundo: #e6e6e6;
-    --preto-de-fundo: #1b1b1b;
-    --branco-maximo: #ffffff;
-
-    --header: 5.5rem;
-    --cardW: 37.8rem;
-    --cardH: 25rem;
-}
 * {
     box-sizing: border-box;
     font-family: 'Arial';
@@ -208,14 +194,6 @@ nav.posts_etc {
 }
 
 /*=============FEED==============*/
-/*ideia para amanhã
-
-quando clicar no botão, a parte se torna visível,
-as outras desabilitam, assim só aparece 1 de cada vez
-todas centralizadas
-
-*/
-
 .feed {
     display: flex;
     flex-direction: row;
