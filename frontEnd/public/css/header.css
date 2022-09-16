@@ -10,6 +10,8 @@
     --branco-maximo: #ffffff;
 
     --header: 5.5rem;
+    --size-lupa: 1.5rem;
+    --busca-size: 20rem;
 }
 * {
     box-sizing: border-box;
@@ -43,9 +45,9 @@ header.header {
 .divBusca {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--branco-maximo);
-    width: fit-content;
+    width: calc(var(--busca-size) + var(--size-lupa) + 0.5rem);
     border-radius: 3rem;
 }
 .txtBusca {
@@ -54,15 +56,14 @@ header.header {
     font-style: italic;
     font-size: 1rem;
     border: none;
-    height: 1.5rem;
-    width: 20rem;
+    height: 2rem;
+    width: var(--busca-size);
     outline: none;
 }
 .lupa {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    width: 2rem;
 }
 
 /*links*/
