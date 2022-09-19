@@ -19,28 +19,80 @@
 
     <img class="logo-fundo" src="" alt="Logo Home Study">
     <div class="cadastro">
-        <div class="toptitle">
+        <!--  <div class="toptitle">
             <h3>CADASTRE-SE</h3>
-        </div>
+        </div> -->
         <div class="SOCORRO">
-          
+
             <form class="form">
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="fname">Nome completo</label>
-                    <input class="input_cadastro" type="text" name="name" placeholder="Digite seu nome...">
+                    <label class="label_cadastro" for="fname">Seu apelido</label>
+                    <input class="input_cadastro" type="text" name="name" placeholder="Digite seu apelido...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Email</label>
+                    <label class="label_cadastro" for="email">Seu Nome</label>
+                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu nome...">
+                </div>
+                <div class="cadastro_div">
+                    <label class="label_cadastro" for="email">Seu Sobrenome</label>
+                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu sobre nome...">
+                </div>
+                <div class="cadastro_div">
+                    <label class="label_cadastro" for="fname">Seu Grau de escolaridade</label>
+                    <details class="custom-select">
+                        <summary class="radios">
+                            <input type="radio" name="item" id="default" title="Auswählen..." checked>
+                            <input type="radio" name="item" id="item1" title="Item 1">
+                            <input type="radio" name="item" id="item2" title="Item 2">
+                            <input type="radio" name="item" id="item3" title="Item 3">
+                            <input type="radio" name="item" id="item4" title="Item 4">
+                            <input type="radio" name="item" id="item5" title="Item 5">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="item1">
+                                    Item 1
+                                    <span></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="item2">Item 2</label>
+                            </li>
+                            <li>
+                                <label for="item3">Item 3</label>
+                            </li>
+                            <li>
+                                <label for="item4">Item 4</label>
+                            </li>
+                            <li>
+                                <label for="item5">Item 5</label>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="cadastro_div">
+                    <label class="label_cadastro" for="email">Seu email</label>
                     <input class="input_cadastro" type="email" name="email" placeholder="you@example.com">
                 </div>
-                <button class="button" type="button" onclick="enviar()">Avançar</button>
+                <div class="cadastro_div">
+                    <label class="label_cadastro" for="email">Sua senha</label>
+                    <input class="input_cadastro" type="email" name="email" placeholder="Digite sua senha...">
+                </div>
+
+                <div class="box">
+                    <input type="checkbox"/>
+                </div>
+                <h3>Eu concordo com os Termos de uso e Política de privacidade e compreendo que vou receber e-mails e notificações até optar por deixar de receber.</h3>
+
+                <button class="button" type="button" onclick="enviar()">Cadastrar</button>
                 <div class="link-login">
                     Já tem uma conta?<br>
                     <a href="/login">Faça seu login</a>
                 </div>
-                
-            </form>
         </div>
+        
+    </form>
+    </div>
     </div>
     <script src="../../service/NewUserApi.js"></script>
 </body>
