@@ -17,7 +17,13 @@
         </a>
     </div>
 
-    <img class="logo-fundo" src="" alt="Logo Home Study">
+    <div class="texto-cadrasto">
+        <h1>Pronto para<span> mudar </span><br>sua vida?</br></h1>
+
+    </div>
+
+
+
     <div class="cadastro">
         <!--  <div class="toptitle">
             <h3>CADASTRE-SE</h3>
@@ -38,6 +44,7 @@
                     <input class="input_cadastro" type="email" name="email" placeholder="Digite seu sobre nome...">
                 </div>
                 <div class="cadastro_div">
+
                     <label class="label_cadastro" for="fname">Seu Grau de escolaridade</label>
                     <details class="custom-select">
                         <summary class="radios">
@@ -80,19 +87,29 @@
                 </div>
 
                 <div class="box">
-                    <input type="checkbox"/>
-                </div>
-                <h3>Eu concordo com os Termos de uso e Política de privacidade e compreendo que vou receber e-mails e notificações até optar por deixar de receber.</h3>
 
-                <button class="button" type="button" onclick="enviar()">Cadastrar</button>
-                <div class="link-login">
-                    Já tem uma conta?<br>
-                    <a href="/login">Faça seu login</a>
+
+                    <h3><input type="checkbox" />
+                        Eu concordo com os Termos de uso e Política de privacidade e compreendo que vou receber e-mails
+                        e
+                        notificações até optar por deixar de receber.</h3>
+
                 </div>
+
+                <div class="botao">
+                    <button class="button" type="button" onclick="enviar()">Cadastrar</button>
+                    <div class="link-login">
+                        Já tem uma conta?<br>
+                        <a href="/login">Faça seu login</a>
+                    </div>
+
+
+                </div>
+
+
+
+            </form>
         </div>
-        
-    </form>
-    </div>
     </div>
     <script src="../../service/NewUserApi.js"></script>
 </body>
