@@ -155,7 +155,7 @@ details[open] {
 }
 
 summary {
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   border-radius: 5px;
   background-color: #ddd;
