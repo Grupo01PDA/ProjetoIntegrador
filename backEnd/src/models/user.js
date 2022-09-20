@@ -34,7 +34,7 @@ const Usuario = db.define('usuarios', {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
     },
-    sttsUsuario: {
+    sttsLogin: {
         type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false
     }
