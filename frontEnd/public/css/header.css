@@ -20,7 +20,7 @@
 
 /*=============HEADER=============*/
 header.header {
-    background-color: var(--branco-base);
+    background-image: linear-gradient(red, yellow);
     display: flex;
     position: fixed;
     z-index: 10;
