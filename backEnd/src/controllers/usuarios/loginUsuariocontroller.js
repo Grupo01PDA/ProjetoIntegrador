@@ -12,7 +12,7 @@ if(!usuarioExistente){
     return res.status(404).json({mensagem: "email ou senha inválido"})
    }
  const senhaMatch = await compare(senha, usuarioExistente.senha)
-if(senhaMatch == true){
+if(senhaMatch){
     await usuario.update({
         id: usuarioExistente.id,
         apelido: usuarioExistente.apelido,
@@ -28,6 +28,6 @@ const usuarioAtualizado = await usuario.findOne({where:{
     email: email
  } 
 })
-return res.status(200).json({mensagem: "logado com sucesso", usuarioAtualizado})
+return res.json({mensagem: "logado com sucesso ", usuarioAtualizado})
 }
 module.exports = loginUsuarioController;
