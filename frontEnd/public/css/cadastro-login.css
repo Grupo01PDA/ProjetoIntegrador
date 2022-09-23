@@ -1,87 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-body{
-  background: url("/imagens/HomeS.png");
-  background-color: var(--preto-fundo);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position-x: center;
-  transition: 200ms;
-}
 
-body.background-login{
-  background: url("/imagens/templateloginpng.png");
-  background-repeat: no-repeat;
-  background-color: var(--verde-base);
-  background-position-y: 5rem;
-  transition: 200ms;
-}
-body.background-cadastro{
-  background: url("/imagens/templatecadastro.png");
-  background-repeat: no-repeat;
-  background-color: var(--azul-base);
-  background-position-y: 5rem;
-  background-position-x: right;
-  transition: 200ms;
-}
-
-.voltar{
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
-}
-.voltar a{
-  text-decoration: none;
-  color: var(--preto-base);
-}
-
-.escolha{
+.header {
+  background-color: aqua;
+  width: 100%;
+  height: 6.5vw;
   display: flex;
-  flex-direction: column;
+  justify-content: end;
   align-items: center;
-  background-color: var(--branco-base);
-  max-width: 30rem;
-  margin: auto;
-  margin-top: 10rem;
-  gap: 5rem;
-  padding-block: 5rem;
-  border-radius: 2rem;
-}
-.escolha a{
-  text-decoration: none;
 }
 
-.cadastro{
-  background-color: var(--azul-base);
-  color: var(--branco-base);
-  padding: 2rem 2rem;
-  text-align: center;
-  border-radius: 5rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-.cadastro:hover{
-  outline-offset: -3px;
-  outline: 3px solid var(--verde-base);
-  transition: 0.3s;
+.botoes {
+  display: flex;
 }
 
-.login{
-  background-color: var(--verde-base);
-  color: var(--preto-base);
-  padding: 2rem 2rem;
-  text-align: center;
-  border-radius: 5rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
+.entrar {
+  margin-right: 3rem;
 }
-.login:hover{
-  outline-offset: -3px;
-  outline: 3px solid var(--azul-base);
-  transition: 0.3s;
+
+.cadrastar {
+  margin-right: 5rem;
+}
+
+.pagina {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 50.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background-color: antiquewhite;
+  width: 400px;
+  height: 400px;
 }
