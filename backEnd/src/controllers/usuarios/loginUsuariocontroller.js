@@ -1,5 +1,5 @@
  const {compare} = require('bcrypt')
- const loginUsuarioController = async (req,res) => {
+ async function loginUsuarioController(req,res){
 
  const usuario = require("../../models/user")
  const {email, senha} = req.body;
@@ -25,9 +25,9 @@ if(senhaMatch == true){
     },{where: {id: usuarioExistente.id}})
 }
 const usuarioAtualizado = await usuario.findOne({where:{
-    email: email,
+    email: email
  } 
 })
 return res.status(200).json({mensagem: "logado com sucesso", usuarioAtualizado})
 }
-module.export = loginUsuarioController;
+module.exports = loginUsuarioController;
