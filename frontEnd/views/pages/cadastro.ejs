@@ -25,11 +25,7 @@
 
 
     <div class="cadastro">
-        <!--  <div class="toptitle">
-            <h3>CADASTRE-SE</h3>
-        </div> -->
-        <div class="SOCORRO">
-
+        <h2>CADASTRE-SE</h2>
             <form class="form">
                 <div class="cadastro_div">
                     <label class="label_cadastro" for="fname">Seu apelido</label>
@@ -48,31 +44,24 @@
                     <label class="label_cadastro" for="fname">Seu Grau de escolaridade</label>
                     <details class="custom-select">
                         <summary class="radios">
-                            <input type="radio" name="item" id="default" title="ESCOLARIDADE" checked>
-                            <input type="radio" name="item" id="item1" title="Item 1">
-                            <input type="radio" name="item" id="item2" title="Item 2">
-                            <input type="radio" name="item" id="item3" title="Item 3">
-                            <input type="radio" name="item" id="item4" title="Item 4">
-                            <input type="radio" name="item" id="item5" title="Item 5">
+                            <input type="radio" name="item" id="default" title="Grau de Escolaridade" checked>
+                            <input type="radio" name="item" id="item1" title="Não tenho ensino fundamental">
+                            <input type="radio" name="item" id="item2" title="Tenho ensino fundamental">
+                            <input type="radio" name="item" id="item3" title="Tenho ensino médio">
+                            <input type="radio" name="item" id="item4" title="Tenho ensino superior">
                         </summary>
                         <ul class="list">
                             <li>
-                                <label for="item1">
-                                    Item 1
-                                    <span></span>
-                                </label>
+                                <label for="item1">Não conclui o ensino fundamental</label>
                             </li>
                             <li>
-                                <label for="item2">Item 2</label>
+                                <label for="item2">Conclui o ensino fundamental, não conclui o ensino médio</label>
                             </li>
                             <li>
-                                <label for="item3">Item 3</label>
+                                <label for="item3">Conclui o ensino médio, não tenho ensino superior</label>
                             </li>
                             <li>
-                                <label for="item4">Item 4</label>
-                            </li>
-                            <li>
-                                <label for="item5">Item 5</label>
+                                <label for="item4">Tenho ensino superior</label>
                             </li>
                         </ul>
                     </details>
@@ -86,31 +75,16 @@
                     <input class="input_cadastro" type="email" name="email" placeholder="Digite sua senha...">
                 </div>
 
-                <div class="box">
-
-
-                    <h3><input type="checkbox" />
-                        Eu concordo com os Termos de uso e Política de privacidade e compreendo que vou receber e-mails
-                        e
-                        notificações até optar por deixar de receber.</h3>
-
-                </div>
 
                 <div class="botao">
                     <button class="button" type="button" onclick="enviar()">Cadastrar</button>
                     <div class="link-login">
                         Já tem uma conta?<br>
-                        <a href="/login">Faça seu login</a>
+                        <a href="/login">Acesse</a>
                     </div>
-
-
                 </div>
-
-
-
             </form>
         </div>
-    </div>
     <script src="../../service/NewUserApi.js"></script>
 </body>
 
