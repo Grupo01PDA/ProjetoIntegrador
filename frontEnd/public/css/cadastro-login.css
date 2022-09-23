@@ -21,11 +21,11 @@
 }
 
 .entrar {
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .cadrastar {
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 
 .pagina {
@@ -47,12 +47,12 @@
 }
 
 .img{
-  margin-left: 4rem;
+  margin-left: 3.5rem;
 
 }
 .texto-botao{
  
-  margin-right: 3rem;
+  margin-right: 2.5rem;
 
 }
 
@@ -82,9 +82,7 @@
   margin-block-end: 60px;
 }
 
-
-
-.botao-entrar-cadrastar{
+.botao-entrar{
   border: none;
   color: var(--branco-maximo);
   padding: 0.6rem 2rem;
@@ -97,4 +95,30 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   transition: 300ms;
+}
+
+
+.cadrastar-botao{
+  border: none;
+  color: var(--branco-maximo);
+  padding: 0.6rem 2rem;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--verde-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+
+.texto-central{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  align-items: center;
 }
