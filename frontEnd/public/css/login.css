@@ -20,12 +20,12 @@ body {
 
 .voltar a {
   text-decoration: none;
-  color: var(--branco-fundo);
+  color: var(--preto-base);
   transition: 300ms;
 }
 
 .voltar a:hover {
-  color: var(--verde-base);
+  color: var(--azul-base);
   transition: 300ms;
 }
 h2 {
@@ -44,7 +44,7 @@ main.main{
 }
 
 .cadastro {
-  background-color: var(--branco-base);
+  background-color: var(--branco-de-fundo);
   display: flex;
   flex-direction: column;
   border: 1px solid var(--preto-base);

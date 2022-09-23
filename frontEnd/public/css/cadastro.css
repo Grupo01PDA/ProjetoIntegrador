@@ -6,6 +6,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: var(--branco-base);
 }
 
 *{
@@ -21,7 +22,7 @@ body {
 
 .voltar a {
   text-decoration: none;
-  color: var(--branco-fundo);
+  color: var(--branco-base);
   transition: 300ms;
 }
 
@@ -45,7 +46,7 @@ main.main{
 }
 
 .cadastro {
-  background-color: var(--branco-base);
+  background-color: var(--branco-de-fundo);
   display: flex;
   flex-direction: column;
   border: 1px solid var(--preto-base);
@@ -56,6 +57,7 @@ main.main{
   height: 95.3vh;
   justify-content: center;
   align-items: center;
+  color: var(--preto-base);
 }
 .form {
   display: flex;
