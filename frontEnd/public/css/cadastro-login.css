@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
-:root{
-    --verde-base: #3DF5A7;
-    --azul-base: #096FE0;
-    --preto-base: #0f0f0f;
-    --branco-base: #f0f0f0;
-    --branco-fundo: #E6E6E6;
-    --preto-fundo: #1B1B1B;
-
-}
 *{
   margin: 0;
   padding: 0;
@@ -46,10 +37,7 @@ body.background-cadastro{
 }
 .voltar a{
   text-decoration: none;
-  color: var(--branco-base);
-}
-.voltar a:hover{
-  color: var(--verde-base);
+  color: var(--preto-base);
 }
 
 .escolha{
