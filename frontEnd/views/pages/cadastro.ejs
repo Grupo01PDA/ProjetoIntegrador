@@ -17,27 +17,29 @@
         </a>
     </div>
 
-    <div class="texto-cadrasto">
-        <h1>Pronto para<span> mudar </span><br>sua vida?</br></h1>
+    <main class="main">
 
-    </div>
+        <div class="texto-cadrasto">
+            <h1>Pronto para<span> mudar </span><br>sua vida?</br></h1>
+
+        </div>
 
 
 
-    <div class="cadastro">
-        <h2>CADASTRE-SE</h2>
+        <div class="cadastro">
+            <h2>CADASTRE-SE</h2>
             <form class="form">
                 <div class="cadastro_div">
                     <label class="label_cadastro" for="fname">Seu apelido</label>
                     <input class="input_cadastro" type="text" name="name" placeholder="Digite seu apelido...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Seu Nome</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu nome...">
+                    <label class="label_cadastro" for="nome">Seu Nome</label>
+                    <input class="input_cadastro" type="text" name="nome" placeholder="Digite seu nome...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Seu Sobrenome</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu sobre nome...">
+                    <label class="label_cadastro" for="sobrenome">Seu Sobrenome</label>
+                    <input class="input_cadastro" type="text" name="sobrenome" placeholder="Digite seu sobrenome...">
                 </div>
                 <div class="cadastro_div">
 
@@ -68,16 +70,16 @@
                 </div>
                 <div class="cadastro_div">
                     <label class="label_cadastro" for="email">Seu email</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="you@example.com">
+                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu email...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Sua senha</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="Digite sua senha...">
+                    <label class="label_cadastro" for="senha">Sua senha</label>
+                    <input class="input_cadastro" type="password" name="senha" placeholder="Digite sua senha...">
                 </div>
 
 
                 <div class="botao">
-                    <button class="button" type="button" onclick="enviar()">Cadastrar</button>
+                    <button class="button" type="button" onclick="">Cadastrar</button>
                     <div class="link-login">
                         Já tem uma conta?<br>
                         <a href="/login">Acesse</a>
@@ -85,6 +87,7 @@
                 </div>
             </form>
         </div>
+    </main>
     <script src="../../service/NewUserApi.js"></script>
 </body>
 
