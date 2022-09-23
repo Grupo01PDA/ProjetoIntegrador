@@ -4,7 +4,7 @@ const cors = require("cors")
 const usuarioRoute = require('../src/routes/user.routes')
 const rankRoute = require('./routes/rank.routes')
 const app = express()
-const port = 3306;
+const port = 3000;
 
 app.use(express.json())
 app.use(cors());
