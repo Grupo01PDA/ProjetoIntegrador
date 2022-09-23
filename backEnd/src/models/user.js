@@ -36,7 +36,8 @@ const Usuario = db.define('usuarios', {
     },
     sttsLogin: {
         type: Sequelize.DataTypes.BOOLEAN,
-        allowNull: false
+        default: false,
+        allowNull: true
     }
 });
 

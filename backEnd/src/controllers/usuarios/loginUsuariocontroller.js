@@ -13,6 +13,7 @@ if(!usuarioExistente){
    }
  const senhaMatch = await compare(senha, usuarioExistente.senha)
 if(senhaMatch){
+    usuarioExistente.sttsLogin = true;
     await usuario.update({
         id: usuarioExistente.id,
         apelido: usuarioExistente.apelido,
@@ -21,7 +22,7 @@ if(senhaMatch){
         escolaridade: usuarioExistente.escolaridade,
         email: usuarioExistente.email,
         senha: usuarioExistente.senha,
-        sttsLogin: true
+        sttsLogin: usuarioExistente.sttsLogin
     },{where: {id: usuarioExistente.id}})
 }
 const usuarioAtualizado = await usuario.findOne({where:{
