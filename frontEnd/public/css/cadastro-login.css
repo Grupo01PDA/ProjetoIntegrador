@@ -12,7 +12,7 @@
   width: 100%;
   height: 6.5vw;
   display: flex;
-  justify-content: end;
+justify-content: space-between;
   align-items: center;
 }
 
@@ -31,10 +31,11 @@
 .pagina {
   background-color: var(--branco-maximo) ;
   width: 100%;
-  height: 50.7vw;
+  height: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block-end: 0;
 }
 
 .card{
@@ -47,12 +48,12 @@
 }
 
 .img{
-  margin-left: 3.5rem;
+  margin-left: 5rem;
 
 }
 .texto-botao{
  
-  margin-right: 2.5rem;
+  margin-right: 3rem;
 
 }
 
@@ -122,3 +123,13 @@
   height: 200px;
   align-items: center;
 }
+
+.frase{
+  width: 100%;
+  height: 3rem;
+  
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+} 
