@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/usuario.css" id="tema">
-    <link rel="stylesheet" href="css/header.css" id="temaHeader">
-    <link rel="stylesheet" href="css/footer.css" id="temaFooter">
+    <link rel="stylesheet" href="./css/root.css"  id="tema">
+    <link rel="stylesheet" href="./css/usuario.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/emptyUser.css">
     <title>Página de usuário</title>
 </head>
 
@@ -25,6 +27,7 @@
                 </div>
 
                 <button class="button-edit" id="modalCadastro" type="button">Editar perfil</button>
+                <!--MODAL EDIÇÃO DE USUÁRIO-->
                 <div id="modalJanela" class="modal">
                     <div class="window">
                         <span id="fechar" class="fechar">&times;</span>
@@ -65,6 +68,7 @@
                     </div>
                 </div>
             </div>
+            <!--NAVEGAÇÃO DE POSTS, FAVORITOS ...-->
             <nav class="posts_etc">
                 <button id="posts" class="postagens">
                     <svg class="posts-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -104,36 +108,12 @@
                 </button>
             </nav>
             <div id="feed" class="feed">
-                <div class="posts-feed">
-                    <div class="card">
-                        <img class="card-post" src="/imagens/LogoHS.png" alt="logo do site">
-                    </div>
-                    <div class="card">
-                        <img class="card-post" src="/imagens/LogoHS.png" alt="logo do site">
-                    </div>
-                </div>
-
-                <div class="salvos-feed">
-                    <div class="card">
-                        <img class="card-post" src="/imagens/fundo-user.png" alt="logo do site">
-                    </div>
-                    <div class="card">
-                        <img class="card-post" src="/imagens/fundo-user.png" alt="logo do site">
-                    </div>
-                </div>
-
-                <div class="gabaritos-feed">
-                    <div class="card">
-                        <img class="card-post" src="/imagens/IconUser.png" alt="icone">
-                    </div>
-                    <div class="card">
-                        <img class="card-post" src="/imagens/IconUser.png" alt="icone">
-                    </div>
-                </div>
+                <%- include('../partials/empty') %> 
             </div>
         </main>
         <%- include('../partials/footer') %>
-            <script type="text/javascript" src="/js/usuario.js"></script>
+        <script type="text/javascript" src="./js/usuario.js"></script>
+        <script type="text/javascript" src="./js/trocaDeTema.js"></script>
 </body>
 
 </html>

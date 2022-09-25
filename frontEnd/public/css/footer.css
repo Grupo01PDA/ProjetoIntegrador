@@ -1,16 +1,4 @@
 /*=============GERAL=============*/
-:root {
-  /*cores*/
-  --azul-base: #096fe0;
-  --verde-base: #3df5a7;
-  --branco-base: #f0f0f0;
-  --preto-base: #0f0f0f;
-  --branco-de-fundo: #e6e6e6;
-  --preto-de-fundo: #1b1b1b;
-  --branco-maximo: #ffffff;
-
-  --header: 5.5rem;
-}
 * {
   box-sizing: border-box;
   font-family: 'Arial';
@@ -23,9 +11,10 @@ footer {
   background-color: var(--branco-base);
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: relative;
-  z-index: 10;
-  padding: 2rem;
+  z-index: 1;
+  height: var(--header);
   color: var(--preto-base);
 }
 footer a:hover {
