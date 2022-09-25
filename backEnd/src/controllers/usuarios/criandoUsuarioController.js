@@ -14,7 +14,8 @@ const criandoUsuarioController = async (req, res)=>{
       sobrenome,
       escolaridade,
       email,
-      senha: senhaHash
+      senha: senhaHash,
+      sttsLogin: true
   })
   return res.status(201).json({ usuario: novoUsuario })
 };
