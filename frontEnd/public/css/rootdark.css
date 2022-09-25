@@ -1,0 +1,22 @@
+:root {
+  /*cores*/
+  --azul-base: #3df5a7;
+  --verde-base: #096fe0;
+  --branco-base: #0f0f0f;
+  --preto-base: #f0f0f0;
+  --branco-de-fundo: #1b1b1b;
+  --preto-de-fundo: #e6e6e6;
+  --branco-maximo: #ffffff;
+
+  --header: 5.5rem;
+  --barra-lateral: 15rem;
+  --cardW: 37.8rem;
+  --cardH: 25rem;
+  --border-radius: 2rem;
+  --card-border-redius: 1rem;
+  --card-padding: 1rem;
+
+  /*lupa, barra de pesquisa*/
+  --size-lupa: 1.5rem;
+  --busca-size: 20rem;
+}

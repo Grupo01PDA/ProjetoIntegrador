@@ -1,16 +1,4 @@
 /*=============GERAL=============*/
-:root {
-    /*cores*/
-    --azul-base: #096fe0;
-    --verde-base: #3df5a7;
-    --branco-base: #f0f0f0;
-    --preto-base: #0f0f0f;
-    --branco-de-fundo: #e6e6e6;
-    --preto-de-fundo: #1b1b1b;
-    --branco-maximo: #ffffff;
-
-    --header: 5.5rem;
-}
 * {
     box-sizing: border-box;
     font-family: 'Arial';
@@ -43,9 +31,9 @@ header.header {
 .divBusca {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--branco-maximo);
-    width: fit-content;
+    width: calc(var(--busca-size) + var(--size-lupa) + 0.5rem);
     border-radius: 3rem;
 }
 .txtBusca {
@@ -54,15 +42,14 @@ header.header {
     font-style: italic;
     font-size: 1rem;
     border: none;
-    height: 1.5rem;
-    width: 20rem;
+    height: 2rem;
+    width: var(--busca-size);
     outline: none;
 }
 .lupa {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    width: 2rem;
 }
 
 /*links*/
@@ -91,9 +78,4 @@ header.header {
 }
 label.checkbox svg {
     fill: var(--preto-base);
-}
-
-/*menu-hamburguer*/
-#btn-mobile {
-    display: none;
 }

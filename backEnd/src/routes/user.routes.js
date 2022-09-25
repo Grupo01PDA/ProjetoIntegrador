@@ -3,6 +3,7 @@ const chamandoUsuarioApelidoController = require("../controllers/usuarios/chaman
 const criandoUsuarioController = require("../controllers/usuarios/criandoUsuarioController");
 const deletandoUsuarioController = require("../controllers/usuarios/deletandoUsuarioController");
 const mudandoUsuarioController = require("../controllers/usuarios/mudandoUsuarioController");
+const loginUsuarioController = require("../controllers/usuarios/loginUsuarioController")
 
 const usuarioRoute = express.Router();
 
@@ -13,5 +14,7 @@ usuarioRoute.get("/usuario/:apelido", chamandoUsuarioApelidoController);
 usuarioRoute.put("/usuario/:id", mudandoUsuarioController);
 
 usuarioRoute.delete('/usuario/:id',deletandoUsuarioController);
+
+usuarioRoute.post("/usuario/login", loginUsuarioController)
 
 module.exports = usuarioRoute;

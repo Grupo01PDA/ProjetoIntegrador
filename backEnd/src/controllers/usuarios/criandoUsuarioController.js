@@ -1,4 +1,4 @@
-await db.sync()
+const {hash} = require('bcrypt')
 const criandoUsuarioController = async (req, res)=>{
   const db = require('../../connection/db')
   const usuario = require('../../models/user')
