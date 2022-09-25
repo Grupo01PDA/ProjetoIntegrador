@@ -6,8 +6,8 @@ const criandoUsuarioController = async (req, res)=>{
   //caso não existe ele cria
   //se existe ele insere os dados na tabela
   await db.sync()
-  const { apelido, nome, sobrenome, escolaridade, email, senha  } = req.body
-  const senhaHash = await hash(senha, 8)
+  const { apelido, nome, sobrenome, escolaridade, email, senha } = req.body
+  const senhaHash = await hash(senha,8)
   const novoUsuario = await usuario.create({
       apelido,
       nome,
