@@ -4,6 +4,7 @@ const criandoUsuarioController = require("../controllers/usuarios/criandoUsuario
 const deletandoUsuarioController = require("../controllers/usuarios/deletandoUsuarioController");
 const mudandoUsuarioController = require("../controllers/usuarios/mudandoUsuarioController");
 const loginUsuarioController = require("../controllers/usuarios/loginUsuarioController")
+const deslogandoUsuarioController = require("../controllers/usuarios/deslogandoUsuarioController")
 
 const usuarioRoute = express.Router();
 
@@ -15,6 +16,8 @@ usuarioRoute.put("/usuario/:id", mudandoUsuarioController);
 
 usuarioRoute.delete('/usuario/:id',deletandoUsuarioController);
 
-usuarioRoute.post("/usuario/login", loginUsuarioController)
+usuarioRoute.post("/usuario/login", loginUsuarioController);
+
+usuarioRoute.post("/usuario/deslogar", deslogandoUsuarioController);
 
 module.exports = usuarioRoute;
