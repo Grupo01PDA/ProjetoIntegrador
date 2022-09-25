@@ -1,30 +1,27 @@
-const { response } = require('express')
 const express = require('express')
 const app = express()
 const port = 4000
 
 app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: false}))
+app.use(express.json())
 app.use(express.static(__dirname + '/public'))
 
+const paginaInicial = require("./routes/paginaInicial")
+const conectar = require("./routes/conexao")
+const cadastro = require("./routes/cadastro")
+const login = require("./routes/login")
 
-app.get('/', (req, res) => {
-    res.render('pages/index')
-})
+app.get('/', paginaInicial)
 
-app.get('/cadastro-login', (req, res) => {
-    res.render('pages/cadastro-login')
-})
+app.get("/conectar", conectar)
 
-app.get('/cadastro', (req, res) => {
-    res.render('pages/cadastro')
-})
+app.get('/cadastro', cadastro)
+
+app.get('/login', login)
 
 app.get('/erro', (req, res) => {
     res.render('pages/Erro')
-})
-
-app.get('/login', (req, res) => {
-    res.render('pages/login')
 })
 
 app.get('/noticias', (req, res) => {
