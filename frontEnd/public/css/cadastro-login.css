@@ -9,112 +9,65 @@
 
 ::-webkit-scrollbar {
   width: 5px;
-
-
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--verde-base), var(--azul-base));
-
-
+  background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
 }
 
-.header {
-  background-color: var(--preto-base);
-  width: 100%;
-  height: 6.5vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.botoes {
-  display: flex;
-}
-
-.entrar {
-  margin-right: 2rem;
-}
-
-.cadrastar {
-  margin-right: 4rem;
-}
-
-.pagina {
-  background-color: var(--branco-maximo);
-  width: 100%;
-  height: 40vw;
+main{
+  background-color: var(--branco-de-fundo);
+  color: var(--preto-base);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-block-end: 0;
+  gap: 10rem;
+  padding-bottom: var(--header);
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .card {
-  background-color: var(--branco-maximo);
-  width: 85%;
-  height: 85%;
+  margin-top: calc(var(--header) + 5rem);
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-}
-
-.img {
-  margin-left: 5rem;
-
-}
-
-.texto-botao {
-
-  margin-right: 3rem;
-
+  gap: 3rem;
 }
 
 .imagem {
-  background-color: var(--azul-base);
-  width: 300px;
-  height: 300px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
 }
 
 .botao-principal {
   border: none;
-  color: black;
+  color: var(--branco-base);
   padding: 1rem 4rem;
   margin: auto;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   background-color: var(--azul-base);
   border-radius: 20rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  transition: 300ms;
-
+  transition: 250ms;
 }
 
 .lorem {
-  margin-block-end: 60px;
+  margin-block-end: 3rem;
 }
 
 .botao-entrar {
   border: none;
-  color: var(--branco-maximo);
-  padding: 0.6rem 2rem;
-  margin: auto;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: var(--azul-base);
-  border-radius: 20rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  transition: 300ms;
-}
-
-
-.cadrastar-botao {
-  border: none;
-  color: var(--branco-maximo);
+  color: var(--preto-base);
   padding: 0.6rem 2rem;
   margin: auto;
   text-decoration: none;
@@ -128,86 +81,73 @@
 }
 
 
-.texto-central {
-  background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
-  align-items: center;
+.cadastrar-botao {
+  border: none;
+  color: var(--branco-base);
+  padding: 0.6rem 2rem;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--azul-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
 }
-
-.frase {
-  width: 100%;
-  height: 4rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-}
-
 
 .texto-fotos {
-  width: 100%;
-  height: 85%;
   display: flex;
-  justify-content: center;
   align-items: center;
-
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
 }
 
 .photo {
-  width: 300px;
-  height: 300px;
-  background-color: var(--azul-base);
-  margin-top: 6rem;
-  margin-left: 6rem;
-
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/21/13/32/girl-2771936_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
 }
-
-.container {
-  align-items: center;
-  justify-content: center;
-
-
-}
-
-
 .texto-1 {
-  width: 300px;
-  height: 300px;
-  margin-top: 5rem;
-  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+}
+.texto-1 h2{
+  font-size: 1.5rem;
 }
 
 .texto-2 {
-  width: 300px;
-  height: 300px;
-  margin-top: 6rem;
-  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+}
+.texto-2 h2{
+  font-size: 1.5rem;
 }
 
 .photo-1 {
-  width: 300px;
-  height: 300px;
-  background-color: var(--azul-base);
-  margin-top: 6rem;
-  margin-right: 6rem;
-
-}
-
-.materias {
-  width: 98.9vw;
-  height: 98.9vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
+  background-image: url("https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
 }
 
 .photo-materias {
-  width: 70vw;
+  width: 100%;
   height: 70vh;
-  background-color: var(--azul-base);
-
+  background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
