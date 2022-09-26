@@ -1,4 +1,4 @@
-import loginUsuario from "../../service/loginUsuario.js";
+import loginUsuario from '../../service/loginUsuario.js'
 
 const getLoginControler = {
   viewLogin: (req, res) => {
@@ -7,7 +7,7 @@ const getLoginControler = {
   postLogin: (req, res) => {
     let user = req.body
     loginUsuario(user)
-    res.redirect("/");
+    res.redirect('/usuario')
   }
 }
 
