@@ -48,19 +48,19 @@
         </div>
         <div class="cadastro">
             <h2>CONECTE-SE</h2>
-            <form class="form">
+            <form action="/login" method="POST" class="form">
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Seu email</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu email...">
+                    <label class="label_cadastro" for="email">Email:</label>
+                    <input class="input_cadastro" type="email" name="email" id="email" placeholder="Digite seu email...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Sua senha</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="Digite sua senha...">
+                    <label class="label_cadastro" for="senha">Senha:</label>
+                    <input class="input_cadastro" type="password" name="senha" id="senha" placeholder="Digite sua senha...">
                 </div>
 
 
                 <div class="botao">
-                    <button class="button" type="button" onclick="">Conectar</button>
+                    <button class="button" type="submit">Conectar</button>
                     <div class="link-login">
                         Ainda não tem conta?<br>
                         <a href="/cadastro">Faça seu cadastro</a>

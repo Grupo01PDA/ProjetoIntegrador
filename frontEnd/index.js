@@ -27,6 +27,8 @@ app.post('/cadastro', cadastro)
 
 app.get('/login', login)
 
+app.post('/login', login)
+
 app.get('/erro', (req, res) => {
     res.render('pages/Erro')
 })
