@@ -1,22 +1,29 @@
-const express = require('express')
+import express from "express"
+import path from "path"
+import {fileURLToPath} from 'url'
 const app = express()
 const port = 4000
+const __filename = fileURLToPath(import.meta.url);
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
+
+const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname + '/public'))
 
-const paginaInicial = require("./routes/paginaInicial")
-const conectar = require("./routes/conexao")
-const cadastro = require("./routes/cadastro")
-const login = require("./routes/login")
+import paginaInicial from "./routes/paginaInicial.js"
+import conectar from "./routes/conexao.js"
+import cadastro from "./routes/cadastro.js"
+import login from "./routes/login.js"
 
 app.get('/', paginaInicial)
 
 app.get("/conectar", conectar)
 
 app.get('/cadastro', cadastro)
+
+app.post('/cadastro', cadastro)
 
 app.get('/login', login)
 

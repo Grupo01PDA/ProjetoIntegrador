@@ -1,10 +1,10 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
 
-const getCadastroControler = require('../controllers/connection/cadastroController')
+import getCadastroControler from '../controllers/connection/cadastroController.js'
 
-router.get('/cadastro', getCadastroControler.viewCadastro);
+router.get('/cadastro', getCadastroControler.viewCadastro)
 
-router.post('/cadastro', getCadastroControler.postCadastro);
+router.post('/cadastro', getCadastroControler.postCadastro)
 
-module.exports = router
+export default router;

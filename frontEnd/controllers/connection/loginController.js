@@ -4,4 +4,4 @@ const getLoginControler = {
   }
 }
 
-module.exports = getLoginControler;
+export default getLoginControler

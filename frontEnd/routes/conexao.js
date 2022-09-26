@@ -1,8 +1,8 @@
-const express = require('express')
+import express from "express"
 const router = express.Router()
 
-const cadastroELogin = require('../controllers/connection/cadastroELogin')
+import cadastroELogin from "../controllers/connection/cadastroELogin.js"
 
 router.get('/conectar', cadastroELogin.viewCadastroELogin)
 
-module.exports = router
+export default router;

@@ -1,8 +1,8 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
-const paginaInicialTela = require("../controllers/paginaInicialTela")
+import paginaInicialTela from "../controllers/paginaInicialTela.js"
 
 router.get("/", paginaInicialTela.viewTela);
 
-module.exports = router;
+export default router

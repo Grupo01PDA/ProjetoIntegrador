@@ -4,4 +4,4 @@ let paginaInicialTela = {
   }
 }
 
-module.exports = paginaInicialTela;
+export default paginaInicialTela;

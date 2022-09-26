@@ -22,7 +22,7 @@ const Usuario = db.define('usuarios', {
         allowNull: false
     },
     escolaridade: {
-        type: Sequelize.DataTypes.INTEGER(4),
+        type: Sequelize.DataTypes.STRING(1),
         allowNull: false
     },
     email: {

@@ -4,4 +4,4 @@ const cadastroELogin = {
   }
 }
 
-module.exports = cadastroELogin;
+export default cadastroELogin;
