@@ -4,6 +4,7 @@ import {fileURLToPath} from 'url'
 const app = express()
 const port = 4000
 const __filename = fileURLToPath(import.meta.url);
+import session from "express-session";
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false}))
@@ -11,6 +12,11 @@ app.use(express.json())
 
 const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname + '/public'))
+app.use(session({
+    secret: "batatinha123",
+    resave: true,
+    saveUninitialized: true
+}))
 
 import paginaInicial from "./routes/paginaInicial.js"
 import conectar from "./routes/conexao.js"
@@ -26,6 +32,8 @@ app.get('/cadastro', cadastro)
 app.post('/cadastro', cadastro)
 
 app.get('/login', login)
+
+app.post('/login', login)
 
 app.get('/erro', (req, res) => {
     res.render('pages/Erro')
