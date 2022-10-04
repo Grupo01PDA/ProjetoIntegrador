@@ -52,7 +52,10 @@ h2 {
   background-color: var(--branco-de-fundo);
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--preto-base);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 4px -2px #989898;
+  -moz-box-shadow: 0 4px 4px -2px #989898;
+  -webkit-box-shadow: 0 4px 4px -2px #989898;
   border-radius: 2rem;
   padding: 2rem;
   margin-top: 1rem;
