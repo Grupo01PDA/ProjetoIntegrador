@@ -43,6 +43,3 @@ const Usuario = db.define('usuarios', {
 
 module.exports = Usuario;
 
-// 1 parametro NOME DA TABELA
-// 2 parametro sao as colunas que devem ter na
-// tabela
