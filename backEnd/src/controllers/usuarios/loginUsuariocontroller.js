@@ -29,7 +29,7 @@ async function loginUsuarioController(req, res) {
       },
       { where: { id: usuarioExistente.id } }
     )
-  armazenar = usuarioExistente
+  armazenar = await usuarioExistente
   } else {
     return res.status(403).json({ mensagem: 'email ou senha inválido' })
   }
@@ -43,6 +43,7 @@ async function loginUsuarioController(req, res) {
 function getUsuario(){
   return armazenar
 }
+console.log()
 
 module.exports = {getUsuario, loginUsuarioController}
 
