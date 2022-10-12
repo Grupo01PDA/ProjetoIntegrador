@@ -2,7 +2,7 @@ import "./index.css";
 
 function BarraLateral(){
   return(
-    <nav class="barra-lateral">
+    <aside class="barra-lateral">
       <ul class="lista">
         <li><a href="/">Perfil</a></li>
         <li><a href="/">Crie seu Cronograma</a></li>
@@ -12,7 +12,7 @@ function BarraLateral(){
         <li><a href="/">Gabaritos</a></li>
         <li><a href="/">Encontre um Professor</a></li>
       </ul>
-    </nav>
+    </aside>
   )
 }
 
