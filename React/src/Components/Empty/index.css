@@ -1,0 +1,9 @@
+section.empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--preto-base);
+  width: 80vw;
+  height: calc(100vh - (var(--header) * 2) - 1rem);
+}
