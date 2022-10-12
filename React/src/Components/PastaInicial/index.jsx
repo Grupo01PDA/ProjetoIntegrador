@@ -1,9 +1,12 @@
 import Header from "../Header";
-
+import BarraLateral from "../BarraLateral";
 
 function PaginaInicial(){
   return(
-    <Header />
+    <main>
+      <Header />
+      <BarraLateral />
+    </main>
   )
 }
 
