@@ -1,10 +1,10 @@
 import './App.css'
-import Header from './Components/Header'
+import PaginaInicial from "./Components/PastaInicial"
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
+    <div>
+      <PaginaInicial />
     </div>
   )
 }

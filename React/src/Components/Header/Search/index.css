@@ -1,0 +1,23 @@
+.divBusca {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--branco-maximo);
+  width: calc(var(--busca-size) + var(--size-lupa) + 0.5rem);
+  border-radius: 3rem;
+}
+.txtBusca {
+  background-color: transparent;
+  padding-left: 0.5rem;
+  font-style: italic;
+  font-size: 1rem;
+  border: none;
+  height: 2rem;
+  width: var(--busca-size);
+  outline: none;
+}
+.lupa {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
