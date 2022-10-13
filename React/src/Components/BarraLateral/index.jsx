@@ -3,7 +3,7 @@ import "./index.css";
 function BarraLateral(){
   return(
     <nav class="barra-lateral">
-      <ul class="lista">
+      <ul class="lista">li
         <li><a href="/">Perfil</a></li>
         <li><a href="/">Crie seu Cronograma</a></li>
         <li><a href="/">Grupos</a></li>

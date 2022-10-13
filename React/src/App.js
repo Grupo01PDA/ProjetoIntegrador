@@ -1,10 +1,10 @@
 import './App.css'
-import PaginaInicial from "./Components/PastaInicial"
+import PgUsuario from "./Components/PgUsuario"
 
 function App() {
   return (
     <div>
-      <PaginaInicial />
+      <PgUsuario/>
     </div>
   )
 }
