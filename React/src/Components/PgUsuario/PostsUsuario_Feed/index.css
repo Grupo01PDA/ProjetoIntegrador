@@ -1,0 +1,94 @@
+nav.posts_etc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--preto-base);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--branco-de-fundo);
+    color: var(--preto-base);
+}
+
+.posts_etc button.postagens,
+.posts_etc button.salvos,
+.posts_etc button.gabaritos {
+    border: none;
+    background: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: 300ms;
+    color: var(--preto-base);
+}
+
+.posts_etc button.btnActive {
+    background-color: var(--azul-base);
+    color: var(--branco-base);
+}
+
+.posts_etc button.postagens.btnActive svg.posts-svg [stroke*='#0F0F0F'],
+.posts_etc button.salvos.btnActive svg.salvos-svg [stroke*='#0F0F0F'],
+.posts_etc button.gabaritos.btnActive svg.provas-svg [stroke*='#0F0F0F'] {
+    stroke: var(--branco-base);
+}
+
+
+.posts_etc button.postagens svg.posts-svg [stroke*='#0F0F0F'],
+.posts_etc button.salvos svg.salvos-svg [stroke*='#0F0F0F'],
+.posts_etc button.gabaritos svg.provas-svg [stroke*='#0F0F0F'] {
+    stroke: var(--preto-base);
+}
+
+/*=============FEED============== */
+.feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    overflow-x: hidden;
+    background-color: var(--branco-de-fundo);
+}
+.posts-feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    width: 100vw;
+    justify-content: center;
+}
+
+.salvos-feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    width: 100vw;
+    justify-content: center;
+}
+
+.gabaritos-feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    width: 100vw;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--azul-base);
+    width: var(--cardW);
+    height: var(--cardH);
+}
+
+.card-post{
+    max-height: var(--cardH);
+}
