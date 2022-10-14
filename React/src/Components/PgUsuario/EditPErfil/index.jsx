@@ -1,5 +1,5 @@
-import  "./index.css"
-import FundoUser from "../../../../public/images"
+import "./index.css";
+import FundoUser from "./fundo-user.png";
 
 function EditPErfil() {
 
@@ -7,7 +7,7 @@ function EditPErfil() {
         <main class="main">
             <div class="info_perfil">
                 <div class="perfil">
-                    <img src={FundoUser}   alt="loading" />
+                    return <img src={FundoUser} alt="loading" />;
                     <div class="name_e-mail">
                         <h1>aaaa</h1>
                         <p>aaaaa</p>

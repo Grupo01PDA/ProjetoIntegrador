@@ -1,5 +1,4 @@
 import "index.css";
-import AnyImg from "../../../../public/"
 
 function PostsUsuarios_Feed(){
     
@@ -45,4 +44,4 @@ function PostsUsuarios_Feed(){
     )
 }
 
-export default PostsUsuarios_Feed;
+// export default PostsUsuarios_Feed;
