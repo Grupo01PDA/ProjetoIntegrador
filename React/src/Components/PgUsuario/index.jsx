@@ -1,12 +1,16 @@
 import Header from "../Header"
 import PostsUsuarios_Feed from "./PostsUsuario_Feed";
+import EditPErfil from "../PgUsuario/EditPErfil"
 
-function PgUsuario() {
+
+
+function PgUsuario() { 
     return(
-       <div>
-       <Header/>
-       <PostsUsuarios_Feed/>
+       <div> 
+    <Header/>
+    <EditPErfil/>
        </div>
+
     );
 }
 export default PgUsuario;
