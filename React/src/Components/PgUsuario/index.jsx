@@ -1,10 +1,15 @@
 import Header from "../Header"
+import EditPErfil from "../PgUsuario/EditPErfil"
 
-function PgUsuario() {
+
+
+function PgUsuario() { 
     return(
-       <div>
-       <Header/>
+       <div> 
+    <Header/>
+    <EditPErfil/>
        </div>
+
     );
 }
 export default PgUsuario;
