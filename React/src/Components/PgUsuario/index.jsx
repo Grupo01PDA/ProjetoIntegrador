@@ -2,7 +2,7 @@ import Header from "../Header";
 import EditPErfil from "../PgUsuario/EditPErfil";
 import Usuarios_Feed from "./Usuario_Feed/index";
 import Empty from "../Empty";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 
 function PgUsuario() { 
     return(
@@ -11,7 +11,6 @@ function PgUsuario() {
     <EditPErfil/>
     <Usuarios_Feed/>
     <Empty/>
-    <Footer/>
        </div>
 
 );
