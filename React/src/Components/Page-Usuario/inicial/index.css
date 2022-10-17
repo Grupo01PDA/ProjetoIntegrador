@@ -15,7 +15,7 @@ main.main {
 .info_perfil {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: url('../images/fundo-user.png');
+  
     background-position: 0%;
     display: flex;
     justify-content: space-around;
