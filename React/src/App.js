@@ -3,7 +3,6 @@ import Home from './pages/Home'
 import './App.css'
 import Cadastro from './pages/cadastro'
 
-import Usuario from './pages/Usuario'
 
 
 function App() {
@@ -12,8 +11,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/usuario" element={<Usuario />} /> 
-
       </Routes>
     </Router>
 
