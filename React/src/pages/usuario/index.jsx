@@ -1,9 +1,10 @@
+import PgUsuario from "../../Components/Page-Usuario/inicial";
+
 
 function Usuario(){
-
     return(
-        <TextoPrincipal/>
-    )
+        <PgUsuario/>
+    );
 }
 
 export default Usuario;
