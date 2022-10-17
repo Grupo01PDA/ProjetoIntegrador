@@ -1,11 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
 import './App.css'
-import PaginaInicial from "./Components/PastaInicial"
 
 function App() {
   return (
-    <div>
-      <PaginaInicial />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+
+
   )
 }
 
