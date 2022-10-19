@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
+}
+
+main{
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--branco-de-fundo);
+  color: var(--preto-base);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+  padding-bottom: var(--header);
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.card {
+  margin-top: calc(var(--header) + 5rem);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.imagem {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
+}
+
+.botao-principal {
+  border: none;
+  color: var(--branco-base);
+  padding: 1rem 4rem;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: var(--azul-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 250ms;
+}
+
+.lorem {
+  margin-block-end: 3rem;
+}
+
+.texto-fotos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.photo {
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/21/13/32/girl-2771936_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
+}
+.texto-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+}
+.texto-1 h2{
+  font-size: 1.5rem;
+}
+
+.texto-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+}
+.texto-2 h2{
+  font-size: 1.5rem;
+}
+
+.photo-1 {
+  background-image: url("https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20rem;
+  height: 20rem;
+}
+
+.photo-materias {
+  width: 100%;
+  height: 70vh;
+  background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
