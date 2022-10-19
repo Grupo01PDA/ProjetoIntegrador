@@ -3,7 +3,7 @@ import "./index.css";
 function Connection() {
   return(
     <div className="links">
-      <a className="link" href="/">Entre</a>
+      <a className="link" href="/entrar">Entre</a>
 
       <input className="input-check" type="checkbox" id="checkbox" />
       <label class="checkbox" for="checkbox">

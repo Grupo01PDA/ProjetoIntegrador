@@ -1,0 +1,18 @@
+footer {
+  background-color: var(--branco-base);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: var(--header);
+  color: var(--preto-base);
+}
+footer a:hover {
+  text-decoration: none;
+  color: var(--azul-base);
+}
+footer a {
+  text-decoration: none;
+  color: var(--preto-base);
+}

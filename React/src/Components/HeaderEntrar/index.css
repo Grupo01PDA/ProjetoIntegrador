@@ -1,0 +1,56 @@
+.header {
+  background-color: var(--branco-base);
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  height: var(--header);
+  padding: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 2rem;
+}
+
+.cadastrar-botao {
+  border: none;
+  color: var(--branco-base);
+  padding: 0.6rem 2rem;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--azul-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.login-botao {
+  border: none;
+  color: var(--preto-base);
+  padding: 0.6rem 2rem;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--verde-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.input-check {
+  display: none;
+}
+label.checkbox svg {
+  fill: var(--preto-base);
+}

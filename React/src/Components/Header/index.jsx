@@ -5,7 +5,7 @@ import Connection from "./Connection";
 function Header() {
   return (
     <div className="header">
-      <a href="/PaginaInicial">
+      <a href="/">
         <img src="./images/logo.svg" alt="logoHomeStudy" />
       </a>
       <Search />

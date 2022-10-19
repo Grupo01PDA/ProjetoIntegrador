@@ -1,16 +1,9 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Arial';
-    margin: 0;
-    padding: 0;
-  }
-  
-  section.empty{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--preto-base);
-    width: 100vw;
-    height: calc(50vh - (var(--header) * 2) - 1rem);
-  }
+section.empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--preto-base);
+  width: 80vw;
+  height: calc(100vh - (var(--header) * 2) - 1rem);
+}

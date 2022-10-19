@@ -1,0 +1,21 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import './App.css'
+import Cadastro from './pages/Cadastro'
+import Entrar from './pages/Entrar'
+
+
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={ <Home /> } exact />
+        <Route path='/cadastro' element={ <Cadastro /> } />
+        <Route path='/entrar' element={ <Entrar /> } />
+      </Routes>
+    </Router>
+  )
+}
+
+export default App;
