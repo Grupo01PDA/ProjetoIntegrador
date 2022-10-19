@@ -1,7 +1,6 @@
 body {
-    background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
+    
     font-family: 'Open Sans', sans-serif;
-    display: flex;
     align-items: center;
     justify-content: space-around;
     color: var(--branco-base);
@@ -9,6 +8,7 @@ body {
 
 
   main.main{
+    background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
     display: flex;
     justify-content: space-evenly;
     height: 100vh;

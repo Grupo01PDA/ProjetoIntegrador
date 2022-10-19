@@ -1,7 +1,7 @@
-import Header from "../Header";
-import Footer from "../Footer"
-import BarraLateral from "../BarraLateral";
-import Empty from "../Empty"
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer"
+import BarraLateral from "../../Components/BarraLateral";
+import Empty from "../../Components/Empty"
 import "./index.css";
 
 function PaginaInicial(){
