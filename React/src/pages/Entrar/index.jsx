@@ -7,7 +7,7 @@ function Entrar(){
     <div>
       <HeaderEntrar />
 
-      <main>
+      <main className="Entrar">
         <div className="card">
             <div className="texto-botao">
                 <div className="lorem">

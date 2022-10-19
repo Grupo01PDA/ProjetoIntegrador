@@ -8,7 +8,7 @@
   background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
 }
 
-main{
+main.Entrar{
   font-family: 'Open Sans', sans-serif;
   background-color: var(--branco-de-fundo);
   color: var(--preto-base);
