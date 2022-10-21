@@ -3,7 +3,7 @@ import "./index.css";
 
 function HeaderEntrar() {
   return (
-    <div className="header">
+    <div className="headerEntrar">
       <a href="/">
         <img src="./images/logo.svg" alt="logoHomeStudy" />
       </a>

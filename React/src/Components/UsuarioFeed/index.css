@@ -1,0 +1,49 @@
+nav.posts_etc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: var(--branco-de-fundo);
+    color: var(--preto-base);
+}
+
+.posts_etc button.postagens,
+.posts_etc button.salvos,
+.posts_etc button.gabaritos {
+    border: none;
+    background: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: 300ms;
+    color: var(--preto-base);
+}
+
+.posts_etc button.btnActive {
+    background-color: var(--azul-base);
+}
+span.userInputs{
+    color: var(--preto-base);
+}
+
+.posts_etc button.btnActive span.userInputs{
+    color: var(--branco-base);
+}
+
+.posts_etc button.postagens.btnActive svg.posts-svg [stroke*='#0F0F0F'],
+.posts_etc button.salvos.btnActive svg.salvos-svg [stroke*='#0F0F0F'],
+.posts_etc button.gabaritos.btnActive svg.provas-svg [stroke*='#0F0F0F'] {
+    stroke: var(--branco-base);
+}
+
+
+.posts_etc button.postagens svg.posts-svg [stroke*='#0F0F0F'],
+.posts_etc button.salvos svg.salvos-svg [stroke*='#0F0F0F'],
+.posts_etc button.gabaritos svg.provas-svg [stroke*='#0F0F0F'] {
+    stroke: var(--preto-base);
+}

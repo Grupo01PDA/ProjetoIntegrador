@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import './App.css'
 import Cadastro from './pages/Cadastro'
 import Entrar from './pages/Entrar'
+import PgUsuario from './pages/PgUsuario'
 
 
 
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={ <Home /> } exact />
         <Route path='/cadastro' element={ <Cadastro /> } />
         <Route path='/entrar' element={ <Entrar /> } />
+        <Route path='/usuario' element={ <PgUsuario /> } />
       </Routes>
     </Router>
   )

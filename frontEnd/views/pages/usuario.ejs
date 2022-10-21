@@ -15,105 +15,105 @@
 
 <body>
     <%- include("../partials/header") %>
-
-        <main class="main">
-            <div class="info_perfil">
-                <div class="perfil">
-                    <img src="/images/IconUser.png" alt="loading">
-                    <div class="name_e-mail">
-                        <h1>aaaa</h1>
-                        <p>aaaaa</p>
-                    </div>
+    <main class="main">
+        <div class="info_perfil">
+            <div class="perfil">
+                <img src="/images/IconUser.png" alt="loading">
+                <div class="name_e-mail">
+                    <h1>aaaa</h1>
+                    <p>aaaaa</p>
                 </div>
+            </div>
 
-                <button class="button-edit" id="modalCadastro" type="button">Editar perfil</button>
-                <!--MODAL EDIÇÃO DE USUÁRIO-->
-                <div id="modalJanela" class="modal">
-                    <div class="window">
-                        <span id="fechar" class="fechar">&times;</span>
-                        <form class="form">
-                            <main class="modalMain">
-                                <div class="coluna1">
-                                    <div class="bloco">
-                                        <label for="nome">Insira seu Nome:</label>
-                                        <input class="modalInput" type="text" name="nome" id="nome" placeholder="Insira seu Nome">
-                                    </div>
-                                    <div class="bloco">
-                                        <label for="email">Insira seu email:</label>
-                                        <input class="modalInput" type="email" name="email" id="email" placeholder="Insira seu Email">
-                                    </div>
+            <button class="button-edit" id="modalCadastro" type="button">Editar perfil</button>
+            <!--MODAL EDIÇÃO DE USUÁRIO-->
+            <div id="modalJanela" class="modal">
+                <div class="window">
+                    <span id="fechar" class="fechar">&times;</span>
+                    <form class="form">
+                        <main class="modalMain">
+                            <div class="coluna1">
+                                <div class="bloco">
+                                    <label for="nome">Insira seu Nome:</label>
+                                    <input class="modalInput" type="text" name="nome" id="nome" placeholder="Insira seu Nome">
                                 </div>
-                                <div class="coluna2">
-                                    <div class="bloco">
-                                        <label for="sobrenome">Insira seu Sobrenome:</label>
-                                        <input class="modalInput" type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu Sobrenome">
-                                    </div>
-                                    <div class="bloco">
-                                        <label for="grau">Selecione seu grau de escolaridade:</label>
-                                        <select class="modalInput" name="grau" id="grau">
-                                            <option value="1">Não conclui o Ensino Fundamental</option>
-                                            <option value="2">Conclui o Ensino Fundamental, não conclui o Ensino Médio
-                                            </option>
-                                            <option value="3" selected>Conclui o Ensino Médio, não tenho Ensino Superior
-                                            </option>
-                                            <option value="4">Tenho Ensino Superior</option>
-                                        </select>
-                                    </div>
+                                <div class="bloco">
+                                    <label for="email">Insira seu email:</label>
+                                    <input class="modalInput" type="email" name="email" id="email" placeholder="Insira seu Email">
                                 </div>
-                            </main>
-                            <div class="enviar">
-                                <input class="botao-enviar" type="submit" value="Enviar">
                             </div>
-                        </form>
-                    </div>
+                            <div class="coluna2">
+                                <div class="bloco">
+                                    <label for="sobrenome">Insira seu Sobrenome:</label>
+                                    <input class="modalInput" type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu Sobrenome">
+                                </div>
+                                <div class="bloco">
+                                    <label for="grau">Selecione seu grau de escolaridade:</label>
+                                    <select class="modalInput" name="grau" id="grau">
+                                        <option value="1">Não conclui o Ensino Fundamental</option>
+                                        <option value="2">Conclui o Ensino Fundamental, não conclui o Ensino Médio
+                                        </option>
+                                        <option value="3" selected>Conclui o Ensino Médio, não tenho Ensino Superior
+                                        </option>
+                                        <option value="4">Tenho Ensino Superior</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </main>
+                        <div class="enviar">
+                            <input class="botao-enviar" type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
             </div>
-            <!--NAVEGAÇÃO DE POSTS, FAVORITOS ...-->
-            <nav class="posts_etc">
-                <button id="posts" class="postagens">
-                    <svg class="posts-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="14" height="14" stroke="#0F0F0F" />
-                        <rect x="19.5" y="0.5" width="14" height="14" stroke="#0F0F0F" />
-                        <rect x="0.5" y="19.5" width="14" height="14" stroke="#0F0F0F" />
-                        <rect x="19.5" y="19.5" width="14" height="14" stroke="#0F0F0F" />
-                    </svg>
-                    <span>Meus posts</span>
-                </button>
-                <button id="salvos" class="salvos">
-                    <svg class="salvos-svg" width="28" height="36" viewBox="0 0 28 36" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1.5" y1="0.500488" x2="26.9438" y2="0.500488" stroke="#0F0F0F"
-                            stroke-linecap="round" />
-                        <path d="M1.1875 34.9996L1.1875 0.999976" stroke="#0F0F0F" stroke-linecap="round" />
-                        <path d="M1.1875 34.9994L14.2231 21.9638" stroke="#0F0F0F" stroke-linecap="round" />
-                        <path d="M27.2563 35L27.2563 1.00034" stroke="#0F0F0F" stroke-linecap="round" />
-                        <path d="M27.2563 34.9996L14.2208 21.9641" stroke="#0F0F0F" stroke-linecap="round" />
-                    </svg>
-                    <span>Salvos</span>
-                </button>
-                <button id="provas" class="gabaritos">
-                    <svg class="provas-svg" width="23" height="34" viewBox="0 0 23 34" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="21.6667" height="33" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="4.44543" x2="20.1943" y2="4.44543" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="8.56665" x2="20.1943" y2="8.56665" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="12.6879" x2="20.1943" y2="12.6879" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="16.8091" x2="20.1943" y2="16.8091" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="20.9303" x2="20.1943" y2="20.9303" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="25.0515" x2="20.1943" y2="25.0515" stroke="#0F0F0F" />
-                        <line x1="2.6792" y1="29.1727" x2="20.1943" y2="29.1727" stroke="#0F0F0F" />
-                    </svg>
-                    <span>Provas e Gabaritos</span>
-                </button>
-            </nav>
-            <div id="feed" class="feed">
-                <%- include('../partials/empty') %> 
-            </div>
-        </main>
-        <%- include('../partials/footer') %>
-        <script type="text/javascript" src="./js/usuario.js"></script>
-        <script type="text/javascript" src="./js/trocaDeTema.js"></script>
+        </div>
+        <!--NAVEGAÇÃO DE POSTS, FAVORITOS ...-->
+        <nav class="posts_etc">
+            <button id="posts" class="postagens">
+                <svg class="posts-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="14" height="14" stroke="#0F0F0F" />
+                    <rect x="19.5" y="0.5" width="14" height="14" stroke="#0F0F0F" />
+                    <rect x="0.5" y="19.5" width="14" height="14" stroke="#0F0F0F" />
+                    <rect x="19.5" y="19.5" width="14" height="14" stroke="#0F0F0F" />
+                </svg>
+                <span>Meus posts</span>
+            </button>
+            <button id="salvos" class="salvos">
+                <svg class="salvos-svg" width="28" height="36" viewBox="0 0 28 36" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.5" y1="0.500488" x2="26.9438" y2="0.500488" stroke="#0F0F0F"
+                        stroke-linecap="round" />
+                    <path d="M1.1875 34.9996L1.1875 0.999976" stroke="#0F0F0F" stroke-linecap="round" />
+                    <path d="M1.1875 34.9994L14.2231 21.9638" stroke="#0F0F0F" stroke-linecap="round" />
+                    <path d="M27.2563 35L27.2563 1.00034" stroke="#0F0F0F" stroke-linecap="round" />
+                    <path d="M27.2563 34.9996L14.2208 21.9641" stroke="#0F0F0F" stroke-linecap="round" />
+                </svg>
+                <span>Salvos</span>
+            </button>
+            <button id="provas" class="gabaritos">
+                <svg class="provas-svg" width="23" height="34" viewBox="0 0 23 34" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="21.6667" height="33" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="4.44543" x2="20.1943" y2="4.44543" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="8.56665" x2="20.1943" y2="8.56665" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="12.6879" x2="20.1943" y2="12.6879" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="16.8091" x2="20.1943" y2="16.8091" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="20.9303" x2="20.1943" y2="20.9303" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="25.0515" x2="20.1943" y2="25.0515" stroke="#0F0F0F" />
+                    <line x1="2.6792" y1="29.1727" x2="20.1943" y2="29.1727" stroke="#0F0F0F" />
+                </svg>
+                <span>Provas e Gabaritos</span>
+            </button>
+        </nav>
+        <div id="feed" class="feed">
+            <%- include('../partials/empty') %> 
+        </div>
+    </main>
+    <%- include('../partials/footer') %>
+    <script type="text/javascript" src="./js/usuario.js"></script>
+    <script type="text/javascript" src="./js/trocaDeTema.js"></script>
 </body>
+
 
 </html>
