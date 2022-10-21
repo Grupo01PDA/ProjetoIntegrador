@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0.5vw;
 }
 
 ::-webkit-scrollbar-thumb {

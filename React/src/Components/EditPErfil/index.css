@@ -1,26 +1,16 @@
-
-
-/*=============GERAL=============*/
-* {
-    box-sizing: border-box;
-    font-family: 'Arial';
-    margin: 0;
-    padding: 0;
-}
 /*=============MAIN=============*/
-main.main {
+div.usuarioEdit {
     padding-top: var(--header);
     background-color: var(--branco-de-fundo);
 }
 
 /*=============Perfil-usu=============*/
 .info_perfil {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-position: 0%;
+    background-color: var(--preto-de-fundo);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
 }
 .perfil {
     display: flex;
