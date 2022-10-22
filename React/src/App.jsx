@@ -1,11 +1,10 @@
-
 import './App.css';
-import Cadastro from './Components/Cadastro/TextoPrincipal';
+import Login from './Components/Login';
 
 function App() {
   return (
     <div className="App">
-      <Cadastro/>
+      <Login />
     </div>
   );
 }

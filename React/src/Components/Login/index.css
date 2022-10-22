@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
 
-body {
+main.login {
   background: linear-gradient(135deg, var(--verde-base), var(--azul-base));
   font-family: 'Open Sans', sans-serif;
   display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-}
-
-*{
-  margin: 0;
 }
 
 .voltar {
@@ -28,19 +27,10 @@ body {
   color: var(--azul-base);
   transition: 300ms;
 }
+
 h2 {
   color: var(--verde-base);
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  margin-bottom: 1rem;
-}
-main.main{
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
 }
 
 .cadastro {
@@ -51,10 +41,11 @@ main.main{
   border-radius: 2rem;
   padding: 0 4rem;
   height: 60vh;
-  width: 30vw;
+  width: 40vw;
   justify-content: center;
   align-items: center;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -77,11 +68,17 @@ main.main{
   outline: none;
 }
 
-.button {
+.botaoLogin{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.buttonLogin {
   border: none;
   color: var(--preto-base);
   padding: 1rem 2rem;
-  margin: auto;
   text-decoration: none;
   font-size: 1rem;
   cursor: pointer;
@@ -111,14 +108,10 @@ button:hover {
   text-decoration: none;
 }
 
-.botao {
-  display: flex;
-  width: 100%;
-}
-
 .texto-cadrasto {
   font-size: 1.5rem;
 }
+
 span {
   color: var(--azul-base);
 }
