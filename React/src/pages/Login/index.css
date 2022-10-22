@@ -28,12 +28,12 @@ main.login {
   transition: 300ms;
 }
 
-h2 {
+h2.spanConecte {
   color: var(--verde-base);
   font-weight: 700;
 }
 
-.cadastro {
+.caixaLogin {
   background-color: var(--branco-de-fundo);
   display: flex;
   flex-direction: column;
@@ -54,13 +54,13 @@ h2 {
   width: 100%;
 }
 
-.cadastro_div {
+.login_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.input_cadastro {
+.input_login {
   background-color: var(--branco-maximo);
   border-radius: 0.8rem;
   border: solid 0.2px var(--preto-base);
@@ -89,7 +89,7 @@ h2 {
   transition: 300ms;
 }
 
-button:hover {
+.buttonLogin:hover {
   background-color: var(--azul-base);
   color: var(--branco-base);
   transition: 300ms;
@@ -108,10 +108,10 @@ button:hover {
   text-decoration: none;
 }
 
-.texto-cadrasto {
+.texto-login {
   font-size: 1.5rem;
 }
 
-span {
+span.loginSpan{
   color: var(--azul-base);
 }
