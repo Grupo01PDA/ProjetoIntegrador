@@ -1,0 +1,10 @@
+.emptyUser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--branco-de-fundo);
+  align-items: center;
+  color: var(--preto-base);
+  width: 99.5vw;
+  height: 30vh;
+}
