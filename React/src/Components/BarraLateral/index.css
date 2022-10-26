@@ -1,0 +1,27 @@
+.barra-lateral {
+  background-color: var(--branco-base);
+  font-size: 1rem;
+  display: flex;
+  position: fixed;
+  margin-top: var(--header);
+  height: 100%;
+  width: var(--barra-lateral);
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.lista li a {
+  text-decoration: none;
+  color: var(--preto-base);
+}
+
+.lista li a:hover {
+  color: var(--azul-base);
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 4rem;
+}

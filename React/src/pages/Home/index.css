@@ -1,0 +1,14 @@
+main {
+  background-color: var(--branco-de-fundo);
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed {
+  display: flex;
+  padding-top: var(--header);
+  margin-left: var(--barra-lateral);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
