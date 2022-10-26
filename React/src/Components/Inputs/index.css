@@ -1,45 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
-
-body {
-  background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: var(--branco-base);
-}
-
-*{
-  margin: 0;
-}
-
-main.main{
-  display: flex;
-  justify-content: space-evenly;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-}
-
-/*botão de voltar */
-.voltar {
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
-
-}
-.voltar a {
-  text-decoration: none;
-  color: var(--branco-base);
-  transition: 300ms;
-}
-.voltar a:hover {
-  color: var(--verde-base);
-  transition: 300ms;
-}
-
-/*------INÍCIO DO FORMULÁRIO------*/
-/*título*/
 h2 {
   color: var(--azul-base);
   font-family: 'Open Sans', sans-serif;
@@ -47,15 +5,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/*parte-cadastro*/
-.cadastro {
+
+.caixaInputs {
   background-color: var(--branco-de-fundo);
   display: flex;
   flex-direction: column;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 4px 4px -2px #989898;
-  -moz-box-shadow: 0 4px 4px -2px #989898;
-  -webkit-box-shadow: 0 4px 4px -2px #989898;
+  border: 1px solid var(--preto-base);
   border-radius: 2rem;
   padding: 2rem;
   margin-top: 1rem;
@@ -66,18 +21,18 @@ h2 {
 }
 
 /*formulário*/
-.form {
+.cadastro {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   width: 30vw;
 }
-.cadastro_div {
+.inputs_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.input_cadastro {
+.input_inputs {
   background-color: var(--branco-maximo);
   border-radius: 0.8rem;
   border: solid 0.2px rgb(15, 11, 11);
@@ -85,7 +40,7 @@ h2 {
   outline: none;
 }
 
-.escolaridade{
+.escolaridade {
   background-color: var(--branco-maximo);
   border-radius: 0.8rem;
   border: solid 0.2px rgb(15, 11, 11);
@@ -93,9 +48,7 @@ h2 {
   outline: none;
 }
 
-
-/*botão-de-cadastro*/
-.enviar-cadastro {
+.enviar-inputs {
   display: flex;
   justify-content: space-between;
 }
@@ -129,8 +82,6 @@ button:hover {
   font-weight: 700;
   text-decoration: none;
 }
-
-
 
 .texto-cadrasto {
   font-size: 2rem;
