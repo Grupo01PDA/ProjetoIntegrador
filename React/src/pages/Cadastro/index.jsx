@@ -1,11 +1,9 @@
 import Inputs from '../../Components/Inputs';
 import './index.css'
 
-
-
 function Cadastro() {
     return (
-        <main className='main'>
+        <main className='cadastro'>
             <a className='voltar' href='/'>
                 <img src="./images/setaDeVoltar.svg" alt="Seta para voltar" />
                  Voltar para a pagina inicial</a>

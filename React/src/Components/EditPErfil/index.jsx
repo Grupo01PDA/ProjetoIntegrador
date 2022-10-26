@@ -17,7 +17,7 @@ function EditPErfil() {
                 <div id="modalJanela" class="modal">
                     <div class="window">
                         <span id="fechar" class="fechar">&times;</span>
-                        <form class="form">
+                        <form class="editPerfil">
                             <main class="modalMain">
                                 <div class="coluna1">
                                     <div class="bloco">

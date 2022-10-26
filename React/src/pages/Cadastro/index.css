@@ -1,8 +1,9 @@
-main.main {
+main.cadastro {
   font-family: 'Open Sans', sans-serif;
   color: var(--branco-base);
   background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   height: 100vh;
   width: 100vw;
