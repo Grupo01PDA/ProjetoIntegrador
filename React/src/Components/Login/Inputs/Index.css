@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(135deg, var(--verde-base), var(--azul-base));
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+*{
+  margin: 0;
+}
+
+.voltar {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+.voltar a {
+  text-decoration: none;
+  color: var(--preto-base);
+  transition: 300ms;
+}
+
+.voltar a:hover {
+  color: var(--azul-base);
+  transition: 300ms;
+}
+h2 {
+  color: var(--verde-base);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+main.main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro {
+  background-color: var(--branco-de-fundo);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--preto-base);
+  border-radius: 2rem;
+  padding: 0 4rem;
+  height: 60vh;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.cadastro_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input_cadastro {
+  background-color: var(--branco-maximo);
+  border-radius: 0.8rem;
+  border: solid 0.2px var(--preto-base);
+  padding: 0.7rem;
+  outline: none;
+}
+
+.button {
+  border: none;
+  color: var(--preto-base);
+  padding: 1rem 2rem;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--verde-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: var(--azul-base);
+  color: var(--branco-base);
+  transition: 300ms;
+}
+
+.link-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-login a {
+  color: var(--azul-base);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.botao {
+  display: flex;
+  width: 100%;
+}
+
+.texto-cadrasto {
+  font-size: 1.5rem;
+}
+span {
+  color: var(--azul-base);
+}
