@@ -12,7 +12,7 @@ function Login(){
             </div>
             <div className="caixaLogin">
                 <h2 className="spanConecte">CONECTE-SE</h2>
-                <form action="/login" method="POST" class="form">
+                <form action="/login" method="POST" class="login">
                     <div className="login_div">
                         <label className="label_login" for="email">Email:</label>
                         <input className="input_login" type="email" name="email" id="email" placeholder="Digite seu email..." />

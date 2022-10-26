@@ -46,7 +46,7 @@ h2.spanConecte {
   align-items: center;
 }
 
-.form {
+.login {
   display: flex;
   flex-direction: column;
   justify-content: center;

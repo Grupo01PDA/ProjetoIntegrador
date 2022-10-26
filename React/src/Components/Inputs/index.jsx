@@ -4,7 +4,7 @@ function Inputs() {
     return (
         <div className='caixaInputs'>
             <h2>CADASTRE-SE</h2>
-            <form className="form" action="/cadastro" method="POST">
+            <form className="cadastro" action="/cadastro" method="POST">
                 <div className="inputs_div">
                     <label for="apelido">Seu apelido</label>
                     <input className="input_inputs" type="text" name="apelido" id="apelido"
