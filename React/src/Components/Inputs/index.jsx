@@ -30,41 +30,33 @@ function Inputs() {
     }
 
     return (
-<<<<<<< HEAD
         <div className='cadastro'>
-            <h2>CAD00000000SE</h2>
+            <h2>CADDASTRE-SE</h2>
             <form className="form" onSubmit={cadastrando}>
                 <div className="cadastro_div">
                     <label for="apelido">Seu apelido</label>
                     <input className="input_cadastro" type="text" name="apelido" id="apelido"
                         placeholder="Digite seu apelido..." onChange={testeNome} ref={apelidoRef}/>
-=======
+                 </div>       
         <div className='caixaInputs'>
             <h2>CADASTRE-SE</h2>
-            <form className="cadastro" action="/cadastro" method="POST">
+            <div className="cadastro" action="/cadastro" method="POST">
                 <div className="inputs_div">
                     <label for="apelido">Seu apelido</label>
                     <input className="input_inputs" type="text" name="apelido" id="apelido"
                         placeholder="Digite seu apelido..." />
->>>>>>> 6c90ce34b82f4d16be3483a8bc9e1beea5958b50
                 </div>
                 <div className="inputs_div">
                     <label for="nome">Seu Nome</label>
-<<<<<<< HEAD
                     <input className="input_cadastro" type="text" name="nome" id="nome" placeholder="Digite seu nome..." ref={nomeRef}/>
-=======
                     <input className="input_inputs" type="text" name="nome" id="nome" placeholder="Digite seu nome..." />
->>>>>>> 6c90ce34b82f4d16be3483a8bc9e1beea5958b50
                 </div>
                 <div className="inputs_div">
                     <label for="sobrenome">Seu Sobrenome</label>
-<<<<<<< HEAD
                     <input className="input_cadastro" type="text" name="sobrenome" id="sobrenome"
                         placeholder="Digite seu sobrenome..." ref={sobrenomeRef}/>
-=======
                     <input className="input_inputs" type="text" name="sobrenome" id="sobrenome"
                         placeholder="Digite seu sobrenome..." />
->>>>>>> 6c90ce34b82f4d16be3483a8bc9e1beea5958b50
                 </div>
 
                 <div className="inputs_div">
@@ -80,40 +72,35 @@ function Inputs() {
 
                 <div className="inputs_div">
                     <label for="email">Seu email</label>
-<<<<<<< HEAD
                     <input className="input_cadastro" type="email" name="email" id="email"
                         placeholder="Digite seu email..." ref={emailRef} />
-=======
                     <input className="input_inputs" type="email" name="email" id="email"
                         placeholder="Digite seu email..." />
->>>>>>> 6c90ce34b82f4d16be3483a8bc9e1beea5958b50
                 </div>
                 <div className="inputs_div">
                     <label for="senha">Sua senha</label>
-<<<<<<< HEAD
                     <input className="input_cadastro" type="password" name="senha" id="senha"
                         placeholder="Digite sua senha..." ref={senhaRef} />
                 </div>
 
                 <div className="enviar-cadastro">
                     <button className="button" type="submit" >Cadastrar</button>
-=======
                     <input className="input_inputs" type="password" name="senha" id="senha"
                         placeholder="Digite sua senha..." />
                 </div>
 
                 <div className="enviar-inputs">
                     <button className="button" type="submit">Cadastrar</button>
->>>>>>> 6c90ce34b82f4d16be3483a8bc9e1beea5958b50
                     <div class="link-login">
                         <br />Já tem uma conta?
                         <a href="/login">Acesse</a>
                     </div>
                 </div>
-
-            </form>
+            </div>
         </div>
-    );
-}
+        </form>
+    </div>
+    )
+};
 
 export default Inputs;
