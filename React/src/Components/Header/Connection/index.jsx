@@ -1,5 +1,5 @@
 import "./index.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Connection() {
 
@@ -43,9 +43,21 @@ function Connection() {
     fundoBranco('#e6e6e6');
   }
 
-  const [count, setCount] = useState(0)
 
-  console.log(count)
+
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const data = window.localStorage.getItem('Tema');
+    if (data != null){setCount(JSON.parse(data));}
+    console.log(data + " data") 
+
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('Tema', JSON.stringify(count));
+  }, [count]);
+
 
 
   function mudarCor() {
@@ -59,6 +71,8 @@ function Connection() {
       setCount(0)
     }
   }
+
+  console.log(count + " count")
   return (
     <div className="links">
       <a className="link" href="/entrar">Entre</a>
