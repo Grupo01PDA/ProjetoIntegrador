@@ -22,7 +22,7 @@ const Usuario = db.define('usuarios', {
         allowNull: false
     },
     escolaridade: {
-        type: Sequelize.DataTypes.STRING(1),
+        type: Sequelize.DataTypes.INTEGER(4),
         allowNull: false
     },
     email: {
@@ -39,10 +39,18 @@ const Usuario = db.define('usuarios', {
         default: false,
         allowNull: true
     }
+},{
+    timestamps: false
 });
+
+// Usuario.hasMany(post,{
+//     foreignKey: 'postUsuarioId'
+// });
+// post.belongsTo(Usuario,{
+//     constraint:true,
+//     foreignKey: 'postUsuarioId'
+// });  
+
 
 module.exports = Usuario;
 
-// 1 parametro NOME DA TABELA
-// 2 parametro sao as colunas que devem ter na
-// tabela
