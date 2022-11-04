@@ -34,79 +34,82 @@ h2.spanConecte {
 }
 
 .caixaLogin {
-  background-color: var(--branco-de-fundo);
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 60vh;
+  width: 45vw;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--preto-base);
-  border-radius: 2rem;
-  padding: 0 4rem;
-  height: 60vh;
-  width: 40vw;
+}
+
+.cadastro {
+  display: flex;
+  text-align: center;
+  margin-top: 2%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.login {
+.formField{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
+  width: 40vw;
+  background-color: #ffff;
+  padding: 1%;
+  margin: 2%;
+  text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-left: 20px;
 }
 
-.login_div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.input_login {
-  background-color: var(--branco-maximo);
-  border-radius: 0.8rem;
-  border: solid 0.2px var(--preto-base);
-  padding: 0.7rem;
-  outline: none;
-}
-
-.botaoLogin{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-
-.buttonLogin {
+.formField input{
   border: none;
-  color: var(--preto-base);
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: var(--verde-base);
-  border-radius: 20rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  transition: 300ms;
+  padding: 2%
+ }
+ 
+ .formField input:focus{
+   outline: 0;
+ }
+ 
+ .formField label{
+   color: #3BEEAA;
+ }
+ .error{
+   color: red;
+   font-size: 15px;
+ }
+
+ .button {
+  justify-content: center;
+  border: none;
+  padding: 1em;
+  width: 100%;
+  background-color: #0D77DC;
+  color: #ffff;
 }
 
-.buttonLogin:hover {
-  background-color: var(--azul-base);
-  color: var(--branco-base);
-  transition: 300ms;
-}
 
 .link-login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding:10px 20px;
 }
 
 .link-login a {
-  color: var(--azul-base);
-  font-weight: 700;
-  text-decoration: none;
+color: blue;
+font-weight: 500;
+font-size: 15px;
+text-decoration: none;
 }
+
+
+
+
+
 
 .texto-login {
   font-size: 1.5rem;
