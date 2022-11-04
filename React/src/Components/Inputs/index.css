@@ -1,0 +1,91 @@
+h2 {
+  color: var(--azul-base);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+
+.caixaInputs {
+  background-color: var(--branco-de-fundo);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--preto-base);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--preto-base);
+}
+
+/*formulário*/
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 30vw;
+}
+.inputs_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input_inputs {
+  background-color: var(--branco-maximo);
+  border-radius: 0.8rem;
+  border: solid 0.2px rgb(15, 11, 11);
+  padding: 0.7rem;
+  outline: none;
+}
+
+.escolaridade {
+  background-color: var(--branco-maximo);
+  border-radius: 0.8rem;
+  border: solid 0.2px rgb(15, 11, 11);
+  padding: 0.7rem;
+  outline: none;
+}
+
+.enviar-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  border: none;
+  color: var(--branco-maximo);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--azul-base);
+  border-radius: 20rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: 300ms;
+}
+button:hover {
+  background-color: var(--verde-base);
+  color: var(--preto-base);
+  transition: 300ms;
+}
+/*link-para-login*/
+.link-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.link-login a {
+  color: var(--verde-base);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.texto-cadrasto {
+  font-size: 2rem;
+}
+span {
+  color: var(--verde-base);
+}

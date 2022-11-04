@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+
+main.login {
+  background: linear-gradient(135deg, var(--verde-base), var(--azul-base));
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voltar {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+.voltar a {
+  text-decoration: none;
+  color: var(--preto-base);
+  transition: 300ms;
+}
+
+.voltar a:hover {
+  color: var(--azul-base);
+  transition: 300ms;
+}
+
+h2.spanConecte {
+  color: var(--verde-base);
+  font-weight: 700;
+}
+
+.caixaLogin {
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 60vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro {
+  display: flex;
+  text-align: center;
+  margin-top: 2%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formField{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  background-color: #ffff;
+  padding: 1%;
+  margin: 2%;
+  text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-left: 20px;
+}
+
+.formField input{
+  border: none;
+  padding: 2%
+ }
+ 
+ .formField input:focus{
+   outline: 0;
+ }
+ 
+ .formField label{
+   color: #3BEEAA;
+ }
+ .error{
+   color: red;
+   font-size: 15px;
+ }
+
+ .button {
+  justify-content: center;
+  border: none;
+  padding: 1em;
+  width: 100%;
+  background-color: #0D77DC;
+  color: #ffff;
+}
+
+
+.link-login {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding:10px 20px;
+}
+
+.link-login a {
+color: blue;
+font-weight: 500;
+font-size: 15px;
+text-decoration: none;
+}
+
+
+
+
+
+
+.texto-login {
+  font-size: 1.5rem;
+}
+
+span.loginSpan{
+  color: var(--azul-base);
+}

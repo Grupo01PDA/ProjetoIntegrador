@@ -1,11 +1,22 @@
-import PaginaInicial from "../../Components/PastaInicial";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer"
+import BarraLateral from "../../Components/BarraLateral";
+import Empty from "../../Components/Empty"
+import "./index.css";
 
-
-function home(){
-
-    return(
-        <PaginaInicial/>
-    )
+function PaginaInicial(){
+  return(
+    <div>
+      <Header />
+      <main>
+        <BarraLateral />
+        <div className="feed">
+          <Empty />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  )
 }
 
-export default home;
+export default PaginaInicial;
