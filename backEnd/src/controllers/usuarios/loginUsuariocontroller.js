@@ -1,5 +1,4 @@
 const { compare } = require('bcrypt')
-let armazenar = {}
 
 async function loginUsuarioController(req, res) {
   const usuario = require('../../models/user')
@@ -40,10 +39,6 @@ async function loginUsuarioController(req, res) {
   })
   return res.json({ mensagem: 'Logado com sucesso ', usuarioAtualizado })
 }
-function getUsuario(){
-  return armazenar
-}
-console.log()
 
-module.exports = {getUsuario, loginUsuarioController}
+module.exports = loginUsuarioController;
 

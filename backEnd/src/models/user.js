@@ -39,7 +39,18 @@ const Usuario = db.define('usuarios', {
         default: false,
         allowNull: true
     }
+},{
+    timestamps: false
 });
+
+// Usuario.hasMany(post,{
+//     foreignKey: 'postUsuarioId'
+// });
+// post.belongsTo(Usuario,{
+//     constraint:true,
+//     foreignKey: 'postUsuarioId'
+// });  
+
 
 module.exports = Usuario;
 

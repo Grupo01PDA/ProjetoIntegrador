@@ -5,24 +5,26 @@ const Usuario = require('./user');
 const Ranking = db.define('rankings', {
     id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
         primaryKey: true,
+        allowNull: false,
         autoIncrement: true
-    },
-    nome: {
-        type: Sequelize.DataTypes.STRING,
-        allowNull: false
     },
     pontosMin: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false
     }
+},{
+    timestamps: false
 });
 
 Ranking.hasMany(Usuario, {
-    foreignKey: "idUsuario"
+    constraint: true,
+    foreignKey: "rankingIdUsuario"
 });
-Usuario.belongsTo(Ranking)
+Usuario.belongsTo(Ranking,{
+    constaint: true,
+    foreignKey: "rankingIdUsuario"
+})
 
 module.exports = Ranking;
 

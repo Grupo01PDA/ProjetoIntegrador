@@ -1,0 +1,25 @@
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 2rem;
+}
+.link {
+  text-decoration: none;
+  color: var(--preto-base);
+}
+.link:hover {
+  text-decoration: none;
+  color: var(--azul-base);
+}
+
+.botao {
+  align-items: center;
+}
+.input-check {
+  display: none;
+}
+label.checkbox svg {
+  fill: var(--preto-base);
+}

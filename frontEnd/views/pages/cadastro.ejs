@@ -12,9 +12,31 @@
 
 <body>
     <div class="voltar">
-        <a href="/">
-            <h4>&#8656;Voltar para a página inicial</h4>
+        <a class="link" href="/conectar">
+
+            <svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>ic_back</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <g id="24-px-Icons" transform="translate(-219.000000, -26.000000)" stroke="#000000">
+                        <g id="ic_back" transform="translate(216.000000, 24.000000)">
+                            <g transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) "
+                                id="forward">
+                                <g transform="translate(4.000000, 3.000000)" stroke-width="2">
+                                    <path d="M0,9 L16,9" id="Line"></path>
+                                    <path d="M16,9 L7.93774223,0.937742233" id="Line"></path>
+                                    <path d="M16,9 L7.93774223,17.0622578" id="Line"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
         </a>
+
     </div>
 
     <main class="main">
@@ -28,68 +50,55 @@
 
         <div class="cadastro">
             <h2>CADASTRE-SE</h2>
-            <form class="form">
+            <form class="form" action="/cadastro" method="POST">
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="fname">Seu apelido</label>
-                    <input class="input_cadastro" type="text" name="name" placeholder="Digite seu apelido...">
+                    <label for="apelido">Seu apelido</label>
+                    <input class="input_cadastro" type="text" name="apelido" id="apelido"
+                        placeholder="Digite seu apelido...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="nome">Seu Nome</label>
-                    <input class="input_cadastro" type="text" name="nome" placeholder="Digite seu nome...">
+                    <label for="nome">Seu Nome</label>
+                    <input class="input_cadastro" type="text" name="nome" id="nome" placeholder="Digite seu nome...">
                 </div>
                 <div class="cadastro_div">
-                    <label class="label_cadastro" for="sobrenome">Seu Sobrenome</label>
-                    <input class="input_cadastro" type="text" name="sobrenome" placeholder="Digite seu sobrenome...">
-                </div>
-                <div class="cadastro_div">
-
-                    <label class="label_cadastro" for="fname">Seu Grau de escolaridade</label>
-                    <details class="custom-select">
-                        <summary class="radios">
-                            <input type="radio" name="item" id="default" title="Grau de Escolaridade" checked>
-                            <input type="radio" name="item" id="item1" title="Não tenho ensino fundamental">
-                            <input type="radio" name="item" id="item2" title="Tenho ensino fundamental">
-                            <input type="radio" name="item" id="item3" title="Tenho ensino médio">
-                            <input type="radio" name="item" id="item4" title="Tenho ensino superior">
-                        </summary>
-                        <ul class="list">
-                            <li>
-                                <label for="item1">Não conclui o ensino fundamental</label>
-                            </li>
-                            <li>
-                                <label for="item2">Conclui o ensino fundamental, não conclui o ensino médio</label>
-                            </li>
-                            <li>
-                                <label for="item3">Conclui o ensino médio, não tenho ensino superior</label>
-                            </li>
-                            <li>
-                                <label for="item4">Tenho ensino superior</label>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-                <div class="cadastro_div">
-                    <label class="label_cadastro" for="email">Seu email</label>
-                    <input class="input_cadastro" type="email" name="email" placeholder="Digite seu email...">
-                </div>
-                <div class="cadastro_div">
-                    <label class="label_cadastro" for="senha">Sua senha</label>
-                    <input class="input_cadastro" type="password" name="senha" placeholder="Digite sua senha...">
+                    <label for="sobrenome">Seu Sobrenome</label>
+                    <input class="input_cadastro" type="text" name="sobrenome" id="sobrenome"
+                        placeholder="Digite seu sobrenome...">
                 </div>
 
+                <div class="cadastro_div">
+                <label for="escolaridade">Grau de escolaridade</label>
+                <select class="escolaridade" name="escolaridade" id="escolaridade">
+                    <option value="default">Selecione a opção em que você se encaixa</option>
+                    <option value="1">Não conclui o ensino fundamental</option>
+                    <option value="2">Conclui o ensino fundamental, não conclui o ensino médio</option>
+                    <option value="3">Conclui o ensino médio, não tenho ensino superior</option>
+                    <option value="4">Tenho ensino superior</option>
+                </select>
+                </div>
+                
+                <div class="cadastro_div">
+                    <label for="email">Seu email</label>
+                    <input class="input_cadastro" type="email" name="email" id="email"
+                        placeholder="Digite seu email...">
+                </div>
+                <div class="cadastro_div">
+                    <label for="senha">Sua senha</label>
+                    <input class="input_cadastro" type="password" name="senha" id="senha"
+                        placeholder="Digite sua senha...">
+                </div>
 
-                <div class="botao">
-                    <button class="button" type="button" onclick="">Cadastrar</button>
+                <div class="enviar-cadastro">
+                    <button class="button" type="submit">Cadastrar</button>
                     <div class="link-login">
                         Já tem uma conta?<br>
                         <a href="/login">Acesse</a>
                     </div>
                 </div>
-                
+
             </form>
         </div>
     </main>
-    <script src="../../service/NewUserApi.js"></script>
 </body>
 
 </html>

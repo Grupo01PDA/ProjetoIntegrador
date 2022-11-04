@@ -1,30 +1,42 @@
-const { response } = require('express')
-const express = require('express')
+import express from "express"
+import path from "path"
+import {fileURLToPath} from 'url'
 const app = express()
 const port = 4000
+const __filename = fileURLToPath(import.meta.url);
+import session from "express-session";
 
 app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: false}))
+app.use(express.json())
+
+const __dirname = path.dirname(__filename);
 app.use(express.static(__dirname + '/public'))
+app.use(session({
+    secret: "batatinha123",
+    resave: true,
+    saveUninitialized: true
+}))
 
+import paginaInicial from "./routes/paginaInicial.js"
+import conectar from "./routes/conexao.js"
+import cadastro from "./routes/cadastro.js"
+import login from "./routes/login.js"
 
-app.get('/', (req, res) => {
-    res.render('pages/index')
-})
+app.get('/', paginaInicial)
 
-app.get('/cadastro-login', (req, res) => {
-    res.render('pages/cadastro-login')
-})
+app.get("/conectar", conectar)
 
-app.get('/cadastro', (req, res) => {
-    res.render('pages/cadastro')
-})
+app.get('/cadastro', cadastro)
+
+app.post('/cadastro', cadastro)
+
+app.get('/login', login)
+
+app.post('/login', login)
 
 app.get('/erro', (req, res) => {
     res.render('pages/Erro')
-})
-
-app.get('/login', (req, res) => {
-    res.render('pages/login')
 })
 
 app.get('/noticias', (req, res) => {
