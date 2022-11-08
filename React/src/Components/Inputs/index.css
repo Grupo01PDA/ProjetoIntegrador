@@ -40,6 +40,11 @@ h2 {
   outline: none;
 }
 
+.error{
+  outline: 1px solid red;
+  border: 1px solid red;
+}
+
 .escolaridade {
   background-color: var(--branco-maximo);
   border-radius: 0.8rem;

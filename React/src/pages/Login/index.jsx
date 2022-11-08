@@ -73,9 +73,6 @@ function Login(){
           </div>
 
           <div className="enviar-cadastro">
-            <div className="link-login">
-              <a href="#">Esqueci minha senha</a>
-            </div>
             <button disabled={isSubmitting} className="button" type="submit">Entrar</button>
           </div>
         </form>

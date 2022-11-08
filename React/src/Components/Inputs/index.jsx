@@ -1,56 +1,76 @@
 import React from 'react';
-import axios from "axios"
-import './index.css'
+import './index.css';
+import { useState, useEffect } from 'react';
+import banco from "../../services/urlBase"
+
+import clearInput from "../../js/clearInput"
+import validacaoDeUsuario from "../../js/validacaoDeUsuario"
 
 
 function Inputs() {
+    const [ formValues, setFormValues ] = useState({});
 
-   const apelidoRef = React.useRef();
-   const nomeRef = React.useRef();
-   const sobrenomeRef = React.useRef();
-   const escolaridadeRef = React.useRef();
-   const emailRef = React.useRef();
-   const senhaRef = React.useRef();
-
-   const testeNome = ''
-
-
- function cadastrando(){
-    console.log(testeNome)
-
-      console(apelidoRef, nomeRef, sobrenomeRef,escolaridadeRef,emailRef,senhaRef)
-        axios.post("http://localhost:3000/usuario", {
-            apelido: apelidoRef,
-            nome: nomeRef,
-            sobrenome: sobrenomeRef,
-            escolaridade: escolaridadeRef,
-            email: emailRef,
-            senha: senhaRef
-        }).then((res)=> console.log(res))
+    const inputChange = (e) => {
+        const { name, value } = e.target
+        setFormValues({ ...formValues, [name]: value })
     }
 
+    const cadastrar = (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target)
+        const data = Object.fromEntries(formData)
+        let userCreated = validacaoDeUsuario(data)
+        if (userCreated){
+            
+        }
+    }
+    useEffect(() => {
+        async function validacao(){
+            await banco.get("/rankings/global")
+            .then(res => res.data.Allusers)
+            .then(users => {
+                // eslint-disable-next-line
+                users.map(function(usuario) {
+                    let mensagem
+                    if (usuario.apelido === formValues.apelido){
+                        mensagem = "Esse apelido já está em uso, por favor coloque outro"
+                        clearInput("apelido")
+                        formValues.apelido = ""
+                        return alert(mensagem) 
+                    }
+                    if (usuario.email === formValues.email){
+                        mensagem = "Esse email já está em uso, por favor coloque outro"
+                        clearInput("email")
+                        formValues.email = ""
+                        return alert(mensagem)
+                    }
+                })
+            })
+            .catch(error => console.log("desculpe, encontramos um erro: ", error))
+        }
+        validacao()
+    }, [formValues])
+    
     return (
         <div className='caixaInputs'>
         <h2>CADASTRE-SE</h2>
-        <form className="cadastro" action="/cadastro" method="POST">
+        <form className="cadastro" onSubmit={cadastrar}>
             <div className="inputs_div">
-                <label for="apelido">Seu apelido</label>
-                <input className="input_inputs" type="text" name="apelido" id="apelido"
-                    placeholder="Digite seu apelido..." />
+                <label htmlFor="apelido">Seu apelido</label>
+                <input className="input_inputs" type="text" name="apelido" onChange={inputChange} id="apelido" placeholder="Digite seu apelido..." />
             </div>
             <div className="inputs_div">
-                <label for="nome">Seu Nome</label>
-                <input className="input_inputs" type="text" name="nome" id="nome" placeholder="Digite seu nome..." />
+                <label htmlFor="nome">Seu Nome</label>
+                <input className="input_inputs" type="text" name='nome' onChange={inputChange} id="nome" placeholder="Digite seu nome..." />
             </div>
             <div className="inputs_div">
-                <label for="sobrenome">Seu Sobrenome</label>
-                <input className="input_inputs" type="text" name="sobrenome" id="sobrenome"
-                    placeholder="Digite seu sobrenome..." />
+                <label htmlFor="sobrenome">Seu Sobrenome</label>
+                <input className="input_inputs" type="text" name='sobrenome' onChange={inputChange} id="sobrenome" placeholder="Digite seu sobrenome..." />
             </div>
 
             <div className="inputs_div">
-                <label for="escolaridade">Grau de escolaridade</label>
-                <select className="escolaridade" name="escolaridade" id="escolaridade">
+                <label htmlFor="escolaridade">Grau de escolaridade</label>
+                <select className="escolaridade" onChange={inputChange} name="escolaridade" id="escolaridade">
                     <option value="default">Selecione a opção em que você se encaixa</option>
                     <option value="1">Não conclui o ensino fundamental</option>
                     <option value="2">Conclui o ensino fundamental, não conclui o ensino médio</option>
@@ -60,19 +80,17 @@ function Inputs() {
             </div>
 
             <div className="inputs_div">
-                <label for="email">Seu email</label>
-                <input className="input_inputs" type="email" name="email" id="email"
-                    placeholder="Digite seu email..." />
+                <label htmlFor="email">Seu email</label>
+                <input className="input_inputs" type="email" name="email" onChange={inputChange} id="email" placeholder="Digite seu email..." />
             </div>
             <div className="inputs_div">
-                <label for="senha">Sua senha</label>
-                <input className="input_inputs" type="password" name="senha" id="senha"
-                    placeholder="Digite sua senha..." />
+                <label htmlFor="senha">Sua senha</label>
+                <input className="input_inputs" type="password" name="senha" onChange={inputChange} id="senha" placeholder="Digite sua senha..." />
             </div>
 
             <div className="enviar-inputs">
                 <button className="button" type="submit">Cadastrar</button>
-                <div class="link-login">
+                <div className="link-login">
                     <br />Já tem uma conta?
                     <a href="/login">Acesse</a>
                 </div>
