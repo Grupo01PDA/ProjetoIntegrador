@@ -47,7 +47,6 @@ h2.spanConecte {
 .cadastro {
   display: flex;
   text-align: center;
-  margin-top: 2%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -58,16 +57,15 @@ h2.spanConecte {
   flex-direction: column;
   width: 40vw;
   background-color: #ffff;
-  padding: 1%;
   margin: 2%;
   text-align: start;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .formField input{
   border: none;
-  padding: 2%
+  padding: 2%;
  }
  
  .formField input:focus{
@@ -79,16 +77,17 @@ h2.spanConecte {
  }
  .error{
    color: red;
-   font-size: 15px;
+   font-size: 12px;
  }
 
  .button {
   justify-content: center;
   border: none;
-  padding: 1em;
+  padding: 2%;
   width: 100%;
   background-color: #0D77DC;
   color: #ffff;
+  margin-bottom: 5%;
 }
 
 
@@ -101,7 +100,7 @@ padding:10px 20px;
 
 .link-login a {
 color: blue;
-font-weight: 500;
+font-weight: 50;
 font-size: 15px;
 text-decoration: none;
 }

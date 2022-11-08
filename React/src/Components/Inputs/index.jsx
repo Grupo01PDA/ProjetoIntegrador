@@ -1,10 +1,8 @@
-import React from 'react';
-import './index.css';
-import { useState, useEffect } from 'react';
-import banco from "../../services/urlBase"
-
 import clearInput from "../../js/clearInput"
 import validacaoDeUsuario from "../../js/validacaoDeUsuario"
+import { React, useState, useEffect } from 'react';
+import banco from "../../services/urlBase"
+import './index.css'
 
 
 function Inputs() {
@@ -21,7 +19,7 @@ function Inputs() {
         const data = Object.fromEntries(formData)
         let userCreated = validacaoDeUsuario(data)
         if (userCreated){
-            
+            alert("usuario criado com sucesso")
         }
     }
     useEffect(() => {
@@ -94,10 +92,10 @@ function Inputs() {
                     <br />Já tem uma conta?
                     <a href="/login">Acesse</a>
                 </div>
-            </div>
+                </div>
 
-        </form>
-    </div>
+            </form>
+            </div>
     )
 };
 
