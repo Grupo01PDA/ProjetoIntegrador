@@ -1,5 +1,5 @@
 import { useFormik} from 'formik';
-import { basicSchema } from '../../schemas/loginschema';
+import { basicSchema } from '../../schemas';
 import axios from "axios";
 import "./index.css";
 
@@ -23,8 +23,8 @@ const onSubmit = async (values, actions) => {
 function Login(){
     const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
         initialValues: {
-          email: 'teste@gmail.com',
-          password: '#Andrew1234',
+          email: '',
+          password: '',
         },
         validationSchema: basicSchema,
         onSubmit,
