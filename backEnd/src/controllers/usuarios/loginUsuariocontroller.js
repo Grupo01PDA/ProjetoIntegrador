@@ -1,4 +1,5 @@
 const { compare } = require('bcrypt')
+
 async function loginUsuarioController(req, res) {
   const usuario = require('../../models/user')
   const { email, senha } = req.body
@@ -27,6 +28,7 @@ async function loginUsuarioController(req, res) {
       },
       { where: { id: usuarioExistente.id } }
     )
+  armazenar = await usuarioExistente
   } else {
     return res.status(403).json({ mensagem: 'email ou senha inválido' })
   }
@@ -37,4 +39,6 @@ async function loginUsuarioController(req, res) {
   })
   return res.json({ mensagem: 'Logado com sucesso ', usuarioAtualizado })
 }
-module.exports = loginUsuarioController
+
+module.exports = loginUsuarioController;
+

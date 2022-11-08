@@ -3,7 +3,7 @@ const chamandoUsuarioApelidoController = require("../controllers/usuarios/chaman
 const criandoUsuarioController = require("../controllers/usuarios/criandoUsuarioController");
 const deletandoUsuarioController = require("../controllers/usuarios/deletandoUsuarioController");
 const mudandoUsuarioController = require("../controllers/usuarios/mudandoUsuarioController");
-const loginUsuarioController = require("../controllers/usuarios/loginUsuarioController")
+const {loginUsuarioController} = require("../controllers/usuarios/loginUsuarioController")
 const deslogandoUsuarioController = require("../controllers/usuarios/deslogandoUsuarioController")
 
 const usuarioRoute = express.Router();

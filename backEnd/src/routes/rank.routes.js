@@ -9,6 +9,6 @@ rankRoute.get("/rankings/global", chamandoUsuariosPorRanqueController);
 
 rankRoute.get("/rankings", chamandoRankingsController);
 
-rankRoute.post("/rankings/criando", criandoRankingController);
+rankRoute.post("/rankings/criando/:id", criandoRankingController);
 
 module.exports = rankRoute;
