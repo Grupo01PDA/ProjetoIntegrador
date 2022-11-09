@@ -67,9 +67,6 @@ function Login(){
           </div>
           {errors.password && touched.password && <p className="error">{errors.password}</p>}
           <div className="enviar-cadastro">
-            <div className="link-login">
-              <a href="#">Esqueci minha senha</a>
-            </div>
             <button disabled={isSubmitting} className="button" type="submit">Entrar</button>
           </div>
         </form>
