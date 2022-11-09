@@ -17,7 +17,7 @@ div.usuarioEdit {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    color: var(--branco-base);
+    color: white;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem rgb(0, 0, 0));
 }
 .button-edit {
