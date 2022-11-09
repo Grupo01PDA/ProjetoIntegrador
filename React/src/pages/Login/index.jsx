@@ -1,28 +1,28 @@
 import { useFormik} from 'formik';
 import { basicSchema } from '../../schemas';
-import axios from "axios";
+import loginUsuario from "../../services/loginUsuario"
 import "./index.css";
+import { useNavigate } from 'react-router-dom';
 
-const onSubmit = async (values, actions) => {
-  console.log(values);
-  console.log(actions);
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  actions.resetForm()
-  await axios.get('https://634b29e533bb42dca41161ad.mockapi.io/login/v1/users')
-  .then(response => {
-    if(values.email === response.data.email && values.password === response.data.senha){
-      window.alert("Você está logado")
-    }else{
-      window.alert("Usuário não existe")
-    }
-  })
-  .catch(error => console.log(error))
-  
-};
 
 function Login(){
-    const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
-        initialValues: {
+  const navigate = useNavigate();
+
+  const onSubmit = async (values, actions) => {
+    console.log(values);
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm()
+    loginUsuario(values)
+    let statusLogin = localStorage.getItem("statusLogin")
+    console.log(statusLogin)
+    if(statusLogin === "true") {
+      navigate("/")
+    }
+  }
+
+  const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
+    initialValues: {
           email: '',
           password: '',
         },
@@ -69,6 +69,7 @@ function Login(){
           <div className="enviar-cadastro">
             <button disabled={isSubmitting} className="button" type="submit">Entrar</button>
           </div>
+          <span>Ainda não tem cadastro? <a href="/cadastro">Clique Aqui</a></span>
         </form>
             </div>
         </main>

@@ -2,7 +2,7 @@ import banco from "./urlBase"
 
 async function cadastrarUsuario(data) {
   let userCreated = 0;
-  banco.post("/usuario", {
+  await banco.post("/usuario", {
     apelido: data.apelido,
     nome: data.nome,
     sobrenome: data.sobrenome,
@@ -10,13 +10,25 @@ async function cadastrarUsuario(data) {
     email: data.email,
     senha: data.senha
   }).then(function (res){
-    if(res.statusCode === 201){
-      userCreated = 1
+    if(res.status === 201){
+      usuarioLocalget(data)
+      userCreated = 1;
     }
   }).catch (function(error){
     console.log(error)
   })
   return userCreated;
+}
+
+async function usuarioLocalget(user){
+  await banco.post("/usuario/pegar-usuario", {
+    apelido: user.apelido
+  }).then(res => {
+    localStorage.setItem("apelido", res.apelido)
+    localStorage.setItem("statusLogin", res.sttsLogin)
+    localStorage.setItem("nome", res.nome)
+    localStorage.setItem("email", res.email)
+  })
 }
 
 export default cadastrarUsuario

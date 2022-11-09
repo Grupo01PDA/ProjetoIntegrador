@@ -12,6 +12,7 @@
 .link:hover {
   text-decoration: none;
   color: var(--azul-base);
+  cursor: pointer;
 }
 
 .botao {

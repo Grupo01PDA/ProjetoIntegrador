@@ -12,13 +12,16 @@
   gap: 2rem;
 }
 
+.lista li span,
 .lista li a {
   text-decoration: none;
   color: var(--preto-base);
 }
 
+.lista li span:hover,
 .lista li a:hover {
   color: var(--azul-base);
+  cursor: pointer;
 }
 
 li {

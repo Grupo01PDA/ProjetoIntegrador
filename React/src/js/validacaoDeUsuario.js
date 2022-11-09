@@ -1,7 +1,7 @@
 import clearInput from './clearInput'
 import cadastrarUsuario from '../services/cadastrarUsuario'
 
-function validacaoDeUsuario(data) {
+async function validacaoDeUsuario(data) {
   const { nome, sobrenome, apelido, email, senha, escolaridade } = data
   const escola = validacaoDeEscolaridade(escolaridade)
   const password = validacaoDeSenha(senha)
@@ -10,7 +10,7 @@ function validacaoDeUsuario(data) {
     alert("Ops! Parece que você não preencheu tudo corretamente")
   } else {
     if(escola && password){
-      let userCreated = cadastrarUsuario(data)
+      let userCreated = await cadastrarUsuario(data)
       if (userCreated === 1){
         return true
       }

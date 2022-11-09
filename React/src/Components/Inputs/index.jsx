@@ -2,24 +2,26 @@ import clearInput from "../../js/clearInput"
 import validacaoDeUsuario from "../../js/validacaoDeUsuario"
 import { React, useState, useEffect } from 'react';
 import banco from "../../services/urlBase"
+import { useNavigate } from "react-router-dom";
 import './index.css'
 
 
 function Inputs() {
     const [ formValues, setFormValues ] = useState({});
+    const navigate = useNavigate();
 
     const inputChange = (e) => {
         const { name, value } = e.target
         setFormValues({ ...formValues, [name]: value })
     }
 
-    const cadastrar = (event) => {
+    const cadastrar = async(event) => {
         event.preventDefault();
         const formData = new FormData(event.target)
         const data = Object.fromEntries(formData)
-        let userCreated = validacaoDeUsuario(data)
-        if (userCreated){
-            alert("usuario criado com sucesso")
+        let userCreated = await validacaoDeUsuario(data)
+        if(userCreated){
+            navigate("/")
         }
     }
     useEffect(() => {

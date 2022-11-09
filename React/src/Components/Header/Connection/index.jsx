@@ -1,7 +1,10 @@
 import "./index.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import logoutUsuario from "../../../services/logoutUsuario"
 
 function Connection() {
+  const navigate = useNavigate();
   function modoDark() {
     function brancoPreto(tema) {
       document.documentElement.style.setProperty("--preto-base", tema);
@@ -44,6 +47,7 @@ function Connection() {
     if (localStorage.getItem("Tema")) {
       setCount(localStorage.getItem("Tema"));
     }
+    loginLogout()
   }, []);
 
   useEffect(() => {
@@ -62,22 +66,43 @@ function Connection() {
       setCount(0);
     }
   }
-  
+  async function loginLogout() {
+    let status = localStorage.getItem("statusLogin")
+    let span = document.getElementById("loginLogout")
+    if(status){
+      span.innerHTML = "Sair"
+    } else {
+      span.innerHTML = "Entrar"
+    }
+  }
+  function loginLogoutClick() {
+    let span = document.getElementById("loginLogout").innerText
+    if (span == "Sair"){
+      logoutUsuario()
+      console.log(localStorage.getItem("statusLogin"))
+      if (localStorage.getItem("statusLogin") === "false"){
+        navigate("/login")
+        localStorage.clear()
+      }
+    } else {
+      navigate("/entrar")
+    }
+  }
+
   return (
     <div className="links">
-      <a className="link" href="/entrar">
-        Entre
-      </a>
-
+      <span id="loginLogout" className="link" onClick={loginLogoutClick}>
+          Entre
+      </span>
       <input className="input-check" type="checkbox" id="checkbox" />
-      <label class="checkbox" for="checkbox">
+      <label className="checkbox" htmlFor="checkbox">
         <svg
           onClick={() => mudarCor()}
           xmlns="http://www.w3.org/2000/svg"
           width="25"
           height="25"
           fill="currentColor"
-          class="bi bi-circle-half"
+          className="bi bi-circle-half"
           viewBox="0 0 16 16"
         >
           <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />

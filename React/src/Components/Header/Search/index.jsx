@@ -2,7 +2,7 @@ import "./index.css";
 
 function Search(){
   return(
-    <div class="pesquisa">
+    <div className="pesquisa">
         <div className="divBusca">
             <input type="text" className="txtBusca" placeholder="O que gostaria de saber..." />
             <button className="lupa">
