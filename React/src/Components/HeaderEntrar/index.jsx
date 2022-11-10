@@ -8,7 +8,10 @@ function HeaderEntrar() {
   return (
     <div className="headerEntrar">
       <a href="/">
+        <div className="logo">
         <img src="./images/logo.svg" alt="logoHomeStudy" />
+
+        </div>
       </a>
       <div className="links">
       

@@ -1,8 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .barra-lateral {
   background-color: var(--branco-base);
@@ -27,36 +23,38 @@
   color: var(--azul-base);
 }
 
+.lista li {
+  background-color: var(--branco-de-fundo);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--barra-lateral);
+  height: 60px;
+  border-radius: 7px;
+  transform: scale(0.9);
+  transition: all ease 0.3s;
+  color: var(--preto-base);
+  opacity: 0.9;
+  cursor: pointer;
+  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.lista li:hover {
+  transform: scale(1);
+  opacity: 1;
+}
 
 .lista li {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #3DF5AA;;
-margin-top:10px;
-display: flex;
-justify-content: center;
-align-items: center;
-width: var(--barra-lateral);
-height: 60px;
-border-radius: 7px;
-transform: scale(0.9);
-transition: all ease 0.3s;
-color: #096FE0;
-opacity: 0.9;
-
-font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
-.lista li:hover{
-    transform: scale(1);
-    opacity: 1;
+li {
+  text-decoration: none;
 }
 
-.lista li{
-
+h3 {
+  text-decoration: none;
 }
-
-
-
-
-
-
