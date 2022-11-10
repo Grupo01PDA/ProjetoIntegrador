@@ -5,7 +5,7 @@ const criandoPostsController = async (req, res) => {
 
   await db.sync();
   const { description } = req.body;
-  const id = req.params.id;
+  const id = req.params.id
   const postador = await usuario.findOne({where:{id: id}});
   if (!postador.sttsLogin) {
     return res.status(400).json({ messege: "usuario não está logado" });
