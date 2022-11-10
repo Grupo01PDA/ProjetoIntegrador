@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .barra-lateral {
   background-color: var(--branco-base);
   font-size: 1rem;
@@ -21,7 +23,38 @@
   color: var(--azul-base);
 }
 
+.lista li {
+  background-color: var(--branco-de-fundo);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--barra-lateral);
+  height: 60px;
+  border-radius: 7px;
+  transform: scale(0.9);
+  transition: all ease 0.3s;
+  color: var(--preto-base);
+  opacity: 0.9;
+  cursor: pointer;
+  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.lista li:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.lista li {
+  text-decoration: none;
+}
+
 li {
-  list-style-type: none;
-  padding-bottom: 4rem;
+  text-decoration: none;
+}
+
+h3 {
+  text-decoration: none;
 }

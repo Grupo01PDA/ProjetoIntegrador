@@ -19,7 +19,7 @@
 
 .cadastrar-botao {
   border: none;
-  color: var(--branco-base);
+  color: white;
   padding: 0.6rem 2rem;
   margin: auto;
   text-decoration: none;

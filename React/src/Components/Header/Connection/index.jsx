@@ -2,6 +2,8 @@ import "./index.css";
 import { useEffect, useState } from "react";
 
 function Connection() {
+  
+  
   function modoDark() {
     function brancoPreto(tema) {
       document.documentElement.style.setProperty("--preto-base", tema);
@@ -39,6 +41,7 @@ function Connection() {
   }
 
   const [count, setCount] = useState(localStorage.getItem("Tema") || 0);
+  
 
   useEffect(() => {
     if (localStorage.getItem("Tema")) {

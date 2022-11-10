@@ -1,25 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap");
 
-::-webkit-scrollbar {
-  width: 0.5vw;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
-}
-
-main.Entrar{
-  font-family: 'Open Sans', sans-serif;
+.main,
+.Entrar {
+  font-family: "Open Sans", sans-serif;
   background-color: var(--branco-de-fundo);
   color: var(--preto-base);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
-  padding-bottom: var(--header);
-  padding-left: 10rem;
-  padding-right: 10rem;
+  gap: 7rem;
+  padding-bottom: 5rem;
 }
 
 .card {
@@ -32,7 +23,6 @@ main.Entrar{
 }
 
 .imagem {
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,7 +40,7 @@ main.Entrar{
   cursor: pointer;
   background-color: var(--azul-base);
   border-radius: 20rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   transition: 250ms;
 }
@@ -67,14 +57,6 @@ main.Entrar{
   width: 100%;
 }
 
-.photo {
-  background-image: url("https://cdn.pixabay.com/photo/2017/09/21/13/32/girl-2771936_1280.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20rem;
-  height: 20rem;
-}
 .texto-1 {
   display: flex;
   flex-direction: column;
@@ -82,7 +64,7 @@ main.Entrar{
   width: 20rem;
   height: 20rem;
 }
-.texto-1 h2{
+.texto-1 h2 {
   font-size: 1.5rem;
 }
 
@@ -93,24 +75,20 @@ main.Entrar{
   width: 20rem;
   height: 20rem;
 }
-.texto-2 h2{
+.texto-2 h2 {
   font-size: 1.5rem;
 }
 
-.photo-1 {
-  background-image: url("https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20rem;
-  height: 20rem;
+.card {
+  width: 70vw;
+  height: 20vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.photo-materias {
-  width: 100%;
-  height: 70vh;
-  background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.main {
+  width: 77vw;
+  height: 85vh;
 }
