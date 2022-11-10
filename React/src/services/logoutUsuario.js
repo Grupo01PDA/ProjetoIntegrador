@@ -7,8 +7,10 @@ async function logoutUsuario() {
   })
   .then(res => res.data.usuarioAtualizado)
   .then(res => {
-    localStorage.clear();
-    localStorage.setItem("statusLogin", res.sttsLogin)
+    localStorage.removeItem("statusLogin")
+    let statusObj = res.sttsLogin
+    let status = statusObj.toString()
+    localStorage.setItem("statusLogin", status)
   })
 }
 

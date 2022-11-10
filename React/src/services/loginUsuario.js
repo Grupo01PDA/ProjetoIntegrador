@@ -8,6 +8,7 @@ async function loginUsuario(values){
   .then(res => res.data)
   .then(res => res.usuarioAtualizado)
   .then(res => {
+    localStorage.setItem("id", res.id)
     localStorage.setItem("apelido", res.apelido)
     localStorage.setItem("nome", res.nome)
     localStorage.setItem("statusLogin", res.sttsLogin)

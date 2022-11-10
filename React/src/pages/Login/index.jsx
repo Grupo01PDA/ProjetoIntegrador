@@ -3,21 +3,34 @@ import { basicSchema } from '../../schemas';
 import loginUsuario from "../../services/loginUsuario"
 import "./index.css";
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 
 function Login(){
   const navigate = useNavigate();
+  const [ status, setStatus ] = useState(localStorage.getItem("statusLogin") || "false");
+
+  useEffect(() => {
+    if (localStorage.getItem("statusLogin")) {
+      setStatus(localStorage.getItem("statusLogin"))
+    }
+  }, [])
+
+  useEffect(() =>{
+    localStorage.setItem("statusLogin", status);
+    console.log(status)
+  }, [status])
+  
 
   const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm()
-    loginUsuario(values)
-    let statusLogin = localStorage.getItem("statusLogin")
-    console.log(statusLogin)
-    if(statusLogin === "true") {
+    await loginUsuario(values)
+    if(localStorage.getItem("statusLogin") == 'true') {
+      console.log("passei")
       navigate("/")
+    } else {
+      alert("não deu certo")
     }
   }
 

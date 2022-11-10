@@ -24,6 +24,7 @@ async function usuarioLocalget(user){
   await banco.post("/usuario/pegar-usuario", {
     apelido: user.apelido
   }).then(res => {
+    localStorage.setItem("id", res.id)
     localStorage.setItem("apelido", res.apelido)
     localStorage.setItem("statusLogin", res.sttsLogin)
     localStorage.setItem("nome", res.nome)

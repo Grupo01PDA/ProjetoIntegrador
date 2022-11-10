@@ -69,18 +69,20 @@ function Connection() {
   async function loginLogout() {
     let status = localStorage.getItem("statusLogin")
     let span = document.getElementById("loginLogout")
-    if(status){
+    if(status == "true"){
       span.innerHTML = "Sair"
     } else {
       span.innerHTML = "Entrar"
     }
   }
-  function loginLogoutClick() {
+  async function loginLogoutClick() {
     let span = document.getElementById("loginLogout").innerText
     if (span == "Sair"){
-      logoutUsuario()
-      console.log(localStorage.getItem("statusLogin"))
-      if (localStorage.getItem("statusLogin") === "false"){
+      await logoutUsuario()
+      let statusLogout = localStorage.getItem("statusLogin")
+      console.log(statusLogout)
+      if (statusLogout == 'false'){
+        console.log("to vazando")
         navigate("/login")
         localStorage.clear()
       }
