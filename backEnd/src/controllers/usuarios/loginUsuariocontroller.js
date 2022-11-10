@@ -28,7 +28,6 @@ async function loginUsuarioController(req, res) {
       },
       { where: { id: usuarioExistente.id } }
     )
-  armazenar = await usuarioExistente
   } else {
     return res.status(403).json({ mensagem: 'email ou senha inválido' })
   }
