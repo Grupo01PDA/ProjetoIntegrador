@@ -2,11 +2,14 @@ import "./index.css";
 
 function BarraLateral(){
   return(
-    <aside class="barra-lateral">
-      <div class="lista">
-        <li><a href="/usuario">Perfil</a></li>
-        <li><a href="/">Comunidade</a></li>
-        <li><a target="_blank" rel="noreferrer" href="https://discord.com/channels/1032357491792687145/1032357492413440111">Grupos</a></li>
+
+    <aside className="barra-lateral">
+    
+      <div className="lista">
+        
+        <li><h3 href="/usuario">Perfil</h3></li>
+        <li><h3 href="/">Comunidade</h3></li>
+        <li><h3 target="_blank" rel="noreferrer" href="https://discord.com/channels/1032357491792687145/1032357492413440111">Grupos</h3></li>
       </div>
     </aside>
   )
