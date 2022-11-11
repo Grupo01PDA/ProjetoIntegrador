@@ -1,32 +1,31 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 
 function BarraLateral() {
-  const [ page, setPage ] = useState("");
+  const navigate = useNavigate();
 
   function validarSeLogado(){
     let statusLogin = localStorage.getItem("statusLogin")
-    if (statusLogin){
-      setPage("/usuario")
+    if (statusLogin === "true"){
+      navigate("/usuario")
     } else {
-      setPage("/login")
+      navigate("/login")
     }
+  }
+
+  function navegarParaAbacomunidade(){
+    navigate("/entrar")
   }
 
   return (
     <aside className="barra-lateral">
       <div className="lista">
-        <Link to={page} onClick={validarSeLogado} style={{ textDecoration: "none" }}>
-          <li>
-            <h3 href="/usuario">Perfil</h3>
-          </li>
-        </Link>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <li>
-            <h3 href="/">Comunidade</h3>
-          </li>
-        </Link>
+        <li onClick={validarSeLogado} style={{ textDecoration: "none" }}>
+            <h3>Perfil</h3>
+        </li>
+        <li onClick={navegarParaAbacomunidade} style={{ textDecoration: "none" }}>
+            <h3>Comunidade</h3>
+        </li>
       </div>
     </aside>
   );

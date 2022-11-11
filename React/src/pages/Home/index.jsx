@@ -1,17 +1,19 @@
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer"
 import BarraLateral from "../../Components/BarraLateral";
-import Empty from "../../Components/Empty"
+import Post from "../../Components/Post"
+import Posts from "../../Components/Posts"
 import "./index.css";
 
 function PaginaInicial(){
   return(
     <div>
       <Header />
-      <main>
+      <main className="mainHome">
         <BarraLateral />
         <div className="feed">
-          <Empty />
+          <Post />
+          <Posts />
         </div>
       </main>
       <Footer />

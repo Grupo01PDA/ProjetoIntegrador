@@ -16,7 +16,7 @@ function Comunidade(){
     chamandoBanco()
     console.log(users)
 
-  }, [])
+  }, [users])
 
   return(
     <div className="comundidade">

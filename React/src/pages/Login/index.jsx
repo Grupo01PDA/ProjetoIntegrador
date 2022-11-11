@@ -26,7 +26,7 @@ function Login(){
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm()
     await loginUsuario(values)
-    if(localStorage.getItem("statusLogin") == 'true') {
+    if(localStorage.getItem("statusLogin") === 'true') {
       console.log("passei")
       navigate("/")
     } else {

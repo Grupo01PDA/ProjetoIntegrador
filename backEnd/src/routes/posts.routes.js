@@ -9,6 +9,6 @@ const postsRoute = express.Router()
 postsRoute.post("/posts/:id", criandoPostsController)
 postsRoute.get("/posts/todos", chamandoPostsController)
 postsRoute.put("/posts/:id", mudandoPostsController)
-postsRoute.delete("/posts/", deletandoPostsController)
+postsRoute.delete("/posts/:id", deletandoPostsController)
 
 module.exports = postsRoute;

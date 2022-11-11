@@ -53,6 +53,7 @@ function Connection() {
 
   useEffect(() => {
     localStorage.setItem("Tema", count);
+    // eslint-disable-next-line
     if (count == 0) {
       modoWhite();
     } else {
@@ -61,6 +62,7 @@ function Connection() {
   }, [count]);
 
   function mudarCor() {
+    // eslint-disable-next-line
     if (count == 0) {
       setCount(1);
     } else {
@@ -70,7 +72,7 @@ function Connection() {
   async function loginLogout() {
     let status = localStorage.getItem("statusLogin")
     let span = document.getElementById("loginLogout")
-    if(status == "true"){
+    if(status === "true"){
       span.innerHTML = "Sair"
     } else {
       span.innerHTML = "Entrar"
@@ -78,11 +80,11 @@ function Connection() {
   }
   async function loginLogoutClick() {
     let span = document.getElementById("loginLogout").innerText
-    if (span == "Sair"){
+    if (span === "Sair"){
       await logoutUsuario()
       let statusLogout = localStorage.getItem("statusLogin")
       console.log(statusLogout)
-      if (statusLogout == 'false'){
+      if (statusLogout === 'false'){
         console.log("to vazando")
         navigate("/login")
         localStorage.clear()
