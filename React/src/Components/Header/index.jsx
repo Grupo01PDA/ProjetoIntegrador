@@ -11,7 +11,6 @@ function Header() {
         <img src="./images/logo.svg" alt="logoHomeStudy" />
         </div>
       </a>
-  
       <Connection />
     </div>
   )
