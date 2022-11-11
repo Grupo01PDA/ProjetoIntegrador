@@ -57,7 +57,7 @@ function Post(){
         placeholder="O que você aprendeu hoje?"
         onChange={inputChange}
         id="post" />
-        <div className="msgLogar">Você não está logado, por favor entre com um usuário antes de se logar</div>
+        <div className="msgLogar">Você não está logado, por favor entre com uma conta antes de postar</div>
       </div>
       <input className="enviarPost" type="submit" value="Postar" />
     </form>

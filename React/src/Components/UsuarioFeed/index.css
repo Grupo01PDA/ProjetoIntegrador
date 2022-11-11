@@ -3,7 +3,7 @@ nav.posts_etc {
     align-items: center;
     justify-content: space-around;
     padding: 0.5rem;
-    background-color: var(--branco-de-fundo);
+    background-color: var(--branco-base);
     color: var(--preto-base);
 }
 

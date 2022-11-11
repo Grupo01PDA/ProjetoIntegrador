@@ -27,7 +27,6 @@ function Login(){
     actions.resetForm()
     await loginUsuario(values)
     if(localStorage.getItem("statusLogin") === 'true') {
-      console.log("passei")
       navigate("/")
     } else {
       alert("não deu certo")

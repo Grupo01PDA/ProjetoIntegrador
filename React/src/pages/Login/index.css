@@ -55,12 +55,10 @@ h2.spanConecte {
 .formField{
   display: flex;
   flex-direction: column;
-  width: 40vw;
   background-color: #ffff;
-  margin: 2%;
+  width: 100%;
   text-align: start;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin-left: 0px;
 }
 
 .formField input{

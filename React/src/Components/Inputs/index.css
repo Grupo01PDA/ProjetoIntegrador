@@ -75,6 +75,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     transition: 300ms;
+    border: none;
     margin-left: 2rem;
 }
 .buttom:hover {
