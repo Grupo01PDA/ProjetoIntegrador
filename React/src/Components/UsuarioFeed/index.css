@@ -26,6 +26,7 @@ nav.posts_etc {
 
 .posts_etc button.btnActive {
     background-color: var(--azul-base);
+    cursor: pointer;  
 }
 span.userInputs{
     color: var(--preto-base);
@@ -46,4 +47,17 @@ span.userInputs{
 .posts_etc button.salvos svg.salvos-svg [stroke*='#0F0F0F'],
 .posts_etc button.gabaritos svg.provas-svg [stroke*='#0F0F0F'] {
     stroke: var(--preto-base);
+}
+
+.button-edit{
+    display: none;
+}
+
+.info_perfil{
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil{
+    margin-left: 70px;
 }

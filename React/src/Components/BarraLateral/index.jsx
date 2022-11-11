@@ -14,7 +14,7 @@ function BarraLateral() {
   }
 
   function navegarParaAbacomunidade(){
-    navigate("/entrar")
+    navigate("/https://discord.gg/BWT7krxP")
   }
 
   return (
