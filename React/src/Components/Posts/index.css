@@ -1,0 +1,19 @@
+.postsUsers{
+  margin-top: 2rem;
+  color: var(--preto-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.post{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: var(--branco-base);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  color: var(--preto-base)
+}

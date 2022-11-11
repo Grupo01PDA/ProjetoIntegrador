@@ -1,8 +1,5 @@
 import "./index.css";
 import Connectio from "../Header/Connection";
-import { Link } from "react-router-dom";
-
-
 
 function HeaderEntrar() {
   return (

@@ -1,0 +1,62 @@
+.formularioPost{
+  color: var(--branco-base);
+  width: 90%;
+  background-color: var(--branco-base);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+}
+
+.enviarPost{
+  width: 10%;
+  background-color: var(--azul-base);
+  border: 1px solid var(--azul-base);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: ease-in-out 400ms;
+}
+
+.enviarPost:hover {
+  transition: ease-in-out 400ms;
+  transform: scale(1);
+}
+
+.enviarPost:disabled{
+  display: none;
+}
+
+.inputDescription{
+  border: none;
+  padding-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  width: 100%;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+  height: 5rem;
+  resize: none;
+  background-color: var(--branco-base);
+  border: 1px solid var(--preto-base);
+  color: var(--preto-base);
+  outline: none;
+}
+.msgContainer{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.msgLogar{
+  color: red;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: var(--branco-base);
+  display: none;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}

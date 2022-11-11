@@ -10,7 +10,7 @@ const usuarioRoute = express.Router();
 
 usuarioRoute.post("/usuario", criandoUsuarioController);
 
-usuarioRoute.get("/usuario/:apelido", chamandoUsuarioApelidoController);
+usuarioRoute.post("/usuario/pegar-usuario", chamandoUsuarioApelidoController);
 
 usuarioRoute.put("/usuario/:id", mudandoUsuarioController);
 

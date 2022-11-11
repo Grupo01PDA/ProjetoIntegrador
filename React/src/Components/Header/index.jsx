@@ -1,5 +1,4 @@
 import "./index.css";
-import Search from "./Search"
 import Connection from "./Connection";
 
 function Header() {

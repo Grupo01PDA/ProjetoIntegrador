@@ -1,4 +1,4 @@
-main {
+.mainHome {
   background-color: var(--branco-de-fundo);
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,10 @@ main {
   display: flex;
   padding-top: var(--header);
   margin-left: var(--barra-lateral);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
