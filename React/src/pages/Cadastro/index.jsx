@@ -1,11 +1,11 @@
-import Inputs from '../../Components/Inputs';
+import Inputs from '../../Components/Inputs';           
 import './index.css'
 
 function Cadastro() {
     return (
         <main className='cadastro'>
             <a className='voltar' href='/'>
-                <img src="./images/setaDeVoltar.svg" alt="Seta para voltar" />
+                <img className='simbolo_voltar' src="./images/setaDeVoltar.svg" alt="Seta para voltar" />
                  Voltar para a pagina inicial</a>
             <div className="texto-cadrasto">
                 <h1>Pronto para <span> mudar</span>

@@ -5,32 +5,39 @@ h2 {
   margin-bottom: 1rem;
 }
 
-
 .caixaInputs {
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   border-radius: 2rem;
   padding: 2%;
-  margin-top: 50rem;
-  margin-bottom: 50%;
+  margin-top: 37rem;
+  margin-bottom: 38rem;
   justify-content: center;
-  align-items: center;
   color: var(--preto-base);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 /*formulário*/
-.cadastro {
+.form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   width: 30vw;
+
 }
+
 .inputs_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.inputs_div label{
+   text-align: start;
+}
+
 .input_inputs {
   background-color: var(--branco-maximo);
   border-radius: 0.8rem;
@@ -54,21 +61,23 @@ h2 {
 .enviar-inputs {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.button {
-  border: none;
-  color: var(--branco-maximo);
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: var(--azul-base);
-  border-radius: 20rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  transition: 300ms;
+.buttom {
+    order: none;
+    color: var(--branco-maximo);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--azul-base);
+    border-radius: 20rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: 300ms;
+    margin-left: 2rem;
 }
-button:hover {
+.buttom:hover {
   background-color: var(--verde-base);
   color: var(--preto-base);
   transition: 300ms;
@@ -87,7 +96,7 @@ button:hover {
 }
 
 .texto-cadrasto {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 span {
   color: var(--verde-base);
