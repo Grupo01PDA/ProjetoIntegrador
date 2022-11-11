@@ -7,24 +7,23 @@ import './index.css'
 
 
 function Inputs() {
-    const [ formValues, setFormValues ] = useState({});
-    const navigate = useNavigate();
+  const [ formValues, setFormValues ] = useState({});
+  const navigate = useNavigate();
 
   const inputChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
 
-    const cadastrar = async(event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target)
-        const data = Object.fromEntries(formData)
-        let userCreated = await validacaoDeUsuario(data)
-        if(userCreated){
-            navigate("/")
-        }
+  const cadastrar = async(event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target)
+    const data = Object.fromEntries(formData)
+    await validacaoDeUsuario(data)
+    if (localStorage.getItem("statusLogin") === "true"){
+      navigate("/")
     }
-  };
+  }
   useEffect(() => {
     async function validacao() {
       await banco
@@ -133,7 +132,6 @@ function Inputs() {
             type="password"
             name="senha"
             onChange={inputChange}
-            onClick
             id="senha"
             placeholder="Digite sua senha..."
           />

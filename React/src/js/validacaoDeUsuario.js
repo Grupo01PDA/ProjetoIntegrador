@@ -10,10 +10,7 @@ async function validacaoDeUsuario(data) {
     alert("Ops! Parece que você não preencheu tudo corretamente")
   } else {
     if(escola && password){
-      let userCreated = await cadastrarUsuario(data)
-      if (userCreated === 1){
-        return true
-      }
+      await cadastrarUsuario(data)
     }
   }
 }
