@@ -1,17 +1,27 @@
+import { useEffect } from "react"
 import { useState } from "react"
 import banco from "../../services/urlBase"
 import "./index.css"
 
 function Comunidade(){
-  const [ users, setUsers ] = useState()
-  banco.get("/rankings/global")
-  .then(res => setUsers(res.data.Allusers))
-  .catch(error => alert(error))
+  const [ users, setUsers ] = useState([])
+
+  async function chamandoBanco(){
+    await banco.get("/rankings/global")
+    .then(res => setUsers(res.data.Allusers))
+    .catch(error => alert(error))
+  }
+
+  useEffect(()=>{
+    chamandoBanco()
+    console.log(users)
+
+  }, [])
 
   return(
     <div className="comundidade">
-      {users.map(function(user){
-        return <li>Apelido: {user.apelido} | Nome: {user.nome}</li>
+      {users.map((user) => {
+        return <div>{user.apelido}</div>
       })}
     </div>
   )
