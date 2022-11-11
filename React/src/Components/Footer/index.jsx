@@ -4,14 +4,12 @@ function Footer() {
   return(
     <footer>
       <div>
-        &copy;esseéumprojetodeestudo
+        &copy;programadoresgrupo01@gmail.com
       </div>
       <div>
         <a href="/">Desenvolvedores</a>
       </div>
-      <div>
-        <a href="/">Precisa de ajuda?</a>
-      </div>
+      
     </footer>
   )
 }

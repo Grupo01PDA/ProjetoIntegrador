@@ -2,12 +2,17 @@ main.cadastro {
   font-family: 'Open Sans', sans-serif;
   color: var(--branco-base);
   background: linear-gradient(135deg, var(--azul-base), var(--verde-base));
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: space-evenly;
   height: 100vh;
   width: 100vw;
   align-items: center;
+}
+/* texto preparado para mudar sua vida */
+.texto-cadrasto {
+  display: block;
+  font-size: 2rem;
 }
 
 /*botão de voltar */
@@ -18,17 +23,23 @@ main.cadastro {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-.voltar{
   text-decoration: none;
   color: var(--branco-base);
   font-weight: 700;
   transition: 300ms;
 }
+
+/* .simbolo_voltar{
+  color: var(--branco-base);
+  transition: 300ms;
+  margin-right: 0.3rem;
+
+}
+
 .voltar:hover {
   color: var(--verde-base);
   transition: 300ms;
-}
+} */
 
 
 

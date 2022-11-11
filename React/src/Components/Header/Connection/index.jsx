@@ -42,6 +42,7 @@ function Connection() {
   }
 
   const [count, setCount] = useState(localStorage.getItem("Tema") || 0);
+  
 
   useEffect(() => {
     if (localStorage.getItem("Tema")) {
